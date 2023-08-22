@@ -1,4 +1,7 @@
 import React from 'react';
+
+import styled from 'styled-components';
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -12,8 +15,8 @@ function NavBar() {
                     <Navbar.Brand href="#home">
                         <img
                             alt="brand"
-                            width="160px"
-                            src="/brand2.png"
+                            width="180px"
+                            src="brand3.png"
                             className="d-inline-block align-top"
                         />{' '}
                     </Navbar.Brand>
