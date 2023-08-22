@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,21 +8,35 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
+    
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        if (window.scrollY >= 125){
+            setNavbar(true);
+        }
+        else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground)
+
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="light" data-bs-theme="light" fixed="top">
+            <Navbar className={ navbar ? 'navbar active' : 'navbar'} collapseOnSelect expand="lg" data-bs-theme="light" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
                             alt="brand"
-                            width="180px"
-                            src="brand3.png"
+                            width="125px"
+                            src={navbar ? 'logo1.png' : 'navbar'}
                             className="d-inline-block align-top"
                         />{' '}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav>
+                        <Nav className="ms-auto">
                             <Nav.Link href="#">Contact</Nav.Link>
                             <NavDropdown title="Services" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#">Window Cleaning</NavDropdown.Item>
