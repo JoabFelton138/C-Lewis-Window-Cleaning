@@ -20,6 +20,16 @@ function NavBar() {
         }
     };
 
+    const displayWindowSize = () => {
+
+        var w = window.innerWidth;
+        
+        if (w <= 993){
+            console.log("mobile view ", w);
+        }
+    }
+
+    displayWindowSize();
     window.addEventListener('scroll', changeBackground)
 
     return (
@@ -29,12 +39,12 @@ function NavBar() {
                     <Navbar.Brand href="#home">
                         <img
                             alt="brand"
-                            width="125px"
-                            src={navbar ? 'logo1.png' : 'navbar'}
+                            width="120px"
+                            src={navbar ? 'blacklogo.png' : 'whitelogo.png'}
                             className="d-inline-block align-top"
                         />{' '}
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle className="bg-light" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link href="#">Contact</Nav.Link>

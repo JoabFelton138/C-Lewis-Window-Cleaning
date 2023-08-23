@@ -1,0 +1,31 @@
+.container{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    background-color: transparent !important;
+    height: 175px;
+    transition: height 2s ease, background-color 2s ease;}
+
+.nav-link {
+    color: white !important;
+    padding-right: 18px !important;
+}
+
+.navbar.active {
+    height: 100px;
+    background-color: white !important;
+    border-bottom: 0.1px solid #d3d3d3;
+    transition: height 2s ease, 
+                border-bottom 1s,
+                background-color 2s ease;
+}
+
+.navbar.active .nav-link {
+    color: black !important;
+}
+
+.navbar-toggler {
+    color: rgb(0, 191, 255) !Important;
+}

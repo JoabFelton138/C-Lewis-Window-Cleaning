@@ -37,25 +37,6 @@
   }
 }
 
-.nav-link{
-  color: black;
-}
-
-/* .bg-light {
-  background-color: white !important;
-  border-bottom: 0.1px solid grey;
-} */
-
-.navbar{
-  background-color: transparent !important;
-  height: 125px;
-}
-
-.navbar.active {
-  background-color: white !important;
-  border-bottom: 0.1px solid grey;
-}
-
 
 
 
