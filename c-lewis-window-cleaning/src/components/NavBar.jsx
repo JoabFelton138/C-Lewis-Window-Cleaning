@@ -10,6 +10,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function NavBar() {
     
     const [navbar, setNavbar] = useState(false);
+    const windowWidth = window.screen.width;
 
     const changeBackground = () => {
         if (window.scrollY >= 125){
@@ -20,21 +21,15 @@ function NavBar() {
         }
     };
 
-    const displayWindowSize = () => {
-
-        var w = window.innerWidth;
-        
-        if (w <= 993){
-            console.log("mobile view ", w);
-        }
+    const getWindowSize = () => {
+        console.log("On load, page size is " + windowWidth);
     }
 
-    displayWindowSize();
-    window.addEventListener('scroll', changeBackground)
+    window.addEventListener('scroll', changeBackground);
 
     return (
         <>
-            <Navbar className={ navbar ? 'navbar active' : 'navbar'} collapseOnSelect expand="lg" data-bs-theme="light" fixed="top">
+            <Navbar onLoad={getWindowSize} className={ navbar ? 'navbar active' : 'navbar'} collapseOnSelect expand="lg" data-bs-theme="light" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img

@@ -27,5 +27,19 @@
 }
 
 .navbar-toggler {
-    color: rgb(0, 191, 255) !Important;
+    color: rgb(0, 191, 255) !important;
+    text-align: center;
+}
+
+.dropdown-item:active{
+    background-color: rgb(0, 191, 255) !important;
+}
+
+.navbar-toggler {
+    color: rgb(0, 191, 255) !important;
+    text-align: center;
+}
+
+*, ::after, ::before {
+    box-sizing: content-box;
 }
