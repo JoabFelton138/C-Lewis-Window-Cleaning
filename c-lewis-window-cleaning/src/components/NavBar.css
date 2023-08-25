@@ -6,7 +6,10 @@
 .navbar {
     background-color: transparent !important;
     height: 175px;
-    transition: height 2s ease, background-color 2s ease;}
+    transition: height 2s ease, background-color 2s ease;
+    box-sizing: content-box;
+
+}
 
 .nav-link {
     color: white !important;
@@ -20,6 +23,7 @@
     transition: height 2s ease, 
                 border-bottom 1s,
                 background-color 2s ease;
+    box-sizing: content-box;
 }
 
 .navbar.active .nav-link {
@@ -40,6 +44,7 @@
     text-align: center;
 }
 
-*, ::after, ::before {
-    box-sizing: content-box;
+  .navbar.active .nav-link:active {
+    color: black !important;
+    background-color: white;
 }

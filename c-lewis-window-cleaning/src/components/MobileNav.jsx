@@ -5,37 +5,24 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const NavBar = () => {
-
-    const [navbar, setNavbar] = useState(false);
-
-    const changeBackground = () => {
-        if (window.scrollY >= 125) {
-            setNavbar(true);
-        }
-        else {
-            setNavbar(false);
-        }
-    };
-
-    window.addEventListener('scroll', changeBackground);
+const MobileNav = () => {
 
     return (
         <>
-            <Navbar className={navbar ? 'navbar active' : 'navbar'} collapseOnSelect expand="lg" data-bs-theme="light" fixed="top">
+            <Navbar className={'navbar active'} collapseOnSelect expand="lg" data-bs-theme="light" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
                             alt="brand"
                             width="120px"
-                            src={navbar ? 'blacklogo.png' : 'whitelogo.png'}
+                            src={'blacklogo.png'}
                             className="d-inline-block align-top"
                         />{' '}
                     </Navbar.Brand>
                     <Navbar.Toggle className="bg-light" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#">Contact</Nav.Link>
+                            <Nav.Link className="eggs" href="#">Contact</Nav.Link>
                             <NavDropdown title="Services" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#">Window Cleaning</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">Gutter and Fascia Cleaning</NavDropdown.Item>
@@ -51,4 +38,4 @@ const NavBar = () => {
     );
 }
 
-export default NavBar;
+export default MobileNav;
