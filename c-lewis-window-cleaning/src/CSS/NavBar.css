@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    background-color: transparent !important;
+    background-color: transparent;
     height: 175px;
     transition: height 2s ease, background-color 2s ease;
     box-sizing: content-box;
@@ -42,9 +42,4 @@
 .navbar-toggler {
     color: rgb(0, 191, 255) !important;
     text-align: center;
-}
-
-  .navbar.active .nav-link:active {
-    color: black !important;
-    background-color: white;
 }

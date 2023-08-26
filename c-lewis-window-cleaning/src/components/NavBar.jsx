@@ -38,8 +38,10 @@ const NavBar = () => {
                             <Nav.Link href="#">Contact</Nav.Link>
                             <NavDropdown title="Services" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#">Window Cleaning</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">Gutter and Fascia Cleaning</NavDropdown.Item>
-                                <NavDropdown.Item href="#action5">Pressure Washing and Conservatory Cleaning</NavDropdown.Item>
+                                <NavDropdown.Item href="#">Gutter and Fascia Cleaning</NavDropdown.Item>
+                                <NavDropdown.Item href="#">Pressure Washing</NavDropdown.Item>
+                                <NavDropdown.Item href="#">Conservatory Cleaning</NavDropdown.Item>
+
                             </NavDropdown>
                             <Nav.Link href="#">Portfolio</Nav.Link>
                             <Nav.Link href="#">Testimonials</Nav.Link>
