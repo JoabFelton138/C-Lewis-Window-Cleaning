@@ -1,0 +1,25 @@
+.about {
+   margin: auto;
+   width: 70%;
+   text-align: center;
+}
+
+.about h3{
+    margin-top: 2vh;
+}
+
+.about p{
+    margin-top: 3vh;
+}
+
+.about img{
+    margin-top: 5vh;
+    max-width: 25%;
+    border-radius: 75%; 
+}
+
+.icons{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}

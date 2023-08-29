@@ -5,8 +5,8 @@
 
 .navbar {
     background-color: transparent;
-    height: 175px;
-    transition: height 2s ease, background-color 2s ease;
+    height: 125px;
+    transition: height 0.5s ease, background-color 0.5s ease;
     box-sizing: content-box;
 
 }

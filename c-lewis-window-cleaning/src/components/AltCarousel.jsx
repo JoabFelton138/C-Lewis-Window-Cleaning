@@ -26,7 +26,7 @@ function AltCarousel() {
             <img src={wc} text="Second slide" />
                 <Carousel.Caption>
                     <h4>PRESSURE WASHING & CONSERVATORY CLEANING</h4>
-                    <h1>MAKING THINGS SHINE SINCE 2020</h1>
+                    <h1>LET ME LIGHT UP YOUR HOME</h1>
                     <h5>07391 853 506</h5>
                 </Carousel.Caption>
         </Carousel.Item>

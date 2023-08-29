@@ -1,13 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './CSS/NavBar.css';
 import './CSS/AltCarousel.css';
+import './CSS/About.css';
 
 import MediaQuery from 'react-responsive'
+import React, { useState } from 'react';
 
 import NavBar from './components/NavBar';
 import MobileNav from './components/MobileNav';
-import { useState } from 'react';
 import AltCarousel from './components/AltCarousel';
+import About from './components/About';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -18,10 +21,10 @@ function App() {
         <NavBar/>
       </MediaQuery>
       <MediaQuery maxWidth={994}>
-        <MobileNav/>
       </MediaQuery>
       <body>
           <AltCarousel/> 
+          <About/>
       </body>
     </div>
   );
