@@ -1,25 +1,32 @@
 .about {
    margin: auto;
-   width: 70%;
+   width: 65%;
    text-align: center;
 }
 
 .about h3{
-    margin-top: 2vh;
+    margin-top: 1vw;
 }
 
 .about p{
-    margin-top: 3vh;
+    margin-top: 1vw;
+    font-size:1.5vw
 }
 
 .about img{
-    margin-top: 5vh;
+    margin-top: 4vw;
     max-width: 25%;
     border-radius: 75%; 
 }
 
 .icons{
-    margin-top: 5vh;
+    margin-top: 3vw;
+    margin-bottom: 7vh;
     display: flex;
     justify-content: space-evenly;
+}
+
+.icons svg{
+    width: 5%;
+    height: 5%
 }

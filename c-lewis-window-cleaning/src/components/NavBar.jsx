@@ -10,7 +10,7 @@ const NavBar = () => {
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
-        if (window.scrollY >= 125) {
+        if (window.scrollY >= 5) {
             setNavbar(true);
         }
         else {
@@ -35,15 +35,16 @@ const NavBar = () => {
                     <Navbar.Toggle className="bg-light" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#">Contact</Nav.Link>
-                            <NavDropdown title="Services" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#">Window Cleaning</NavDropdown.Item>
-                                <NavDropdown.Item href="#">Gutter and Fascia Cleaning</NavDropdown.Item>
-                                <NavDropdown.Item href="#">Pressure Washing</NavDropdown.Item>
-                                <NavDropdown.Item href="#">Conservatory Cleaning</NavDropdown.Item>
+                            <Nav.Link href="#">GET A QUOTE</Nav.Link>
+                            <Nav.Link href="#">CONTACT</Nav.Link>
+                            <NavDropdown title="SERVICES" id="navbarScrollingDropdown">
+                                <NavDropdown.Item href="#">WINDOW CLEANING</NavDropdown.Item>
+                                <NavDropdown.Item href="#">GUTTER AND FASCIA CLEANING</NavDropdown.Item>
+                                <NavDropdown.Item href="#">PRESSURE WASHING</NavDropdown.Item>
+                                <NavDropdown.Item href="#">CONSERVATORY CLEANING</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#">Portfolio</Nav.Link>
-                            <Nav.Link href="#">Testimonials</Nav.Link>
+                            <Nav.Link href="#">PORTFOLIO</Nav.Link>
+                            <Nav.Link href="#">TESTIMONIALS</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -1,0 +1,6 @@
+.quote-container img { position: relative;
+height: 100%;
+width: 100%;
+background-size: cover;
+filter: brightness(50%);
+}

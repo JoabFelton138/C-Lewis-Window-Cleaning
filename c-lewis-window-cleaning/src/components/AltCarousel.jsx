@@ -16,12 +16,13 @@ function AltCarousel() {
         <Carousel.Item>
             <img src={van} text="First slide" />
             <Carousel.Caption>
-                <h4>COVERING PERTON, SHIFNALL, WHEATON ASTON AND MORE</h4>
-                <h1>PROFESSIONAL WINDOW CLEANING</h1>
-                <Button variant="outline-light">Get a Quote</Button>{' '}
-                <Button variant="outline-light">Contact</Button>{' '}
+                <h4>COVERING PERTON, SHIFNAL, WHEATON ASTON AND MORE</h4>
+                <h1>EXPERT WINDOW CLEANING</h1>
+                    <Button variant="outline-light">Get a Quote</Button>{' '}
+                    <Button variant="outline-light">Contact</Button>{' '}
             </Carousel.Caption>
         </Carousel.Item>
+
         <Carousel.Item>
             <img src={wc} text="Second slide" />
                 <Carousel.Caption>
@@ -30,14 +31,15 @@ function AltCarousel() {
                     <h5>07391 853 506</h5>
                 </Carousel.Caption>
         </Carousel.Item>
+        
         <Carousel.Item>
-        <img src={gc} text="First slide" />
-            <Carousel.Caption>
-                <h4>GUTTER & FASCIA CLEANING SERVICES</h4>
-                <h1>MAKING THINGS SHINE SINCE 2020</h1>
-                <Button variant="outline-light">Get a Quote</Button>{' '}
-                <Button variant="outline-light">Contact</Button>{' '}
-            </Carousel.Caption>
+            <img src={gc} text="First slide" />
+                <Carousel.Caption>
+                    <h4 className={"myH4"}> GUTTER & FASCIA CLEANING SERVICES</h4>
+                    <h1>MAKING THINGS SHINE SINCE 2020</h1>
+                    <Button variant="outline-light">Get a Quote</Button>{' '}
+                    <Button variant="outline-light">Contact</Button>{' '}
+                </Carousel.Caption>
         </Carousel.Item>
     </Carousel></>)
 };
