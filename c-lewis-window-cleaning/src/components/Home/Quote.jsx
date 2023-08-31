@@ -1,8 +1,7 @@
 import React from 'react';
 
-import '../CSS/Quote.css';
-
-import pw from '../images/carousel/pw6.jpg';
+import '../../CSS/Quote.css';
+import pw from '../../images/carousel/pw6.jpg';
 
 const Quote = () => {
     return (

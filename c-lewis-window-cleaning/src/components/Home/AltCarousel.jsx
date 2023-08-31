@@ -2,13 +2,11 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 
-import '../App.css';
+import '../../CSS/AltCarousel.css';
 
-import van from '../images/carousel/van.png';
-import wc from '../images/carousel/wc1.jpg'
-// import gc from '../images/carousel/gc4.jpg';
-import gc from '../images/carousel/gc2.jpeg';
-
+import van from '../../images/carousel/van.png';
+import wc from '../../images/carousel/wc1.jpg'
+import gc from '../../images/carousel/gc2.jpeg';
 
 function AltCarousel() {
     return (<>

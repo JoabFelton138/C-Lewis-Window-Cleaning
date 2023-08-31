@@ -1,0 +1,29 @@
+.why-me{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.why-me-container{
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.why-me-container > div{
+    width: 30%;
+}
+
+.why-me .svg-inline--fa {
+    width: 25%;
+    height: 25%;
+}
+
+.why-me h4, p{
+    margin-top: 2vw;
+}
+
+.why-me h4{
+    margin-top: 1vw;
+}

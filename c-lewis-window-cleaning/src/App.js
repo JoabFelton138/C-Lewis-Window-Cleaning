@@ -1,17 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './CSS/NavBar.css';
-import './CSS/AltCarousel.css';
-import './CSS/About.css';
 
 import MediaQuery from 'react-responsive'
 import React, { useState } from 'react';
 
 import NavBar from './components/NavBar';
 import MobileNav from './components/MobileNav';
-import AltCarousel from './components/AltCarousel';
-import About from './components/About';
-import Quote from './components/Quote';
+
+import AltCarousel from './components/Home/AltCarousel';
+import About from './components/Home/About';
+import Why from './components/Home/Why';
+import Quote from './components/Home/Quote';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -27,8 +27,9 @@ function App() {
       </MediaQuery>
       <MediaQuery maxWidth={994}>
       </MediaQuery>
-          <AltCarousel/> 
-          <About/>
+        <AltCarousel/> 
+        <About/>
+        <Why/>
       </body>
     </html>
   );
