@@ -16,8 +16,8 @@ function AltCarousel() {
             <Carousel.Caption>
                 <h4>COVERING PERTON, SHIFNAL, WHEATON ASTON AND MORE</h4>
                 <h1>EXPERT WINDOW CLEANING</h1>
-                    <Button variant="outline-light">Get a Quote</Button>{' '}
-                    <Button variant="outline-light">Contact</Button>{' '}
+                    <Button variant="outline-light">READ MORE</Button>{' '}
+                    <Button variant="outline-light">GET A QUOTE</Button>{' '}
             </Carousel.Caption>
         </Carousel.Item>
 
@@ -26,7 +26,8 @@ function AltCarousel() {
                 <Carousel.Caption>
                     <h4>PRESSURE WASHING & CONSERVATORY CLEANING</h4>
                     <h1>LET ME LIGHT UP YOUR HOME</h1>
-                    <h5>07391 853 506</h5>
+                        <Button variant="outline-light">READ MORE</Button>{' '}
+                        <Button variant="outline-light">GET A QUOTE</Button>{' '}
                 </Carousel.Caption>
         </Carousel.Item>
         
@@ -35,8 +36,8 @@ function AltCarousel() {
                 <Carousel.Caption>
                     <h4 className={"myH4"}> GUTTER & FASCIA CLEANING SERVICES</h4>
                     <h1>MAKING THINGS SHINE SINCE 2020</h1>
-                    <Button variant="outline-light">Get a Quote</Button>{' '}
-                    <Button variant="outline-light">Contact</Button>{' '}
+                        <Button variant="outline-light">READ MORE</Button>{' '}
+                        <Button variant="outline-light">GET A QUOTE</Button>{' '}
                 </Carousel.Caption>
         </Carousel.Item>
     </Carousel></>)
