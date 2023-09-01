@@ -38,7 +38,6 @@ const AboutMe = () => {
                 />
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    color="pink"
                     type="button"
                     onClick={() => window.open("https://instagram.com", "_blank")}
                 />

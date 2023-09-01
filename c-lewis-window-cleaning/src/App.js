@@ -10,8 +10,10 @@ import MobileNav from './components/MobileNav';
 
 import AltCarousel from './components/Home/AltCarousel';
 import About from './components/Home/About';
+import Portfolio from './components/Home/Portfolio';
 import Why from './components/Home/Why';
 import Quote from './components/Home/Quote';
+import Footer from './components/Footer';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,7 +31,9 @@ function App() {
       </MediaQuery>
         <AltCarousel/> 
         <About/>
+        <Portfolio/>
         <Why/>
+        <Footer/>
       </body>
     </html>
   );

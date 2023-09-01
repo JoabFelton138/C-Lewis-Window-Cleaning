@@ -1,0 +1,17 @@
+.portfolio-container {
+    border:1px solid black;
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+.portfolio-container > h3{
+    padding-top: 4vw;
+    font-size: 2.5vw;
+
+}
+
+.portfolio-container > p{
+    padding-top: 1vw;
+    font-size: 1.5vw
+}

@@ -5,12 +5,13 @@
 }
 
 .about h3{
+    font-size: 2.5vw;
     margin-top: 1vw;
 }
 
 .about p{
     margin-top: 1vw;
-    font-size:1.5vw
+    font-size:1.4vw
 }
 
 .about img{
