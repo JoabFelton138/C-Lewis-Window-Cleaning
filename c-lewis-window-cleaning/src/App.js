@@ -33,6 +33,7 @@ function App() {
         <About/>
         <Portfolio/>
         <Why/>
+        <Quote/>
         <Footer/>
       </body>
     </html>

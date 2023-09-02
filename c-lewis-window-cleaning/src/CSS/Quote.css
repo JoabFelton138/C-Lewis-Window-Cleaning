@@ -1,5 +1,26 @@
-.quote-container img { position: relative;
-height: 100%;
-width: 100%;
-background-size: cover;
+.quote-container{
+    background-image : url(../images/carousel/pw6.jpg);
+    width: 100%;
+    height: 38vw;
+    background-size: 'cover';
+    position: relative;
+}
+
+.quote-container-child{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.quote-container-child .svg-inline--fa {
+    width: 8%;
+    height: 8%;
+}
+
+.quote-container-child button{
+    margin-top: 1vw;
 }

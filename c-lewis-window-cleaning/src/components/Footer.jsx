@@ -7,7 +7,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
-        <div className="pt-5">
+        <div>
             <footer className="text-center text-lg-start" style={{ backgroundColor: '#f6f6f6' }}>
                 <div className="container d-flex justify-content-center pt-5">
                     <p>07391 853 506</p>

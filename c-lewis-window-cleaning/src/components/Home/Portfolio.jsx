@@ -6,7 +6,7 @@ import pw from '../../images/gallery/pw12.jpg'
 import cc from '../../images/gallery/cc.jpeg'
 import pw2 from '../../images/gallery/pw6.jpg'
 import wc from '../../images/gallery/wc5.jpg'
-
+import bwc from '../../images/gallery/bwc.jpg'
 
 import Button from 'react-bootstrap/Button';
 
@@ -37,7 +37,7 @@ const Portfolio = () => {
                 />
 
                 <img
-                    src={cc}
+                    src={bwc}
                     class="w-100 shadow-1-strong  mb-4"
                     alt="Boat on Calm Water"
                 />
