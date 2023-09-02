@@ -6,13 +6,8 @@ import MediaQuery from 'react-responsive'
 import React, { useState } from 'react';
 
 import NavBar from './components/NavBar';
-import MobileNav from './components/MobileNav';
-
-import AltCarousel from './components/Home/AltCarousel';
-import About from './components/Home/About';
-import Portfolio from './components/Home/Portfolio';
-import Why from './components/Home/Why';
-import Quote from './components/Home/Quote';
+import Home from './pages/Home';
+import ContactForm from './components/Form';
 import Footer from './components/Footer';
 
 function App() {
@@ -25,15 +20,12 @@ function App() {
       </head>
       <body>
       <MediaQuery minWidth={995}>
-        <NavBar/>
+        {/* <NavBar/> */}
       </MediaQuery>
       <MediaQuery maxWidth={994}>
       </MediaQuery>
-        <AltCarousel/> 
-        <About/>
-        <Portfolio/>
-        <Why/>
-        <Quote/>
+        {/* <Home/> */}
+        <ContactForm/>
         <Footer/>
       </body>
     </html>

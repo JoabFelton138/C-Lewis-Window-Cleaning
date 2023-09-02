@@ -1,0 +1,12 @@
+.form-container{
+    display:block;
+    width:55%;
+    margin:0 auto;
+    margin-top: 8vw;
+}
+
+.form-container button{
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+    background-color: rgb(0, 191, 255);
+}
