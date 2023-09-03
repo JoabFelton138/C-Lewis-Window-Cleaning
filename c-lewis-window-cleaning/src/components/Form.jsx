@@ -17,6 +17,7 @@ const ContactForm = () => {
     const [postCode, setPostCode] = useState("");
     const [area, setArea] = useState("");
     const [message, setMessage] = useState("");
+    const [HDYFOAU, setHDYFOAU] = useState("");
 
     const [validated, setValidated] = useState(false);
 
@@ -156,10 +157,30 @@ const ContactForm = () => {
 
                 <Form.Group controlId="exampleForm.ControlHelp">
                     <Form.Label>How did you find out about CW Lewis WCS?</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
+                    <Form.Check 
+                        class="form-check-input" 
+                        type="checkbox"
+                        label="Recommendation"
+                        value={HDYFOAU}
+                        onChange={(e) => setHDYFOAU(e.target.value)}
+                    />
+                    <Form.Check 
+                        class="form-check-input" 
+                        type="checkbox"
+                        label="Internet Search"
+                        value={HDYFOAU}
+                        onChange={(e) => setHDYFOAU(e.target.value)}
+                    />
+                    <Form.Check 
+                        class="form-check-input" 
+                        type="checkbox"
+                        label="Social Media"
+                        value={HDYFOAU}
+                        onChange={(e) => setHDYFOAU(e.target.value)}
+                    />
                 </Form.Group>
         </Form>
-
+        <p>{HDYFOAU}</p>
         <div className="p-4">
             <Button 
                 type="submit"
