@@ -14,7 +14,7 @@ const Portfolio = () => {
     return (<div className="portfolio-container">
         <h3>MY PORTFOLIO</h3>
         <p>I take great pride in my work, take a look for yourself!</p>
-        <div class="row pt-5 d-flex justify-content-center">
+        <div class="inner-container row pt-5 d-flex justify-content-center">
             <div class="col-lg-4 col-md-12 mb-4">
                 <img
                     src={cc}

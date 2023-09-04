@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import {Link} from 'react-router-dom';
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -24,7 +26,10 @@ const NavBar = () => {
         <>
             <Navbar className={navbar ? 'navbar active' : 'navbar'} collapseOnSelect expand="lg" data-bs-theme="light" fixed="top">
                 <Container>
-                    <Navbar.Brand href="#home">
+
+                    <Navbar.Brand 
+                        as={Link} 
+                        to="/home">
                         <img
                             alt="brand"
                             width="120px"
@@ -35,16 +40,34 @@ const NavBar = () => {
                     <Navbar.Toggle className="bg-light" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link href="#">GET A QUOTE</Nav.Link>
-                            <Nav.Link href="#">CONTACT</Nav.Link>
+                            <Nav.Link 
+                                as={Link} 
+                                to="/home#quote">
+                                    GET A QUOTE
+                            </Nav.Link>
+                            <Nav.Link 
+                                as={Link} 
+                                to="">
+                                    CONTACT
+                            </Nav.Link>
+
                             <NavDropdown title="SERVICES" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#">WINDOW CLEANING</NavDropdown.Item>
-                                <NavDropdown.Item href="#">GUTTER AND FASCIA CLEANING</NavDropdown.Item>
-                                <NavDropdown.Item href="#">PRESSURE WASHING</NavDropdown.Item>
-                                <NavDropdown.Item href="#">CONSERVATORY CLEANING</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="">WINDOW CLEANING</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="">GUTTER AND FASCIA CLEANING</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="">PRESSURE WASHING</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="">CONSERVATORY CLEANING</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#">PORTFOLIO</Nav.Link>
-                            <Nav.Link href="#">TESTIMONIALS</Nav.Link>
+
+                            <Nav.Link 
+                                as={Link} 
+                                to="/portfolio">
+                                    PORTFOLIO
+                            </Nav.Link>
+                            <Nav.Link
+                                as={Link} 
+                                to="/testimonials">
+                                    TESTIMONIALS
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

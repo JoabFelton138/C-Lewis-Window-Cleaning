@@ -195,6 +195,7 @@ const ContactForm = () => {
                         placeholder="Area"
                         value={area}
                         onChange={(e) => setArea(e.target.value)} 
+                        required
                     />
                     <Form.Control.Feedback type="invalid">
                         Please enter your area.

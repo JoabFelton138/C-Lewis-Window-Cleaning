@@ -11,9 +11,9 @@
 
 }
 
-.nav-link {
+a { 
     color: white !important;
-    padding-right: 18px !important;
+    padding-right: 16px !important;
 }
 
 .navbar.active {
@@ -26,7 +26,7 @@
     box-sizing: content-box;
 }
 
-.navbar.active .nav-link {
+.navbar.active a {
     color: black !important;
 }
 
