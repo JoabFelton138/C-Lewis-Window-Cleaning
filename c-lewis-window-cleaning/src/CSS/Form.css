@@ -14,3 +14,8 @@
 .form {
     width: 55%;
 }
+
+.form-check-input:checked {
+    background-color: rgb(128,128,128);
+    border-color: rgb(128,128,128);
+}

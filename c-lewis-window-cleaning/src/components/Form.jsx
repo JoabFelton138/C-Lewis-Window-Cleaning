@@ -27,13 +27,13 @@ const ContactForm = () => {
 
     const handleRecommendationCheck = () => {
 
+        setRecommendationChecked(true);
+
         if (isChecked){
-            console.log("in if");
             setIsChecked(!isChecked);
         }
 
         else if (socialMediaChecked) {
-            console.log("in else");
             setSocialMediaChecked(!socialMediaChecked);
         }
 
@@ -42,17 +42,12 @@ const ContactForm = () => {
         }
 
         setHDYFOAU("Recommendation");
-
-        console.log("");
-        console.log("recommendationChecked " + recommendationChecked);
-        console.log("isChecked " + isChecked);
-        console.log("socialMediaChecked " + socialMediaChecked);
-        console.log("");
-
     }
 
     const handleIsChecked = () => {
         
+        setIsChecked(true);
+
         if (recommendationChecked) {
             setRecommendationChecked(!recommendationChecked);
         }
@@ -70,7 +65,9 @@ const ContactForm = () => {
     }
 
     const handleSocialMediaChecked = () => {
-        
+
+        setSocialMediaChecked(true);
+
         if (recommendationChecked) {
             setRecommendationChecked(!recommendationChecked);
         }
@@ -219,13 +216,10 @@ const ContactForm = () => {
                     </Form.Control.Feedback>
                 </Form.Group>
 
-                {HDYFOAU}
-
                 <Form.Group controlId="exampleForm.ControlHelp">
                     <Form.Label>How did you find out about CW Lewis WCS?</Form.Label>
                     <Form.Check 
                         class="form-check-input" 
-                        type="checkbox"
                         id="recommendation"
                         name="recommendation"
                         label="Recommendation"
