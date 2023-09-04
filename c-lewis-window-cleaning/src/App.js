@@ -4,7 +4,7 @@ import './CSS/NavBar.css';
 
 import MediaQuery from 'react-responsive'
 import React, { useState } from 'react';
-import {Route, Routes} from 'react-router-dom';
+import { Route, Routes, Redirect } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
@@ -23,18 +23,18 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body>
-      <MediaQuery minWidth={995}>
-        <NavBar/>
-      </MediaQuery>
-      <MediaQuery maxWidth={994}>
-      </MediaQuery>
-          <Routes>
-            <Route path="/home" element={<Home/>}/>
-            <Route path="/home#quote" element={<Form/>}/>
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/testimonials" element={<TestimonialsPage/>}/>
-          </Routes>
-        <Footer/>
+        <MediaQuery minWidth={995}>
+          <NavBar />
+        </MediaQuery>
+        <MediaQuery maxWidth={994}>
+        </MediaQuery>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/home#quote" element={<Form />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
+        </Routes>
+        <Footer />
       </body>
     </html>
   );

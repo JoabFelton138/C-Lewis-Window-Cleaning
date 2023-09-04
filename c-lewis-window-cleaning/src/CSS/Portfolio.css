@@ -3,6 +3,7 @@
     background-color: rgb(246, 246, 246);
     text-align: center;
     padding-bottom: 5vw;
+    width: 100%;
 }
 
 .portfolio-container > h3{
@@ -15,3 +16,13 @@
     padding-top: 1vw;
     font-size: 1.5vw
 }
+
+.images img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.images figure:hover img {
+	opacity: .5;
+}
+
