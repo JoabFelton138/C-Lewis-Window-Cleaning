@@ -20,12 +20,11 @@ function App() {
       </head>
       <body>
       <MediaQuery minWidth={995}>
-        {/* <NavBar/> */}
+        <NavBar/>
       </MediaQuery>
       <MediaQuery maxWidth={994}>
       </MediaQuery>
-        {/* <Home/> */}
-        <ContactForm/>
+          <Home/>
         <Footer/>
       </body>
     </html>

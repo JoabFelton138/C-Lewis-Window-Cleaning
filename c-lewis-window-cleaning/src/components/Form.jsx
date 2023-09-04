@@ -17,9 +17,74 @@ const ContactForm = () => {
     const [postCode, setPostCode] = useState("");
     const [area, setArea] = useState("");
     const [message, setMessage] = useState("");
+    
     const [HDYFOAU, setHDYFOAU] = useState("");
-
+    const [recommendationChecked, setRecommendationChecked] = useState(false);
+    const [isChecked, setIsChecked] = useState(false);
+    const [socialMediaChecked, setSocialMediaChecked] = useState(false);
+    
     const [validated, setValidated] = useState(false);
+
+    const handleRecommendationCheck = () => {
+
+        if (isChecked){
+            console.log("in if");
+            setIsChecked(!isChecked);
+        }
+
+        else if (socialMediaChecked) {
+            console.log("in else");
+            setSocialMediaChecked(!socialMediaChecked);
+        }
+
+        else{
+            setRecommendationChecked(!recommendationChecked);
+        }
+
+        setHDYFOAU("Recommendation");
+
+        console.log("");
+        console.log("recommendationChecked " + recommendationChecked);
+        console.log("isChecked " + isChecked);
+        console.log("socialMediaChecked " + socialMediaChecked);
+        console.log("");
+
+    }
+
+    const handleIsChecked = () => {
+        
+        if (recommendationChecked) {
+            setRecommendationChecked(!recommendationChecked);
+        }
+
+        else if (socialMediaChecked){
+            setSocialMediaChecked(!socialMediaChecked);
+        }
+
+        else {
+            setIsChecked(!isChecked);
+        }
+
+        setHDYFOAU("Internet Search");
+
+    }
+
+    const handleSocialMediaChecked = () => {
+        
+        if (recommendationChecked) {
+            setRecommendationChecked(!recommendationChecked);
+        }
+
+        else if (isChecked){
+            setIsChecked(!isChecked);
+        }
+
+        else {
+            setSocialMediaChecked(!socialMediaChecked);
+        }
+
+        setHDYFOAU("Social Media");
+    }
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
@@ -41,7 +106,7 @@ const ContactForm = () => {
             <Form form className="p-4" validated={validated}>
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="FirstName">
-                    <Form.Label>First Name</Form.Label>
+                    <Form.Label>First Name*</Form.Label>
                     <Form.Control 
                         type="name" 
                         placeholder="First Name"
@@ -54,7 +119,7 @@ const ContactForm = () => {
                     </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group as={Col} controlId="Surname">
-                    <Form.Label>Surname</Form.Label>
+                    <Form.Label>Surname*</Form.Label>
                     <Form.Control 
                         type="surname" 
                         placeholder="Surname" 
@@ -70,7 +135,7 @@ const ContactForm = () => {
 
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="PhoneNumber">
-                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Label>Phone Number*</Form.Label>
                     <Form.Control 
                         placeholder="Phone Number" 
                         value={number}
@@ -83,7 +148,7 @@ const ContactForm = () => {
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="Email">
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label>Email*</Form.Label>
                     <Form.Control 
                         type="email" 
                         placeholder="Email"
@@ -98,7 +163,7 @@ const ContactForm = () => {
                 </Row>
 
                 <Form.Group className="mb-3" controlId="formGroupAddress">
-                    <Form.Label>Address</Form.Label>
+                    <Form.Label>Address*</Form.Label>
                     <Form.Control 
                         type="Address" 
                         placeholder="Address"
@@ -113,7 +178,7 @@ const ContactForm = () => {
 
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="PostCode">
-                    <Form.Label>Post Code</Form.Label>
+                    <Form.Label>Post Code*</Form.Label>
                     <Form.Control 
                         type="postcode" 
                         placeholder="Post Code"
@@ -133,7 +198,6 @@ const ContactForm = () => {
                         placeholder="Area"
                         value={area}
                         onChange={(e) => setArea(e.target.value)} 
-                        required 
                     />
                     <Form.Control.Feedback type="invalid">
                         Please enter your area.
@@ -142,7 +206,7 @@ const ContactForm = () => {
                 </Row>
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlHelp">
-                    <Form.Label>How can I help?</Form.Label>
+                    <Form.Label>How can I help?*</Form.Label>
                     <Form.Control 
                         as="textarea" 
                         rows={3} 
@@ -155,34 +219,43 @@ const ContactForm = () => {
                     </Form.Control.Feedback>
                 </Form.Group>
 
+                {HDYFOAU}
+
                 <Form.Group controlId="exampleForm.ControlHelp">
                     <Form.Label>How did you find out about CW Lewis WCS?</Form.Label>
                     <Form.Check 
                         class="form-check-input" 
                         type="checkbox"
+                        id="recommendation"
+                        name="recommendation"
                         label="Recommendation"
-                        value={HDYFOAU}
-                        onChange={(e) => setHDYFOAU(e.target.value)}
+                        checked={recommendationChecked}
+                        onChange={handleRecommendationCheck}
                     />
                     <Form.Check 
                         class="form-check-input" 
                         type="checkbox"
+                        id="InternetSearch"
+                        name="InternetSearch"
                         label="Internet Search"
-                        value={HDYFOAU}
-                        onChange={(e) => setHDYFOAU(e.target.value)}
+                        checked={isChecked}
+                        onChange={handleIsChecked}
                     />
                     <Form.Check 
                         class="form-check-input" 
                         type="checkbox"
+                        id="SocialMedia"
+                        name="SocialMedia"
                         label="Social Media"
-                        value={HDYFOAU}
-                        onChange={(e) => setHDYFOAU(e.target.value)}
+                        checked={socialMediaChecked}
+                        onChange={handleSocialMediaChecked}
                     />
                 </Form.Group>
         </Form>
-        <p>{HDYFOAU}</p>
         <div className="p-4">
             <Button 
+                className='btn-lg'
+                style={{marginBottom: '1vw'}}
                 type="submit"
                 onClick={(handleSubmit)}>
                     Submit
