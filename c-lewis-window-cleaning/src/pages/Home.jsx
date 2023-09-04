@@ -10,7 +10,7 @@ import Form from '../components/Form';
 const Home = () => {
     return (
         <div>
-            <Carousel/>
+            <Carousel/> 
             <About/>
             <Portfolio/>
             <Why/>

@@ -1,8 +1,9 @@
 .quote-container{
-    background-image : url(../images/carousel/pw6.jpg);
+    background-image : url(../images/carousel/wc1.jpg);
     width: 100%;
     height: 38vw;
-    background-size: 'cover';
+    background-repeat: no-repeat;
+    width: cover;
     position: relative;
 }
 

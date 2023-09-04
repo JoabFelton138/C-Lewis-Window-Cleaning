@@ -34,10 +34,12 @@ function AltCarousel() {
         <Carousel.Item>
             <img src={gc} text="First slide" />
                 <Carousel.Caption>
-                    <h4 className={"myH4"}> GUTTER & FASCIA CLEANING SERVICES</h4>
-                    <h1>MAKING THINGS SHINE SINCE 2020</h1>
-                        <Button variant="outline-light">READ MORE</Button>{' '}
-                        <Button variant="outline-light">GET A QUOTE</Button>{' '}
+                    <div className="mt-5">
+                        <h4>GUTTER & FASCIA CLEANING SERVICES</h4>
+                        <h1>MAKING THINGS SHINE SINCE 2020</h1>
+                            <Button variant="outline-light">READ MORE</Button>{' '}
+                            <Button variant="outline-light">GET A QUOTE</Button>{' '}
+                    </div>
                 </Carousel.Caption>
         </Carousel.Item>
     </Carousel></>)

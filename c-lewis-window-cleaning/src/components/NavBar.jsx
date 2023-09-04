@@ -42,7 +42,7 @@ const NavBar = () => {
                         <Nav className="ms-auto">
                             <Nav.Link 
                                 as={Link} 
-                                to="/home#quote">
+                                to="#">
                                     GET A QUOTE
                             </Nav.Link>
                             <Nav.Link 

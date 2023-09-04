@@ -250,6 +250,7 @@ const ContactForm = () => {
         <div className="p-4">
             <Button 
                 className='btn-lg'
+                variant="secondary"
                 style={{marginBottom: '1vw'}}
                 type="submit"
                 onClick={(handleSubmit)}>
