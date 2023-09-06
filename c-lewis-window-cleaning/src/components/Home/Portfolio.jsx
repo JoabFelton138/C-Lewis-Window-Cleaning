@@ -14,19 +14,20 @@ const Portfolio = () => {
     return (<div className="portfolio-container">
         <h3>MY PORTFOLIO</h3>
         <p>I take great pride in my work, take a look for yourself!</p>
+        
         <div class="inner-container row pt-5 d-flex justify-content-center" style={{width:'100%'}}>
-            <div class="images col-lg-4 col-md-12 mb-4">
+            <div class="images col-lg-4 col-md-12 mb-3">
                 <figure>
                     <img
                         src={cc}
-                        class="w-100 shadow-1-strong mb-4"
+                        class="w-100 shadow-1-strong mb-3"
                         alt="Boat on Calm Water"
                     />
                 </figure>
                 <figure>
                     <img
                         src={gutter}
-                        class="w-100 shadow-1-strong  mb-4"
+                        class="w-100 shadow-1-strong  mb-3"
                         alt="Wintry Mountain Landscape"
                     />
                 </figure>
@@ -36,14 +37,14 @@ const Portfolio = () => {
                 <figure>
                     <img
                         src={pw}
-                        class="w-100 shadow-1-strong  mb-4"
+                        class="w-100 shadow-1-strong  mb-3"
                         alt="Mountains in the Clouds"
                     />
                 </figure>
                 <figure>
                     <img
                         src={bwc}
-                        class="w-100 shadow-1-strong  mb-4"
+                        class="w-100 shadow-1-strong  mb-3"
                         alt="Boat on Calm Water"
                     />
                 </figure>

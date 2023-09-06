@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 import '../CSS/Form.css'
 
@@ -6,6 +6,14 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
+import {RenderAlert} from './commons/Alert';
+
+import emailjs from '@emailjs/browser';
+
+import { validateSubmission } from './commons/utils';
+import {isValidString} from './commons/validation';
+import { messages } from './commons/messages';
 
 const ContactForm = () => {
 
@@ -24,6 +32,9 @@ const ContactForm = () => {
     const [socialMediaChecked, setSocialMediaChecked] = useState(false);
     
     const [validated, setValidated] = useState(false);
+    const [invalidInput, setInvalidInput] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
+    const form = useRef();
 
     const handleRecommendationCheck = () => {
 
@@ -83,16 +94,35 @@ const ContactForm = () => {
         setHDYFOAU("Social Media");
     }
 
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
+    // const handleSubmit = (event) => {
+        
+    //     const form = event.currentTarget;
+    //     let errorMessage = validateSubmission(firstName);
+    //     setHDYFOAU()
+    //     setErrorMessage(errorMessage);
 
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
+    //     console.log(errorMessage);
+        
+    //     if (form.checkValidity() === false) {
+    //         event.preventDefault();
+    //         event.stopPropagation();
+    //     }
       
-        setValidated(true);
-    }
+    //     setValidated(true);
+    // }
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_b7pfg3u', 'template_bpuo3nh', form.current, 'bR_vQvzEQNeW8qqkX')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent");
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
     return (
         <div className="form-container border border-1 rounded">
@@ -100,163 +130,79 @@ const ContactForm = () => {
                 <h3>Need a Quote?</h3>
                 <p className="mt-2">If you would like a free quote, fill out the form and i'll get back to you!</p>
             </div>
-            <Form form className="p-4" validated={validated}>
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="FirstName">
+            <Form ref={form} onSubmit={sendEmail} className="p-4" style={{width: '55%;'}}>
+
+            <Row className="mb-3">
+                <Col>
                     <Form.Label>First Name*</Form.Label>
                     <Form.Control 
-                        type="name" 
-                        placeholder="First Name"
-                        value={firstName}
-                        onChange={(e) => setFirstName(e.target.value)} 
-                        required
-                    />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your name.
-                    </Form.Control.Feedback>
-                    </Form.Group>
-                    <Form.Group as={Col} controlId="Surname">
+                        placeholder="First name" 
+                        name="first_name"/>
+                </Col>
+                <Col>
                     <Form.Label>Surname*</Form.Label>
                     <Form.Control 
-                        type="surname" 
-                        placeholder="Surname" 
-                        value={surname}
-                        onChange={(e) => setSurname(e.target.value)}
-                        required 
-                    />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your surname.
-                    </Form.Control.Feedback>
-                    </Form.Group>
-                </Row>
+                        placeholder="Last Name" 
+                        name="surname"/>
+                </Col>
+            </Row>
 
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="PhoneNumber">
+            <Row className="mb-3">
+                <Col>
                     <Form.Label>Phone Number*</Form.Label>
                     <Form.Control 
                         placeholder="Phone Number" 
-                        value={number}
-                        onChange={(e) => setNumber(e.target.value)}
-                        required 
-                    />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your number.
-                    </Form.Control.Feedback>
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="Email">
+                        name="number"/>
+                </Col>
+                <Col>
                     <Form.Label>Email*</Form.Label>
                     <Form.Control 
-                        type="email" 
                         placeholder="Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)} 
-                        required 
+                        name="user_email" 
                     />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your email.
-                    </Form.Control.Feedback>
-                    </Form.Group>
-                </Row>
+                </Col>
+            </Row>
 
-                <Form.Group className="mb-3" controlId="formGroupAddress">
+            <Row className="mb-3">
+                <Col>
                     <Form.Label>Address*</Form.Label>
                     <Form.Control 
-                        type="Address" 
-                        placeholder="Address"
-                        value={address}
-                        onChange={(e) => setAddress(e.target.value)} 
-                        required 
-                    />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your address.
-                    </Form.Control.Feedback>
-                </Form.Group>
+                        placeholder="Address" 
+                        name="address"/>
+                </Col>
+            </Row>
 
-                <Row className="mb-3">
-                    <Form.Group as={Col} controlId="PostCode">
+            <Row className="mb-3">
+                <Col>
                     <Form.Label>Post Code*</Form.Label>
                     <Form.Control 
-                        type="postcode" 
-                        placeholder="Post Code"
-                        value={postCode}
-                        onChange={(e) => setPostCode(e.target.value)} 
-                        required 
-                    />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your postcode.
-                    </Form.Control.Feedback>
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="Area">
-                    <Form.Label>Area</Form.Label>
+                        placeholder="Post Code" 
+                        name="post_code"/>
+                </Col>
+                <Col>
+                    <Form.Label>Area*</Form.Label>
                     <Form.Control 
-                        type="area" 
                         placeholder="Area"
-                        value={area}
-                        onChange={(e) => setArea(e.target.value)} 
-                        required
+                        name="area" 
                     />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your area.
-                    </Form.Control.Feedback>
-                    </Form.Group>
-                </Row>
+                </Col>
+            </Row>
 
-                <Form.Group className="mb-3" controlId="exampleForm.ControlHelp">
-                    <Form.Label>How can I help?*</Form.Label>
+            <Row className='mb-3'>
+                <Col>
+                    <Form.Label>Message*</Form.Label>
                     <Form.Control 
+                        placeholder="Message"
                         as="textarea" 
                         rows={3} 
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        required 
+                        name="message" 
                     />
-                    <Form.Control.Feedback type="invalid">
-                        Please enter your message.
-                    </Form.Control.Feedback>
-                </Form.Group>
-
-                <Form.Group controlId="exampleForm.ControlHelp">
-                    <Form.Label>How did you find out about CW Lewis WCS?</Form.Label>
-                    <Form.Check 
-                        class="form-check-input" 
-                        id="recommendation"
-                        name="recommendation"
-                        label="Recommendation"
-                        checked={recommendationChecked}
-                        onChange={handleRecommendationCheck}
-                    />
-                    <Form.Check 
-                        class="form-check-input" 
-                        type="checkbox"
-                        id="InternetSearch"
-                        name="InternetSearch"
-                        label="Internet Search"
-                        checked={isChecked}
-                        onChange={handleIsChecked}
-                    />
-                    <Form.Check 
-                        class="form-check-input" 
-                        type="checkbox"
-                        id="SocialMedia"
-                        name="SocialMedia"
-                        label="Social Media"
-                        checked={socialMediaChecked}
-                        onChange={handleSocialMediaChecked}
-                    />
-                </Form.Group>
-        </Form>
-        <div className="p-4">
-            <Button 
-                className='btn-lg'
-                variant="secondary"
-                style={{marginBottom: '1vw'}}
-                type="submit"
-                onClick={(handleSubmit)}>
-                    Submit
-            </Button>
-        </div>
+                </Col>
+            </Row>
+            <Button type="submit" value="Send" variant="secondary">
+                Submit
+            </Button>{' '}
+            </Form>
         </div>
     );
 }
