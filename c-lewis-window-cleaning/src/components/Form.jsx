@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
@@ -30,6 +31,7 @@ const ContactForm = () => {
     const [socialMediaChecked, setSocialMediaChecked] = useState(false);
 
     const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
+    const [submissionFailed, setSubmissionFailed] = useState(false);
 
     const [validated, setValidated] = useState(false);
 
@@ -95,34 +97,57 @@ const ContactForm = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const form = e.currentTarget;
+
         setSubmissionSuccessful(false);
+        setSubmissionFailed(false);
+        
+        if (form.checkValidity() === false) {
+            setSubmissionFailed(true);
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    
+        else {
+            emailjs.sendForm('service_b7pfg3u', 'template_bpuo3nh', form, 'bR_vQvzEQNeW8qqkX')
+                .then((result) => {
 
-        emailjs.sendForm('service_b7pfg3u', 'template_bpuo3nh', form.current, 'bR_vQvzEQNeW8qqkX')
-            .then((result) => {
+                    console.log(result.text);
 
-                console.log(result.text);
-
-                if (result.text === "OK") {
-                    setSubmissionSuccessful(true);
-                    form.current.scrollIntoView();
-                }
-                e.target.reset();
-            },
+                    if (result.text === "OK") {
+                        setSubmissionSuccessful(true);
+                    }
+                },
 
                 (error) => {
                     console.log(error.text);
-                });
+                    setSubmissionFailed(true);
+                    e.preventDefault();
+                    e.stopPropagation();
+            });
+        }
+
+        form.reset();
+        form.scrollIntoView();
+        setValidated(true);
     };
 
     return (
         <div className="form-container border border-1 rounded">
-            <Form ref={form} onSubmit={sendEmail} className="p-4">
+            <Form 
+                noValidate
+                validated={validated}
+                ref={form} 
+                onSubmit={sendEmail} 
+                className="p-4">
+                    
                 <div className='form-title-container'>
                     <h3>Need a Quote?</h3>
                     <p className="mt-2">If you would like a free quote, fill out the form and i'll get back to you!</p>
                 </div>
                 
-                { submissionSuccessful &&
+                {submissionSuccessful &&
                     <div className="alert-container">
                         <Alert variant="success">
                             <div className="alert-div d-flex">
@@ -136,6 +161,22 @@ const ContactForm = () => {
                                 I'll be in touch soon, have a great day!
                             </p>
                         </Alert>
+                    </div>}
+
+                {submissionFailed &&
+                    <div className="alert-container">
+                        <Alert variant="danger">
+                            <div className="alert-div d-flex">
+                                <FontAwesomeIcon icon={faCircleExclamation}/>
+                                <Alert.Heading>
+                                    Something went wrong!
+                                </Alert.Heading>
+                            </div>
+                            <hr />
+                            <p className="p mb-0">
+                                Please review your input and try again.
+                            </p>
+                        </Alert>
                     </div>
                 }
 
@@ -144,6 +185,8 @@ const ContactForm = () => {
                         <Col>
                             <Form.Label>First Name*</Form.Label>
                             <Form.Control
+                                required
+                                type="text"
                                 placeholder="First name"
                                 name="first_name" />
                             <Form.Control.Feedback type="invalid">
@@ -153,6 +196,8 @@ const ContactForm = () => {
                         <Col>
                             <Form.Label>Surname*</Form.Label>
                             <Form.Control
+                                required
+                                type="text"
                                 placeholder="Last Name"
                                 name="surname" />
                             <Form.Control.Feedback type="invalid">
@@ -163,9 +208,11 @@ const ContactForm = () => {
 
                     <Row className="mb-3">
                         <Col>
-                            <Form.Label>Phone Number*</Form.Label>
+                            <Form.Label>Number*</Form.Label>
                             <Form.Control
-                                placeholder="Phone Number"
+                                required
+                                type="text"
+                                placeholder="Number"
                                 name="number" />
                             <Form.Control.Feedback type="invalid">
                                 Please provide a valid Phone Number.
@@ -174,11 +221,13 @@ const ContactForm = () => {
                         <Col>
                             <Form.Label>Email*</Form.Label>
                             <Form.Control
+                                required
+                                type="email"
                                 placeholder="Email"
                                 name="user_email"
                             />
                             <Form.Control.Feedback type="invalid">
-                                Please provide a valid Surname.
+                                Please provide a valid Email.
                             </Form.Control.Feedback>
                         </Col>
                     </Row>
@@ -187,6 +236,8 @@ const ContactForm = () => {
                         <Col>
                             <Form.Label>Address*</Form.Label>
                             <Form.Control
+                                required
+                                type="text"
                                 placeholder="Address"
                                 name="address" />
                             <Form.Control.Feedback type="invalid">
@@ -199,6 +250,8 @@ const ContactForm = () => {
                         <Col>
                             <Form.Label>Post Code*</Form.Label>
                             <Form.Control
+                                required
+                                type="text"
                                 placeholder="Post Code"
                                 name="post_code" />
                             <Form.Control.Feedback type="invalid">
@@ -208,6 +261,8 @@ const ContactForm = () => {
                         <Col>
                             <Form.Label>Area*</Form.Label>
                             <Form.Control
+                                required
+                                type="text"
                                 placeholder="Area"
                                 name="area"
                             />
@@ -221,6 +276,8 @@ const ContactForm = () => {
                         <Col>
                             <Form.Label>Message*</Form.Label>
                             <Form.Control
+                                required
+                                type="text"
                                 placeholder="Message"
                                 as="textarea"
                                 rows={3}

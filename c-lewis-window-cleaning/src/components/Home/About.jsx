@@ -11,7 +11,7 @@ const AboutMe = () => {
 
     return (
         <div className='about'>
-            <img src={Chad} alt="chad" class="img-fluid mx-auto d-block" />
+            <img src={Chad} alt="chad" className="img-fluid mx-auto d-block" />
             <h3>MEET CHAD</h3>
             <p>Yeah, motherfuckers better know.
                 Huh, huh (I'm a bad, bad, bad).
