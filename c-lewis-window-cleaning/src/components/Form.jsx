@@ -104,6 +104,7 @@ const ContactForm = () => {
 
                 if (result.text === "OK") {
                     setSubmissionSuccessful(true);
+                    form.current.scrollIntoView();
                 }
                 e.target.reset();
             },
