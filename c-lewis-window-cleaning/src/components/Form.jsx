@@ -2,18 +2,16 @@ import React, { useState, useRef } from 'react';
 
 import '../CSS/Form.css'
 
+import emailjs from '@emailjs/browser';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
-import { RenderAlert } from './commons/Alert';
-
-import emailjs from '@emailjs/browser';
-
-import { validateSubmission } from './commons/utils';
-import { isValidString } from './commons/validation';
-import { messages } from './commons/messages';
 
 const ContactForm = () => {
 
@@ -122,15 +120,20 @@ const ContactForm = () => {
                 <p className="mt-2">If you would like a free quote, fill out the form and i'll get back to you!</p>
             </div>
             <Form ref={form} onSubmit={sendEmail} className="p-4">
-                {submissionSuccessful &&
+                {/* {submissionSuccessful && */}
                     <Alert variant="success">
-                        <Alert.Heading>Thanks for getting in touch!</Alert.Heading>
-                        <p className="mb-0">
-                            I really appreciate you reaching out.
-                            I will get back in touch with you soon!
-                            Have a great day!
+                        <div className="alert-div d-flex">
+                            <FontAwesomeIcon icon={faCheckCircle}/>
+                            <Alert.Heading>
+                                Thank you!
+                            </Alert.Heading>
+                        </div>
+                        <hr />
+                        <p className="p mb-0">
+                            I'll be in touch soon, have a great day!
                         </p>
-                    </Alert>}
+                        
+                    </Alert>
                 <Row className="mb-3">
                     <Col>
                         <Form.Label>First Name*</Form.Label>

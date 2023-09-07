@@ -13,7 +13,7 @@ const Why = () => {
         <h3>WHY CHOOSE C.LEWIS WINDOW CLEANERS?</h3>
         <div className="why-me-container">
             <div>
-                <FontAwesomeIcon icon={faThumbsUp}/>
+                <FontAwesomeIcon icon={faThumbsUp} style={{width: '20%', height: '20%'}}/>
                 <h4>FULLY INSURED</h4>
                 <p>
                     Protecting your home or business is part of my mission to 

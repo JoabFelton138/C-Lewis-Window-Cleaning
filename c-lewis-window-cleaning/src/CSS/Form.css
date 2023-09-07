@@ -15,3 +15,22 @@
     background-color: rgb(128,128,128);
     border-color: rgb(128,128,128);
 }
+
+.alert-div {
+    width: 50%;
+}
+
+.alert-div .svg-inline--fa {
+    height: 1.5em; 
+    padding-top: 1vw;
+}
+
+.alert-div .alert-heading {
+    font-size: 2vw;
+    margin-left: 1vw;
+    padding-top: 1vw;
+}
+
+.p{
+    font-size: 1.4vw;
+}
