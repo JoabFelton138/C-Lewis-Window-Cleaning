@@ -115,116 +115,123 @@ const ContactForm = () => {
 
     return (
         <div className="form-container border border-1 rounded">
-            <div className='p-4'>
-                <h3>Need a Quote?</h3>
-                <p className="mt-2">If you would like a free quote, fill out the form and i'll get back to you!</p>
-            </div>
             <Form ref={form} onSubmit={sendEmail} className="p-4">
-                {/* {submissionSuccessful && */}
-                    <Alert variant="success">
-                        <div className="alert-div d-flex">
-                            <FontAwesomeIcon icon={faCheckCircle}/>
-                            <Alert.Heading>
-                                Thank you!
-                            </Alert.Heading>
-                        </div>
-                        <hr />
-                        <p className="p mb-0">
-                            I'll be in touch soon, have a great day!
-                        </p>
-                        
-                    </Alert>
-                <Row className="mb-3">
-                    <Col>
-                        <Form.Label>First Name*</Form.Label>
-                        <Form.Control
-                            placeholder="First name"
-                            name="first_name" />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a valid First Name.
-                        </Form.Control.Feedback>
-                    </Col>
-                    <Col>
-                        <Form.Label>Surname*</Form.Label>
-                        <Form.Control
-                            placeholder="Last Name"
-                            name="surname" />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a valid Surname.
-                        </Form.Control.Feedback>
-                    </Col>
-                </Row>
+                <div className='form-title-container'>
+                    <h3>Need a Quote?</h3>
+                    <p className="mt-2">If you would like a free quote, fill out the form and i'll get back to you!</p>
+                </div>
+                
+                { submissionSuccessful &&
+                    <div className="alert-container">
+                        <Alert variant="success">
+                            <div className="alert-div d-flex">
+                                <FontAwesomeIcon icon={faCheckCircle}/>
+                                <Alert.Heading>
+                                    Thank you!
+                                </Alert.Heading>
+                            </div>
+                            <hr />
+                            <p className="p mb-0">
+                                I'll be in touch soon, have a great day!
+                            </p>
+                        </Alert>
+                    </div>
+                }
 
-                <Row className="mb-3">
-                    <Col>
-                        <Form.Label>Phone Number*</Form.Label>
-                        <Form.Control
-                            placeholder="Phone Number"
-                            name="number" />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a valid Phone Number.
-                        </Form.Control.Feedback>
-                    </Col>
-                    <Col>
-                        <Form.Label>Email*</Form.Label>
-                        <Form.Control
-                            placeholder="Email"
-                            name="user_email"
-                        />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a valid Surname.
-                        </Form.Control.Feedback>
-                    </Col>
-                </Row>
+                <div className="inner-form-container">
+                    <Row className="mb-3">
+                        <Col>
+                            <Form.Label>First Name*</Form.Label>
+                            <Form.Control
+                                placeholder="First name"
+                                name="first_name" />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid First Name.
+                            </Form.Control.Feedback>
+                        </Col>
+                        <Col>
+                            <Form.Label>Surname*</Form.Label>
+                            <Form.Control
+                                placeholder="Last Name"
+                                name="surname" />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid Surname.
+                            </Form.Control.Feedback>
+                        </Col>
+                    </Row>
 
-                <Row className="mb-3">
-                    <Col>
-                        <Form.Label>Address*</Form.Label>
-                        <Form.Control
-                            placeholder="Address"
-                            name="address" />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a valid Address.
-                        </Form.Control.Feedback>
-                    </Col>
-                </Row>
+                    <Row className="mb-3">
+                        <Col>
+                            <Form.Label>Phone Number*</Form.Label>
+                            <Form.Control
+                                placeholder="Phone Number"
+                                name="number" />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid Phone Number.
+                            </Form.Control.Feedback>
+                        </Col>
+                        <Col>
+                            <Form.Label>Email*</Form.Label>
+                            <Form.Control
+                                placeholder="Email"
+                                name="user_email"
+                            />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid Surname.
+                            </Form.Control.Feedback>
+                        </Col>
+                    </Row>
 
-                <Row className="mb-3">
-                    <Col>
-                        <Form.Label>Post Code*</Form.Label>
-                        <Form.Control
-                            placeholder="Post Code"
-                            name="post_code" />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a valid Post Code.
-                        </Form.Control.Feedback>
-                    </Col>
-                    <Col>
-                        <Form.Label>Area*</Form.Label>
-                        <Form.Control
-                            placeholder="Area"
-                            name="area"
-                        />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a valid Area.
-                        </Form.Control.Feedback>
-                    </Col>
-                </Row>
+                    <Row className="mb-3">
+                        <Col>
+                            <Form.Label>Address*</Form.Label>
+                            <Form.Control
+                                placeholder="Address"
+                                name="address" />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid Address.
+                            </Form.Control.Feedback>
+                        </Col>
+                    </Row>
 
-                <Row className='mb-3'>
-                    <Col>
-                        <Form.Label>Message*</Form.Label>
-                        <Form.Control
-                            placeholder="Message"
-                            as="textarea"
-                            rows={3}
-                            name="message"
-                        />
-                        <Form.Control.Feedback type="invalid">
-                            Please provide a message.
-                        </Form.Control.Feedback>
-                    </Col>
-                </Row>
+                    <Row className="mb-3">
+                        <Col>
+                            <Form.Label>Post Code*</Form.Label>
+                            <Form.Control
+                                placeholder="Post Code"
+                                name="post_code" />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid Post Code.
+                            </Form.Control.Feedback>
+                        </Col>
+                        <Col>
+                            <Form.Label>Area*</Form.Label>
+                            <Form.Control
+                                placeholder="Area"
+                                name="area"
+                            />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid Area.
+                            </Form.Control.Feedback>
+                        </Col>
+                    </Row>
+
+                    <Row className='mb-3'>
+                        <Col>
+                            <Form.Label>Message*</Form.Label>
+                            <Form.Control
+                                placeholder="Message"
+                                as="textarea"
+                                rows={3}
+                                name="message"
+                            />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a message.
+                            </Form.Control.Feedback>
+                        </Col>
+                    </Row>
+                </div>
+
                 <Button
                     type="submit"
                     value="Send"
@@ -232,6 +239,7 @@ const ContactForm = () => {
                     className="mt-2">
                     Submit
                 </Button>{' '}
+
             </Form>
         </div>
     );

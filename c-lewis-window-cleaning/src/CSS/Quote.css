@@ -25,3 +25,7 @@
 .quote-container-child button{
     margin-top: 1vw;
 }
+
+.quote-container-child h1{
+    font-size: 3.5vw;
+}

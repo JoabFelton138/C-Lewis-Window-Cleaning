@@ -16,6 +16,18 @@
     border-color: rgb(128,128,128);
 }
 
+.inner-form-container{
+    padding-top: 2.5vw;
+}
+
+.alert-container{
+    padding-top: 2.5vw;
+}
+
+.alert-container .h3{
+    font-size: 2.5vw;
+}
+
 .alert-div {
     width: 50%;
 }
