@@ -107,9 +107,11 @@ const ContactForm = () => {
             setSubmissionFailed(true);
             e.preventDefault();
             e.stopPropagation();
+            setValidated(true);
         }
     
         else {
+            setValidated(false);
             emailjs.sendForm('service_b7pfg3u', 'template_bpuo3nh', form, 'bR_vQvzEQNeW8qqkX')
                 .then((result) => {
 
@@ -129,8 +131,7 @@ const ContactForm = () => {
         }
 
         form.reset();
-        form.scrollIntoView();
-        setValidated(true);
+        form.scrollIntoView({behavior: 'smooth'});
     };
 
     return (

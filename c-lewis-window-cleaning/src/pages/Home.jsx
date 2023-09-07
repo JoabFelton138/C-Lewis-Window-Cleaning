@@ -6,6 +6,7 @@ import Portfolio from '../components/Home/Portfolio';
 import Why from '../components/Home/Why';
 import Testimonials from '../components/Home/Quote';
 import Form from '../components/Form';
+import Scroll from '../components/Home/Scroll'
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Why/>
             <Testimonials/>
             <Form/>
+            <Scroll/>
         </div>
     );
 }
