@@ -4,11 +4,10 @@
     margin:0 auto;
     margin-top: 8vw;
     margin-bottom: 4vw;
-
 }
 
 .Form {
-    width: 55%;
+    width: 50%;
 }
 
 .form-check-input:checked {
@@ -46,3 +45,4 @@
 .p{
     font-size: 1.4vw;
 }
+
