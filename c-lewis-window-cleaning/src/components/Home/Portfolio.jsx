@@ -12,10 +12,11 @@ import Button from 'react-bootstrap/Button';
 
 const Portfolio = () => {
     return (<div className="portfolio-container">
-        <h3>MY PORTFOLIO</h3>
-        <p>I take great pride in my work, take a look for yourself!</p>
-        
-        <div className="inner-container row pt-5 d-flex justify-content-center" style={{width:'100%'}}>
+        <div className="portfolio-header">
+            <h3>MY PORTFOLIO</h3>
+            <h6>I take great pride in my work, see for yourself!</h6>
+        </div>    
+        <div className="inner-container row pt-5 d-flex justify-content-center">
             <div className="images col-lg-4 col-md-12 mb-3">
                 <figure>
                     <img
@@ -50,7 +51,7 @@ const Portfolio = () => {
                 </figure>
             </div>
         </div>
-        <Button variant="outline-secondary" >SEE MORE</Button>{' '}
+        <Button className="portfolio-button" variant="outline-secondary" >VIEW PORTFOLIO</Button>{' '}
     </div>);
 }
 

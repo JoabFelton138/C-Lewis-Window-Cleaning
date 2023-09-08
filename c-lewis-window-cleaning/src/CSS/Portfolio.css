@@ -6,15 +6,29 @@
     width: 100%;
 }
 
-.portfolio-container > h3{
-    padding-top: 4vw;
-    font-size: 2.5vw;
-
+.portfolio-header {
+    padding-top: 10vw;
+    text-align: center;
 }
 
-.portfolio-container > p{
-    padding-top: 1vw;
-    font-size: 1.5vw
+.portfolio-header > h6{
+    padding-top: 2vw;
+    font-weight: normal;
+}
+
+.inner-container{
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .inner-container{
+        width: auto;
+    }
+}
+
+.portfolio-button{
+    margin-top: 2vw;
+    margin-bottom: 3vw;
 }
 
 .images img {
@@ -26,15 +40,4 @@
 	opacity: .5;
 }
 
-.overlay-text{
-    color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
