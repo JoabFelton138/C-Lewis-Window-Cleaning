@@ -16,7 +16,7 @@ const Why = () => {
     return (
         <Container fluid>
             <h3>WHY CHOOSE C.LEWIS WINDOW CLEANERS?</h3>
-            <Row className="content justify-content-md-center p-5">
+            <Row className="icon-container content justify-content-md-center p-5">
                 <Col xs={12} sm={6} md={4}>
                     <FontAwesomeIcon icon={faThumbsUp} />
                     <h4>FULLY INSURED</h4>
