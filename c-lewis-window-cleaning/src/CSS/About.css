@@ -1,42 +1,24 @@
 .about {
    margin: auto;
-   width: 55%;
+   width: 70%;
    text-align: center;
 }
 
-.about h3{
-    margin-top: 1vw;
-}
-
-.about p{
-    margin-top: 2vw;
-}
 .about img{
-    margin-top: 4vw;
     width: 220px
 }
+
+.row .col .svg-inline--fa {
+    color: rgb(0, 191, 255) !important;
+    font-size: 35px;
+}
+
 
 @media only screen and (max-width: 900px) {
     .about img{
         width: 140px
     }
     .about {
-        width: 70%;
+        width: 90%;
      }
 } 
-
-.content-div{
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-}
-
-.row .col .svg-inline--fa {
-    margin-bottom: 1vw;
-    color: rgb(0, 191, 255) !important;
-    font-size: 35px;
-}
-
-.icon-container {
-    margin-top: 4vw;
-    margin-bottom: 4vw;
-}

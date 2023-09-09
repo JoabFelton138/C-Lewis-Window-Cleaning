@@ -17,12 +17,12 @@ const AboutMe = () => {
     return (
         <div className='about'>
             <Container>
-                <Row className="content mx-auto">
+                <Row className="content mx-auto p-4">
                     <Col>
                         <Image src={Chad} alt="chad" roundedCircle/>
-                        <div className='content-div'>
+                        <div className='content-div p-3'>
                             <h3>MEET CHAD</h3>
-                            <p>
+                            <p className='p-3'>
                                 Yeah, motherfuckers better know.
                                 Huh, huh (I'm a bad, bad, bad).
                                 Lock your windows, close your doors.
@@ -35,7 +35,7 @@ const AboutMe = () => {
                                 A one-to-three, he be home the end of '93.
                                 I'm ready to get this paper, G, you with me?
                             </p>
-                            <div class="icon-container d-flex justify-content-around">
+                            <div class="icon-container d-flex justify-content-around p-3">
                                 <FontAwesomeIcon
                                     icon={faFacebookSquare}
                                     type="button"
