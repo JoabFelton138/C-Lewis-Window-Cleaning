@@ -1,10 +1,19 @@
 .container-fluid{
     padding-top: 9vw;
+    padding-bottom: 4vw;
     text-align: center;
 }
 
 .content .svg-inline--fa {
-    margin-bottom: 1vw;
     color: rgb(0, 191, 255) !important;
     font-size: 55px;
+    margin-bottom: 1.5vw;
+}
+
+.icon-container{
+    margin-top: 3vw;
+}
+
+.icon-container p{
+    margin-top: 1.5vw;
 }

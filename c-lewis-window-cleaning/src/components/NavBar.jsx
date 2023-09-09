@@ -29,7 +29,7 @@ const NavBar = () => {
 
                     <Navbar.Brand 
                         as={Link} 
-                        to="/home">
+                        to="/">
                         <img
                             alt="brand"
                             width="120px"

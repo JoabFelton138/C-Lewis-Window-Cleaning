@@ -29,7 +29,7 @@ function App() {
         <MediaQuery maxWidth={994}>
         </MediaQuery>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/home#quote" element={<Form />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
