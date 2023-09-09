@@ -20,11 +20,11 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
     .inner-container{
         width: auto;
     }
-}
+} */
 
 .portfolio-button{
     margin-top: 2vw;
