@@ -184,7 +184,9 @@ const ContactForm = () => {
                 <div className="inner-form-container">
                     <Row className="mb-3">
                         <Col>
-                            <Form.Label>First Name*</Form.Label>
+                            <Form.Label>
+                                First Name*
+                            </Form.Label>
                             <Form.Control
                                 required
                                 type="text"

@@ -16,8 +16,8 @@ const Why = () => {
     return (
         <Container fluid>
             <h3>WHY CHOOSE C.LEWIS WINDOW CLEANERS?</h3>
-            <Row className="icon-container content justify-content-md-center p-5">
-                <Col xs={12} sm={6} md={4}>
+            <Row className="icon-container content justify-content-md-center p-4">
+                <Col xs={12} sm={6} md={4} className='p-2'>
                     <FontAwesomeIcon icon={faThumbsUp} />
                     <h4>FULLY INSURED</h4>
                     <p className="content-p">
@@ -27,7 +27,7 @@ const Why = () => {
                         premises but also covers myself should anything happen.
                     </p>
                 </Col>
-                <Col xs={12} sm={6} md={4}>
+                <Col xs={12} sm={6} md={4} className='p-2'>
                     <FontAwesomeIcon icon={faUserFriends} />
                     <h4>FAMILY OWNED</h4>
                     <p className="content-p">
@@ -37,7 +37,7 @@ const Why = () => {
                         like it is my own!
                     </p>
                 </Col>
-                <Col xs={12} sm={6} md={4}>
+                <Col xs={12} sm={6} md={4} className='p-2'>
                     <FontAwesomeIcon icon={faDroplet} />
                     <h4>RAIN GUARANTEE</h4>
                     <p className="content-p">

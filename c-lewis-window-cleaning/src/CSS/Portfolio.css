@@ -16,27 +16,17 @@
     font-weight: normal;
 }
 
-.inner-container{
-    width: 100%;
-}
-
-/* @media only screen and (max-width: 900px) {
-    .inner-container{
-        width: auto;
-    }
-} */
-
 .portfolio-button{
     margin-top: 2vw;
     margin-bottom: 3vw;
 }
 
-.images img {
+.image {
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.images figure:hover img {
+.image figure:hover img {
 	opacity: .5;
 }
 

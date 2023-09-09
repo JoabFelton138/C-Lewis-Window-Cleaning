@@ -1,6 +1,6 @@
 .about {
    margin: auto;
-   width: 65%;
+   width: 55%;
    text-align: center;
 }
 
@@ -13,13 +13,16 @@
 }
 .about img{
     margin-top: 4vw;
-    width: 240px
+    width: 220px
 }
 
 @media only screen and (max-width: 900px) {
     .about img{
-        width: 160px
+        width: 140px
     }
+    .about {
+        width: 70%;
+     }
 } 
 
 .content-div{

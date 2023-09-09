@@ -13,7 +13,7 @@ const Quote = () => {
     return (
         <div>
             <div
-                className="bg-image d-flex justify-content-center align-items-center"
+                className="bg-image d-flex justify-content-center align-items-center fluid"
                 >
                 <div className="image-content">
                     <FontAwesomeIcon icon={faQuoteLeft}/>
