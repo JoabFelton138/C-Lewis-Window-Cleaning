@@ -23,29 +23,29 @@
     font-size: 2.5vw;
 }
 
-.alert-div {
-    width: 50%;
-}
-
 .alert-div .svg-inline--fa {
     height: 1.6em; 
     padding-top: 1.2vw;
 }
 
 .alert-div .alert-heading {
-    font-size: 2vw;
     margin-left: 1vw;
     padding-top: 1vw;
 }
 
-.p{
-    font-size: 1.4vw;
-}
-
 @media only screen and (max-width: 500px) {
     .form-container{
-        width:100%;
+        width:75%;
         margin-top: 10vw;
+    }
+    .alert-div .alert-heading {
+        font-size: 3.5vw;
+        margin-left: 2vw;
+        padding-top: 2vw;
+    }
+    
+    .alert .p{
+        font-size: 3vw;
     }
 } 
 

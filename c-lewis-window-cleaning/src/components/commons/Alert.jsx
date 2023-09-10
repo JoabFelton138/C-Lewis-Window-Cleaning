@@ -3,8 +3,8 @@ import Alert from 'react-bootstrap/Alert';
 
 function RenderAlert(){
     return (
-        <Alert variant="danger" className="p-4">
-            <div className='mt-2 mb-2'>
+        <Alert variant="danger" className="">
+            <div className=''>
                 <Alert.Heading>
                     Something went wrong!
                 </Alert.Heading>
