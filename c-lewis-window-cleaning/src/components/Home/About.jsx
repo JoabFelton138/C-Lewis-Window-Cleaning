@@ -15,14 +15,14 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 const AboutMe = () => {
 
     return (
-        <div className='about p-4'>
+        <div className='about'>
             <Container>
                 <Row className="content mx-auto">
                     <Col>
                         <Image src={Chad} alt="chad" roundedCircle/>
-                        <div className='content-div p-3'>
+                        <div className='content-div'>
                             <h3>MEET CHAD</h3>
-                            <p className='m-3'>
+                            <p>
                                 Yeah, motherfuckers better know.
                                 Huh, huh (I'm a bad, bad, bad).
                                 Lock your windows, close your doors.

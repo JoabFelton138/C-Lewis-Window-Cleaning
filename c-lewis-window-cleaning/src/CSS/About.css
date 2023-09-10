@@ -1,11 +1,22 @@
 .about {
    margin: auto;
    text-align: center;
-   width: 70%;
+   width: 65%;
+   margin-top: 4vw;
+   margin-bottom: 4vw;
+
 }
 
 .about img{
     width: 220px
+}
+
+.content-div h3{
+    margin-top: 2vw;
+}
+
+.content-div p{
+    margin-top: 1.5vw;
 }
 
 .row .col .svg-inline--fa {
@@ -13,11 +24,20 @@
     font-size: 35px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 500px) {
+    .about{
+        width: 95%;
+    }
     .about img{
         width: 140px
     }
-    .about{
-        width: 100%;
+    .content-div h3{
+        margin-top: 3vw;
+    }
+    .content-div p{
+        margin-top: 2vw;
+    }
+    .icon-container{
+        margin-top: 3vw;
     }
 } 

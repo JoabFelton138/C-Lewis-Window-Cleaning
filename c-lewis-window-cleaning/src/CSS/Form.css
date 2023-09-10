@@ -1,9 +1,9 @@
 .form-container{
     display:block;
-    width:65%;
+    width:60%;
     margin:0 auto;
-    margin-top: 9vw;
-    margin-bottom: 6vw;
+    margin-top: 8vw;
+    margin-bottom: 4vw;
 }
 
 .form-check-input:checked {
@@ -41,4 +41,11 @@
 .p{
     font-size: 1.4vw;
 }
+
+@media only screen and (max-width: 500px) {
+    .form-container{
+        width:100%;
+        margin-top: 10vw;
+    }
+} 
 

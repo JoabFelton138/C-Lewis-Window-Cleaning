@@ -1,6 +1,7 @@
 .bg-image{
     background-image: url(../images/carousel/wc1.jpg);
     height: 90vh;
+    background-size:auto;
 }
 
 .image-content{
