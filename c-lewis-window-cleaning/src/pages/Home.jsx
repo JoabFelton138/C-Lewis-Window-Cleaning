@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MobileCarousel from '../components/Home/MobileCarousel';
 import Carousel from '../components/Home/MobileCarousel';
 import About from '../components/Home/About';
 import Portfolio from '../components/Home/Portfolio';
@@ -11,7 +12,8 @@ import Scroll from '../components/Home/Scroll'
 const Home = () => {
     return (
         <div>
-            <Carousel/> 
+            <MobileCarousel/> 
+            {/* <Carousel/>  */}
             <About/>
             <Portfolio/>
             <Why/>
