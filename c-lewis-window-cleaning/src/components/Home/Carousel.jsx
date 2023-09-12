@@ -10,29 +10,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import cc from '../../images/mobile-carousel/cc.jpg';
-
-import van from '../../images/mobile-carousel/van.png';
-// import van from '../../images/mobile-carousel/van4.jpg';
-
-import gc1 from '../../images/mobile-carousel/gc1.png'
-import gc2 from '../../images/mobile-carousel/gc2.png'
-import gc3 from '../../images/mobile-carousel/gc3.png'
+import van from '../../images/carousel/van.png';
+import cc from '../../images/carousel/cc.jpg';
+import gc from '../../images/carousel/gc2.jpeg'
 
 
 function AltCarousel() {
     return (<>
-        {/* <div className='first'>
-            <img
-                className='d-block w-100'
-                style={{
-                    height: '100vh',
-                    filter: 'brightness(60%)'
-                }}
-                src={van}
-            />
-        </div> */}
-
         <Carousel fade>
             <Carousel.Item>
                 <Image 
@@ -41,14 +25,15 @@ function AltCarousel() {
                     className='d-block w-100'
                 />
                 <Carousel.Caption>
-                    <h4 className='p-3'>COVERING PERTON, SHIFNAL, WHEATON ASTON & MORE</h4>
+                    <h4>COVERING PERTON, SHIFNAL, WHEATON ASTON & MORE</h4>
                     <h1>EXPERT WINDOW CLEANERS</h1>
-                    <div className='p-4'>
+                    <div className='button-div'>
                         <Button variant="outline-light">READ MORE</Button>{' '}
                         <Button variant="outline-light">GET A QUOTE</Button>{' '}
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item>
                 <Image 
                     src={cc} 
@@ -56,24 +41,25 @@ function AltCarousel() {
                     className='d-block w-100'
                 />
                 <Carousel.Caption>
-                    <h4 className='p-3'>PRESSURE WASHING & CONSERVATORIES</h4>
+                    <h4 className=''>PRESSURE WASHING & CONSERVATORIES</h4>
                     <h1>LET ME LIGHT UP YOUR HOME</h1>
-                    <div className='p-4'>
+                    <div className='button-div'>
                         <Button variant="outline-light">READ MORE</Button>{' '}
                         <Button variant="outline-light">GET A QUOTE</Button>{' '}
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item>
                 <Image 
-                    src={gc3} 
+                    src={gc} 
                     text="First slide" 
                     className='d-block w-100'
                 />
                 <Carousel.Caption>
-                    <h4 className='p-3'>GUTTERS & FASCIAS</h4>
+                    <h4 className=''>GUTTERS & FASCIAS</h4>
                     <h1>MAKING THINGS SHINE SINCE 2020</h1>
-                    <div className='p-4'>
+                    <div className='button-div'>
                         <Button variant="outline-light">READ MORE</Button>{' '}
                         <Button variant="outline-light">GET A QUOTE</Button>{' '}
                     </div>

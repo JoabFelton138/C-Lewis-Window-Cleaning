@@ -8,22 +8,22 @@
     filter: brightness(50%);
 }
 
-.container .row h1 {
-    font-size: 7vw;
-    line-height: 1;
+.carousel-caption h1 {
+    margin-top: 2vw;
+    font-size: 8vw;
     font-weight: bold;
+    line-height: 7vw;
 }
 
-.container .row h4 {
+.carousel-caption h4 {
     font-size: 2vw;
     font-weight: bold;
 }
 
-.carousel-indicators {
-    visibility: hidden;
+.button-div{
+    margin-top: 4vw;
 }
 
-.btn:hover{
-    background-color:  rgb(0, 191, 255);
-    color: white;
+.carousel-indicators {
+    visibility: hidden;
 }
