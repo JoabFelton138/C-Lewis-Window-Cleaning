@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Carousel from '../components/Home/AltCarousel';
+import Carousel from '../components/Home/MobileCarousel';
 import About from '../components/Home/About';
 import Portfolio from '../components/Home/Portfolio';
 import Why from '../components/Home/Why';

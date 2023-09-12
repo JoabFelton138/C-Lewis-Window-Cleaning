@@ -1,0 +1,35 @@
+.carousel{
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 100vh;
+    filter: brightness(60%);
+}
+
+.carousel-caption{
+    left: 50%;
+    top: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+.carousel-caption h1{
+    font-size: 19vw;
+    font-weight: bold;
+    line-height: 17vw;
+}
+
+.carousel-caption h4{
+    font-weight: bold;
+    font-size: 6vw;
+}
+
+.carousel-indicators {
+    visibility: hidden;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    visibility: hidden;
+}

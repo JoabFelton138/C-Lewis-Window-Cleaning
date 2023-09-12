@@ -37,6 +37,7 @@
     .form-container{
         width:75%;
         margin-top: 10vw;
+        margin-bottom: 10vw;
     }
     .alert-div .alert-heading {
         font-size: 3.5vw;

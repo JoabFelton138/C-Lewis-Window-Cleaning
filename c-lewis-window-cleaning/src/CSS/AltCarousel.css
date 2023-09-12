@@ -5,41 +5,22 @@
 }
 
 .carousel-item img {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
     filter: brightness(50%);
 }
 
-.carousel-caption {
-    left: 50%;
-    top: 50%;
-    height: fit-content;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 85%;
-}
-
-.carousel-caption h1 {
-    display: block;
-    font-weight: bold;
+.container .row h1 {
+    font-size: 7vw;
     line-height: 1;
-    font-size: 5.5vw;
+    font-weight: bold;
 }
 
-.carousel-caption h4 {
+.container .row h4 {
     font-size: 2vw;
-    margin-bottom: 3vw;
+    font-weight: bold;
 }
 
 .carousel-indicators {
     visibility: hidden;
-}
-
-.carousel-caption .btn {
-    margin-top: 3vw;
-    font-size: 1.5vw;
 }
 
 .btn:hover{
