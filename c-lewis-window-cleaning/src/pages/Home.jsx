@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import MobileCarousel from '../components/Home/MobileCarousel';
 import Carousel from '../components/Home/Carousel';
@@ -10,10 +10,29 @@ import Form from '../components/Form';
 import Scroll from '../components/Home/Scroll'
 
 const Home = () => {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    const handleResize = () => {
+        if (window.innerWidth < 500) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    } 
+    
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+    })
+
     return (
         <div>
-            {/* <MobileCarousel/>  */}
-            <Carousel/> 
+
+            {window.innerWidth <= 500 || isMobile 
+                ? <MobileCarousel/> 
+                : <Carousel/>
+            }
+
             <About/>
             <Portfolio/>
             <Why/>

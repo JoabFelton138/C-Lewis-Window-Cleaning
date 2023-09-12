@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../CSS/MobileCarousel.css';
+import '../../CSS/AltCarousel.css';
 
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
@@ -22,21 +22,10 @@ import gc3 from '../../images/mobile-carousel/gc3.png'
 
 function AltCarousel() {
     return (<>
-        {/* <div className='first'>
-            <img
-                className='d-block w-100'
-                style={{
-                    height: '100vh',
-                    filter: 'brightness(60%)'
-                }}
-                src={van}
-            />
-        </div> */}
-
         <Carousel fade>
             <Carousel.Item>
-                <Image 
-                    src={van} 
+                <Image
+                    src={van}
                     text="First slide"
                     className='d-block w-100'
                 />
@@ -56,8 +45,8 @@ function AltCarousel() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <Image 
-                    src={cc} 
+                <Image
+                    src={cc}
                     text="Second slide"
                     className='d-block w-100'
                 />
@@ -77,9 +66,9 @@ function AltCarousel() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <Image 
-                    src={gc3} 
-                    text="First slide" 
+                <Image
+                    src={gc3}
+                    text="First slide"
                     className='d-block w-100'
                 />
                 <Carousel.Caption>
