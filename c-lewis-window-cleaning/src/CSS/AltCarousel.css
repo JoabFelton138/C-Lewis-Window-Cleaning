@@ -43,23 +43,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .carousel{
-        width: 100%;
-    }
-    
-    .carousel-item img {
-        height: 100vh;
-        filter: brightness(50%);
-        object-fit: cover;
-    }
-    
-    .carousel-caption{
-        left: 50%;
-        top: 50%;
-        height: fit-content;
-        transform: translate(-50%, -50%);
-        width: 95%;
-    }
     
     .carousel-caption h1{
         font-size: 19vw;
@@ -68,8 +51,13 @@
     }
     
     .carousel-caption h4{
+        padding: 3vw;
         font-weight: bold;
-        font-size: 6vw !important;
+        font-size: 6vw;
+    }
+
+    .button-div{
+        padding: 4vw; 
     }
     
     .carousel-indicators {

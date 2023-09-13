@@ -1,6 +1,6 @@
 .bg-image{
     background-image: url(../images/carousel/cc.jpg);
-    height: 90vh;
+    height: 100vh;
     background-size:auto;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .image-content button{
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 
 .image-content .svg-inline--fa {

@@ -35,7 +35,7 @@ const AboutMe = () => {
                                 A one-to-three, he be home the end of '93.
                                 I'm ready to get this paper, G, you with me?
                             </p>
-                            <div class="icon-container d-flex justify-content-around">
+                            <div className="icon-container d-flex justify-content-around">
                                 <FontAwesomeIcon
                                     icon={faFacebookSquare}
                                     type="button"
