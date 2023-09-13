@@ -4,28 +4,21 @@ import '../../CSS/Quote.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-import Button from 'react-bootstrap/Button';
 
-import wc from '../../images/gallery/wc5.jpg'
+import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button';
 
 const Quote = () => {
     return (
-        <div>
-            <div
-                className="d-block w-100 
-                           bg-image 
-                           d-flex justify-content-center 
-                           align-items-center
-                           fluid"
-                >
-                <div className="image-content">
-                    <FontAwesomeIcon icon={faQuoteLeft}/>
-                    <h1>Great service, quality is amazing.
-                        Always here when he says he will be,
-                        extremely competitive with his prices!
-                    </h1>
-                    <Button variant="outline-light">TESTIMONIALS</Button>{' '}
-                </div>
+        <div class="bg-image d-block w-100">
+            <div className="content-container">
+                <FontAwesomeIcon icon={faQuoteLeft}/>
+                <h1 class="text-white">
+                    Great service, quality is amazing.
+                    Always here when he says he will be,
+                    extremely competitive with his prices!
+                </h1>
+                <Button variant="outline-light">TESTIMONIALS</Button>{' '}
             </div>
         </div>
     );
