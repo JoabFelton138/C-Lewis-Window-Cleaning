@@ -1,5 +1,7 @@
+/* Desktop */
+
 .bg-image{
-    height: 75vh;
+    height: 100vh;
     background-image: url(../images/carousel/cc.jpg);
     background-position: center center;
     background-repeat: none;
@@ -20,7 +22,7 @@
 
 .content-container h1{
     margin-top: 1vw;
-    line-height: 4vw;
+    line-height: 5vw;
 }
 
 .content-container button{
@@ -32,9 +34,29 @@
     color: white;
 }
 
-@media only screen and (max-width: 500px) {
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+
     .bg-image{
         height: 85vh;    
     }
+    
+    .content-container {
+        width: 70%;
+    }
 
+    .content-container h1{
+        margin-top: 1vw;
+        line-height: 8vw;
+    }
+
+    .content-container button{
+        margin-top: 3vw;
+    }
+    
+    .content-container .svg-inline--fa {
+        font-size: 55px;
+        color: white;
+    }
 }

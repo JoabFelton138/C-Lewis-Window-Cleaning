@@ -6,10 +6,9 @@ function RenderAlert(){
         <Alert variant="danger" className="">
             <div className=''>
                 <Alert.Heading>
-                    Something went wrong!
+                    There seems to be a problem ...
                 </Alert.Heading>
-                There seems to be a problem with your submission, 
-                please review the fields below and try again.
+                    please review your submission and try again!
             </div>
         </Alert>
     );
