@@ -1,4 +1,11 @@
- 
+.carousel{
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+
 .carousel-item{
     overflow: hidden;
     height: 100%;

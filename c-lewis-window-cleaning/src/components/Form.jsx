@@ -170,12 +170,12 @@ const ContactForm = () => {
                             <div className="alert-div d-flex">
                                 <FontAwesomeIcon icon={faCircleExclamation}/>
                                 <Alert.Heading>
-                                    Something went wrong!
+                                    Something's not right...
                                 </Alert.Heading>
                             </div>
                             <hr />
                             <p className="p mb-0">
-                                Please review your input and try again.
+                                Please review your submission and try again!
                             </p>
                         </Alert>
                     </div>
