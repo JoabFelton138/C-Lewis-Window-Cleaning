@@ -1,0 +1,5 @@
+.navbar {
+    background-color: transparent;
+    transition: height 1s ease, background-color 1s ease;
+    box-sizing: content-box;
+}

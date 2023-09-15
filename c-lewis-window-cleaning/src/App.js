@@ -6,7 +6,8 @@ import MediaQuery from 'react-responsive'
 import React, { useState } from 'react';
 import { Route, Routes, Redirect } from 'react-router-dom';
 
-import NavBar from './components/NavBar';
+import NavBar2 from './components/Navbar2';
+
 import Home from './pages/Home';
 import Form from './components/Form'
 
@@ -23,11 +24,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body>
-        <MediaQuery minWidth={995}>
-          <NavBar />
-        </MediaQuery>
-        <MediaQuery maxWidth={994}>
-        </MediaQuery>
+        <NavBar2 />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/home#quote" element={<Form />} />

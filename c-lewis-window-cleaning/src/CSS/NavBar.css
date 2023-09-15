@@ -8,7 +8,6 @@
     height: 125px;
     transition: height 1s ease, background-color 1s ease;
     box-sizing: content-box;
-
 }
 
 .nav-link { 
@@ -32,7 +31,6 @@
 
 .navbar-toggler {
     color: rgb(0, 191, 255) !important;
-    text-align: center;
 }
 
 .dropdown-item:active{
@@ -41,5 +39,4 @@
 
 .navbar-toggler {
     color: rgb(0, 191, 255) !important;
-    text-align: center;
 }

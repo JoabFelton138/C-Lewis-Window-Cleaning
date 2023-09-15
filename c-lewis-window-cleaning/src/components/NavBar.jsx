@@ -24,7 +24,16 @@ const NavBar = () => {
 
     return (
         <>
-            <Navbar className={navbar ? 'navbar active' : 'navbar'} collapseOnSelect expand="lg" data-bs-theme="light" fixed="top">
+            <Navbar className={navbar 
+                                ? 'navbar active' 
+                                : 'navbar'} 
+                    collapseOnSelect expand="lg" 
+                    data-bs-theme="light" 
+                    fixed="top"
+                    style={{marginLeft: '3.5vw', 
+                    marginRight: '3.5vw',
+                    marginTop: '1vw',
+                    marginBottom: '0.5vw'}}>
                 <Container>
 
                     <Navbar.Brand 
@@ -37,7 +46,11 @@ const NavBar = () => {
                             className="d-inline-block align-top"
                         />{' '}
                     </Navbar.Brand>
-                    <Navbar.Toggle className="bg-light" aria-controls="responsive-navbar-nav" />
+                    
+                    <Navbar.Toggle 
+                        className="bg-light" 
+                        aria-controls="responsive-navbar-nav" 
+                    />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link 
