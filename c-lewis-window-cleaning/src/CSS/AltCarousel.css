@@ -37,10 +37,6 @@
     font-weight: bold;
 }
 
-.button-div{
-    margin-top: 4vw;
-}
-
 .carousel-indicators {
     display: none;
 }
@@ -52,7 +48,7 @@
 @media only screen and (max-width: 500px) {
     
     .carousel-caption h1{
-        font-size: 19vw;
+        font-size: 17vw;
         font-weight: bold;
         line-height: 17vw;
     }
@@ -62,16 +58,7 @@
         font-weight: bold;
         font-size: 6vw;
     }
-
     .button-div{
-        padding: 4vw; 
-    }
-    
-    .carousel-indicators {
-        visibility: hidden;
-    }
-    
-    .carousel-control-prev-icon, .carousel-control-next-icon{
-        visibility: hidden;
+        margin-top: 4vw;
     }
   }

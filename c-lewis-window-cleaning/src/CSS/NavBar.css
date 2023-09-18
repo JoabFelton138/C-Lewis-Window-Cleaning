@@ -8,6 +8,7 @@
     height: 125px;
     transition: height 1s ease, background-color 1s ease;
     box-sizing: content-box;
+    padding-top: 3vw;
 }
 
 .nav-link { 
@@ -39,4 +40,10 @@
 
 .navbar-toggler {
     color: rgb(0, 191, 255) !important;
+}
+
+.navbar-collapse{
+    text-align: center;
+    background-color: white;
+    width: 100%;
 }
