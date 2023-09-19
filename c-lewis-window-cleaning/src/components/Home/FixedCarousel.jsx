@@ -46,7 +46,7 @@ function FixedCarousel() {
                     <div className="carousel-container">
                         <h4 className=''>PRESSURE WASHING & CONSERVATORIES</h4>
                         <h1>LET ME LIGHT UP YOUR HOME</h1>
-                            {window.innerWidth > 300
+                            {window.innerWidth >= 300
                             ?
                                 <div className='button-div'>
                                     <Button variant="outline-light">READ MORE</Button>{' '}

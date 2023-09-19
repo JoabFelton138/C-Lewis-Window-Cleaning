@@ -1,9 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './CSS/MobileNav.css';
-
-import { useMediaQuery } from 'react-responsive';
-import React, { useState } from 'react';
+import MediaQuery from 'react-responsive';
+import React, { useState, useEffect } from 'react';
 import { Route, Routes, Redirect } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
@@ -18,19 +16,30 @@ import TestimonialsPage from './pages/TestimonalsPage';
 import Footer from './components/Footer';
 
 function App() {
-  
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)'
-  })
 
-    return (
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  React.useEffect(() => {
+    function handleResize() {
+        setScreenWidth(
+        window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize);    
+})
+
+  return (
     <html>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body>
-          {/* <NavBar /> */}
-          <MobileNav/>
+        {
+          screenWidth <= '992' 
+          ? 
+            <MobileNav/>
+          : 
+            <NavBar/>
+        }
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/form" element={<Form />} />

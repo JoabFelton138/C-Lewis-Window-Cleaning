@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
+import '../CSS/MobileNav.css';
+
 import {Link} from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -26,28 +29,36 @@ const MobileNav = () => {
 
     return (
         <>
-            <Navbar className="mobile-nav"
-                    expand="lg" 
-                    data-bs-theme="light" 
-                    fixed="top">
+            {/* <div className="mobile-nav">
+                <div className="mobile-nav-container">
+                    <img
+                        alt="brand"
+                        src={'blacknologo.png'}
+                        width="120vw"
+                    />
+                    <FontAwesomeIcon icon={faBars} onClick={openNav} />
+                </div>
+            </div>
+
+            </div> */}
+            <Navbar expand="lg" 
+                    className="mobile-nav"
+                    sticky="top">
                 <Container>
                     <Navbar.Brand href="#home">
                         <img
                             alt="brand"
-                            width="95px"
                             src={'blacknologo.png'}
-                            className="d-inline-block align-top"
-                        />{' '}
+                            width="120vw"
+                        />                    
                     </Navbar.Brand>
-                    <FontAwesomeIcon 
-                        icon={faBars}
-                        type='button'
-                        onClick={openNav} />
+                    <Navbar.Toggle 
+                        aria-controls="responsive-navbar-nav"
+                        onClick={openNav} 
+                    />
                 </Container>
             </Navbar>
-
-            <div id="myNav" class="overlay">
-                
+            <div id="myNav" class="overlay">           
                 <a
                     className="closebtn" 
                     onClick={closeNav}>

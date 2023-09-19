@@ -13,6 +13,7 @@
 
 .nav-link { 
     color: white !important;
+    background-color: transparent;
     padding-right: 16px !important;
 }
 
@@ -44,6 +45,5 @@
 
 .navbar-collapse{
     text-align: center;
-    background-color: white;
     width: 100%;
 }

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
+
+import '../CSS/NavBar.css';
 
 import {Link} from 'react-router-dom';
 
@@ -46,7 +48,8 @@ const NavBar = () => {
                 aria-controls="responsive-navbar-nav"
             />
 
-            <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar.Collapse id="
+            navbar-nav">
                 <Nav className="ms-auto">
                     <Nav.Link
                         as={Link}
