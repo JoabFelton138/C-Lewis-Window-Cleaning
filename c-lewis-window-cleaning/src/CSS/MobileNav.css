@@ -39,6 +39,12 @@
     color: white;
     display: block; /* Display block instead of inline */
     transition: 0.4s; /* Transition effects on hover (color) */
+    
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
   
   .overlay a:hover, .overlay a:focus {
@@ -54,6 +60,8 @@
 
   .dropdown-container a{
     font-size: 15px;
+    
+    animation: fadeIn 2s;
   }
 
   @media only screen and (max-width: 600px) {

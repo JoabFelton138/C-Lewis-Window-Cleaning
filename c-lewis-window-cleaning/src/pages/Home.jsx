@@ -18,6 +18,7 @@ const Home = () => {
             <Portfolio/>
             <Why/>
             <Testimonials/>
+            <div id="form"/>
             <Form/>
             <Scroll/>
         </div>

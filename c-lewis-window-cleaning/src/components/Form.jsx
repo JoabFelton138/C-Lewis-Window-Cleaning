@@ -136,6 +136,7 @@ const ContactForm = () => {
 
     return (
         <div className="form-container border border-1 rounded">
+            <div id="form"/>
             <Form 
                 noValidate
                 validated={validated}

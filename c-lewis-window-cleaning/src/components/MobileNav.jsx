@@ -86,12 +86,12 @@ const MobileNav = () => {
                         { dropDown 
                             ?
                             <FontAwesomeIcon style={{fontSize: '15px',
-                                                     paddingLeft: '2vw',
+                                                     paddingLeft: '1.5vw',
                                                      paddingBottom: '1vw'}} 
                                              icon={faCaretUp} />
                             :
                             <FontAwesomeIcon style={{fontSize: '15px',
-                                                    paddingLeft: '2vw',
+                                                    paddingLeft: '1.5vw',
                                                     paddingBottom: '1vw'}}
                                              icon={faCaretDown}/>
                         }

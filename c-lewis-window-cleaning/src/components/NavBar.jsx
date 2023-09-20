@@ -52,8 +52,7 @@ const NavBar = () => {
             navbar-nav">
                 <Nav className="ms-auto">
                     <Nav.Link
-                        as={Link}
-                        to="/form">
+                        href="#form">
                         GET A QUOTE
                     </Nav.Link>
                     <Nav.Link
@@ -63,7 +62,7 @@ const NavBar = () => {
                     </Nav.Link>
                     <NavDropdown title="SERVICES" id="navbarScrollingDropdown">
                         <NavDropdown.Item as={Link} to="">WINDOW CLEANING</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to="">GUTTER AND FASCIA CLEANING</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="">GUTTER & FASCIAS</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to="">PRESSURE WASHING</NavDropdown.Item>
                         <NavDropdown.Item as={Link} to="">CONSERVATORY CLEANING</NavDropdown.Item>
                     </NavDropdown>
