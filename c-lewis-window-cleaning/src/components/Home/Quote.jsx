@@ -10,10 +10,10 @@ import Button from 'react-bootstrap/Button';
 
 const Quote = () => {
     return (
-        <div class="bg-image d-block w-100">
+        <div className="bg-image d-block w-100">
             <div className="content-container">
                 <FontAwesomeIcon icon={faQuoteLeft}/>
-                <h1 class="text-white">
+                <h1 className="text-white">
                     Great service, quality is amazing.
                     Always here when he says he will be,
                     extremely competitive with his prices!

@@ -18,7 +18,7 @@ function FixedCarousel() {
     return (<>
         <Carousel fade>
             <Carousel.Item>
-                <div class="slide-one d-block w-100">
+                <div className="slide-one d-block w-100">
                     <div className="carousel-container">
                     <h4>COVERING PERTON, SHIFNAL, WHEATON ASTON & MORE</h4>
                     <h1>EXPERT WINDOW CLEANERS</h1>
@@ -42,7 +42,7 @@ function FixedCarousel() {
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div class="slide-two d-block w-100">
+                <div className="slide-two d-block w-100">
                     <div className="carousel-container">
                         <h4 className=''>PRESSURE WASHING & CONSERVATORIES</h4>
                         <h1>LET ME LIGHT UP YOUR HOME</h1>
@@ -66,7 +66,7 @@ function FixedCarousel() {
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div class="slide-three d-block w-100">
+                <div className="slide-three d-block w-100">
                     <div className="carousel-container">
                         <h4 className=''>GUTTERS & FASCIAS</h4>
                         <h1>MAKING THINGS SHINE SINCE 2020</h1>
