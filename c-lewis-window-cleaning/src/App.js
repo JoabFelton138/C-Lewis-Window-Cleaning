@@ -1,11 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './CSS/NavBar.css';
 import MediaQuery from 'react-responsive';
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, Redirect } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
-import MobileNav from './components/MobileNav';
 
 import Home from './pages/Home';
 import Form from './components/Form'
@@ -33,13 +32,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body>
-        {
-          screenWidth <= '992' 
-          ? 
-            <MobileNav/>
-          : 
-            <NavBar/>
-        }
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/form" element={<Form />} />
