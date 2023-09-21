@@ -61,62 +61,65 @@ const NavBar = () => {
 
     return (
     <>
-   <Navbar className="bg-body-tertiary"
+        <Navbar className={navbar ? 'navbar active' : 'navbar'}
                 collapseOnSelect 
                 expand="lg" 
-                style={{paddingLeft: '3.5vw', 
-                        paddingRight: '3.5vw',
-                        paddingTop: '1vw',
-                        paddingBottom: '0.5vw'}}
                 fixed="top">
-            <Navbar.Brand>
-                <img
-                    alt="brand"
-                    width="120px"
-                    src={'blacklogo.png'}
-                    className="d-inline-block align-top"
-                />{' '}
-            </Navbar.Brand>
+                    <Navbar.Brand>
+                        <Image
+                            alt="brand"
+                            width="115px"
+                            src={navbar ? 'blacklogo.png' : 'whitelogo.png'}
+                            className="d-inline-block align-top"
+                        />{' '}
+                    </Navbar.Brand>
 
-            <Navbar.Toggle
-                className="bg-light"
-                aria-controls="responsive-navbar-nav"
-                onClick={openNav}/>
+                    <Navbar.Toggle
+                        className="bg-light"
+                        aria-controls="responsive-navbar-nav"
+                        onClick={openNav}
+                    />
 
-            <Navbar.Collapse id="
-            navbar-nav">
-                {screenWidth > 991 &&
-                    <Nav className="ms-auto">
-                        <Nav.Link
-                            href="#form">
-                            GET A QUOTE
-                        </Nav.Link>
-                        <Nav.Link
-                            as={Link}
-                            to="">
-                            CONTACT
-                        </Nav.Link>
-                        <NavDropdown title="SERVICES" id="navbarScrollingDropdown">
-                            <NavDropdown.Item as={Link} to="">WINDOW CLEANING</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="">GUTTER & FASCIAS</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="">PRESSURE WASHING</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="">CONSERVATORY CLEANING</NavDropdown.Item>
-                        </NavDropdown>
+                    <Navbar.Collapse id="navbar-nav">
 
-                        <Nav.Link
-                            as={Link}
-                            to="/portfolio">
-                            PORTFOLIO
-                        </Nav.Link>
-                        <Nav.Link
-                            as={Link}
-                            to="/testimonials">
-                            TESTIMONIALS
-                        </Nav.Link>
-                    </Nav>
-                }
-            </Navbar.Collapse>
+                        {screenWidth > 991 &&
+                        
+                        <Nav className="ms-auto">
+                                
+                                <Nav.Link
+                                    className="a"
+                                    href="#form">
+                                    GET A QUOTE
+                                </Nav.Link>
 
+                                <Nav.Link
+                                    as={Link}
+                                    to="">
+                                    CONTACT
+                                </Nav.Link>
+
+                                <NavDropdown title="SERVICES" id="navbarScrollingDropdown">
+                                    <NavDropdown.Item as={Link} to="">WINDOW CLEANING</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="">GUTTER & FASCIAS</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="">PRESSURE WASHING</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="">CONSERVATORY CLEANING</NavDropdown.Item>
+                                </NavDropdown>
+
+                                <Nav.Link
+                                    as={Link}
+                                    to="/portfolio">
+                                    PORTFOLIO
+                                </Nav.Link>
+
+                                <Nav.Link
+                                    as={Link}
+                                    to="/testimonials">
+                                    TESTIMONIALS
+                                </Nav.Link>
+
+                            </Nav>
+                        }
+                    </Navbar.Collapse>
         </Navbar>
 
         <div id="myNav" 
@@ -165,7 +168,7 @@ const NavBar = () => {
                     <a href="#">PORTFOLIO</a>
                     <a href="#">TESTIMONIALS</a>
                 </div>
-            </div>
+        </div>
     </>
     )
 }

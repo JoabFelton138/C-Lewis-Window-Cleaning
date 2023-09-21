@@ -1,9 +1,22 @@
 .navbar{
+    background: transparent;
     z-index: 2;
+    padding-left: 4vw; 
+    padding-right: 4vw;
+    padding-top: 2vw;
+    padding-bottom: 0.5vw;
 }
 
-.nav-brand{
-  padding-top: 1vw;
+.navbar a {
+  color: white !important;
+}
+
+.navbar.active{
+  background-color: white;
+}
+
+.navbar.active a {
+  color: black !important;
 }
 
 .overlay {
@@ -38,16 +51,7 @@
      
  }
  
- @keyframes fadeIn {
-   0% { opacity: 0; }
-   100% { opacity: 1; }
- }
-   
-   .overlay a:hover, .overlay a:focus {
-     color: #f1f1f1 !important;
-   }
-   
-   .overlay .closebtn {
+  .overlay .closebtn {
      position: absolute;
      top: 20px;
      right: 45px;
@@ -56,8 +60,6 @@
  
    .dropdown-container a{
      font-size: 15px;
-     
-     animation: fadeIn 2s;
    }
  
    @media only screen and (max-width: 600px) {

@@ -26,17 +26,17 @@
 .carousel-container{
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50% , -50%);
     width: 95%;
 }
 
 .carousel-container h1 {
-    padding-top: 3vw;
+    padding-top: 2.5vw;
     font-size: 7vw;
     font-weight: bold;
-    line-height: 7vw;
+    line-height: 6.5vw;
 }
 
 .carousel-container h4 {
@@ -45,7 +45,7 @@
 }
 
 .button-div{
-    padding-top: 4vw;
+    padding-top: 3.5vw;
 }
 
 .carousel-indicators {
