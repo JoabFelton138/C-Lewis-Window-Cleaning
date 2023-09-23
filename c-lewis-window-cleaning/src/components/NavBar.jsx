@@ -61,6 +61,7 @@ const NavBar = () => {
 
     return (
     <>
+    {screenWidth}
         <Navbar className={navbar ? 'navbar active' : 'navbar'}
                 collapseOnSelect 
                 expand="lg" 

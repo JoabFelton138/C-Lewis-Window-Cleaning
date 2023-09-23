@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS/NavBar.css';
+
 import MediaQuery from 'react-responsive';
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, Redirect } from 'react-router-dom';
