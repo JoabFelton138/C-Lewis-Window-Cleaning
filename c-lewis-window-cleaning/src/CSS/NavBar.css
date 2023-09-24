@@ -5,11 +5,23 @@
     padding-left: 4vw; 
     padding-right: 4vw;
     padding-top: 1.5vw;
-    padding-bottom: 0.5vw;
+    padding-bottom: 0.5vw;  
 }
 
 .navbar a {
+  color: white ;
+}
+
+.navbar .nav-link{
   color: white !important;
+}
+
+.dropdown-toggle .nav-link{
+  color: white;
+}
+
+.nav-item a{
+  color: black;
 }
 
 .navbar.active{
@@ -33,37 +45,59 @@
     transition: 0.4s;  
  }
    
-   .overlay-content {   
-     position: relative;
-     top: 25%; 
-     width: 100%; 
-     text-align: center;
-     margin-top: 30px;
-   }
+.overlay-content {   
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center;
+  margin-top: 30px;
+}
    
-   .overlay a {
-     padding: 8px;
-     text-decoration: none;
-     font-size: 20px;
-     color: white;
-     display: block;
-     transition: 0.4s;
-     
- }
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.4s;
+    
+}
  
-  .overlay .closebtn {
-     position: absolute;
-     top: 20px;
-     right: 45px;
-     font-size: 60px;
-   }
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
  
-   .dropdown-container a{
-     font-size: 15px;
-   }
+.dropdown-container a{
+  font-size: 15px;
+}
+
+.navbar-toggler {
+  color: rgb(0, 191, 255) ;
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar-brand img{
+    width: 90px;
+  }
+
+  .navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+  }
+}
  
-   @media only screen and (max-width: 600px) {
-     .mobile-nav{
-         height: 24vw;
-     }
-   }
+/* Landscape */
+
+@media only screen and (max-width: 920px) and (orientation: landscape) {
+  .navbar-brand img{
+    width: 90px;
+  }
+
+  .navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+  }
+}
