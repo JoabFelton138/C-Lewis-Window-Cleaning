@@ -78,41 +78,70 @@
   color: rgb(0, 191, 255) ;
 }
 
+/* Mobile Portrait*/
+
+@media only screen 
+and (max-width: 420px) 
+and (max-height: 920px)
+and (orientation: portrait){
+  .navbar-brand img{
+    width: 90px;
+  }
+
+  .navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+  }
+}
+
+/* Mobile Landscape*/
+
+@media only screen 
+and (min-width: 667px)
+and (max-width: 920px)
+and (max-height: 414px) 
+and (orientation: landscape){
+  .navbar-brand img{
+    width: 85px;
+  }
+
+  .navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+  }
+}
+
+/*Galaxy Fold Landscape*/
+
 @media only screen 
 and (min-width: 650px) 
 and (max-width: 660px) 
-and (max-height: 280px){
+and (max-height: 280px)
+{
   .navbar-brand img{
-    width: 75px;
+    width: 65px;
   }
+
   .navbar-toggler-icon{
-    width: 1em;
+    width: 0.5em;
     height: 1em;
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .navbar-brand img{
-    width: 90px;
-  }
-
-  .navbar-toggler-icon{
-    width: 1em;
-    height: 1em;
-  }
-}
- 
-/* Landscape */
+/* Ipad Portriat*/
 
 @media only screen 
-and (min-width: 667px) 
-and (max-width: 920px){
-  .navbar-brand img{
-    width: 90px;
-  }
-
-  .navbar-toggler-icon{
-    width: 1em;
-    height: 1em;
-  }
-}
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+      .navbar-brand img{
+        width: 130px;
+      }
+    
+      .navbar-toggler-icon{
+        width: 1.5em;
+        height: 1.5em;
+      }
+    }

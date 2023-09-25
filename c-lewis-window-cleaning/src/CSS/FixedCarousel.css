@@ -122,10 +122,17 @@ and (max-height: 280px)
     .carousel-container h1{
         font-size: 40px;
         line-height: 45px;
+        padding-top: 1vw;
+
     }
     
     .carousel-container h4{
         font-size: 20px;
+        padding-top: 1vw;
+    }
+
+    .button-div{
+        padding-top: 2vw;
     }
 }
 
