@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import '../../CSS/FixedCarousel.css';
 
@@ -15,6 +15,27 @@ import gc from '../../images/carousel/gc2.jpeg'
 
 
 function FixedCarousel() {
+
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    React.useEffect(() => {
+        function getScreenDimensions() {
+            setScreenWidth(window.innerWidth)
+            setScreenHeight(window.innerHeight)
+
+            if (screenWidth <= 655 && screenHeight <= 300){
+                setIsSmallScreen(true);
+            }
+
+            else {
+                setIsSmallScreen(false);
+            }
+        }
+        getScreenDimensions();
+    })
+
     return (<>
         <Carousel fade>
             <Carousel.Item>
@@ -25,8 +46,15 @@ function FixedCarousel() {
                     {window.innerWidth > 300
                     ?
                         <div className='button-div'>
-                            <Button variant="outline-light">READ MORE</Button>{' '}
-                            <Button variant="outline-light">GET A QUOTE</Button>{' '}
+                            <Button 
+                                variant="outline-light"
+                                size={isSmallScreen && "sm"}>
+                                READ MORE
+                            </Button>{' '}
+                            <Button 
+                                variant="outline-light"
+                                size={isSmallScreen && "sm"}>
+                                GET A QUOTE</Button>{' '}
                         </div>
                     :
                         <Row className="gy-2 p-4">
@@ -49,8 +77,16 @@ function FixedCarousel() {
                             {window.innerWidth >= 300
                             ?
                                 <div className='button-div'>
-                                    <Button variant="outline-light">READ MORE</Button>{' '}
-                                    <Button variant="outline-light">GET A QUOTE</Button>{' '}
+                                    <Button 
+                                        variant="outline-light"
+                                        size={isSmallScreen && "sm"}>
+                                        READ MORE
+                                    </Button>{' '}
+                                    <Button 
+                                        variant="outline-light"
+                                        size={isSmallScreen && "sm"}>
+                                        GET A QUOTE
+                                    </Button>{' '}
                                 </div>
                             :
                                 <Row className="gy-2 p-4">
@@ -73,8 +109,16 @@ function FixedCarousel() {
                         {window.innerWidth > 300
                         ?
                         <div className='button-div'>
-                            <Button variant="outline-light">READ MORE</Button>{' '}
-                            <Button variant="outline-light">GET A QUOTE</Button>{' '}
+                            <Button 
+                                variant="outline-light"
+                                size={isSmallScreen && "sm"}>
+                                    READ MORE
+                            </Button>{' '}
+                            <Button 
+                                variant="outline-light"
+                                size={isSmallScreen && "sm"}>
+                                GET A QUOTE
+                            </Button>{' '}
                         </div>
                         :
                             <Row className="gy-2 p-4">

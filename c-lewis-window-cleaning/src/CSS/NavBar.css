@@ -78,6 +78,19 @@
   color: rgb(0, 191, 255) ;
 }
 
+@media only screen 
+and (min-width: 650px) 
+and (max-width: 660px) 
+and (max-height: 280px){
+  .navbar-brand img{
+    width: 75px;
+  }
+  .navbar-toggler-icon{
+    width: 1em;
+    height: 1em;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .navbar-brand img{
     width: 90px;
@@ -91,7 +104,9 @@
  
 /* Landscape */
 
-@media only screen and (max-width: 920px) and (orientation: landscape) {
+@media only screen 
+and (min-width: 667px) 
+and (max-width: 920px){
   .navbar-brand img{
     width: 90px;
   }

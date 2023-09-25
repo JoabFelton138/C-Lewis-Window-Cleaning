@@ -16,12 +16,14 @@ const NavBar = () => {
     const [dropDown, setDropDown] = React.useState(false);
     const [count, setCount] = React.useState(0);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [screenHeight, setScreenHeight] = useState(window.innerHeight);
     const [displayOverlay, setDisplayOverlay] = React.useState(false);
 
     React.useEffect(() => {
         function handleResize() {
             setScreenWidth(
             window.innerWidth)
+            setScreenHeight(window.innerHeight)
         }
         window.addEventListener('resize', handleResize);
     })
@@ -61,7 +63,7 @@ const NavBar = () => {
 
     return (
     <>
-        {screenWidth}
+        {/* {screenWidth + " " + screenHeight} */}
         <Navbar className={navbar ? 'navbar active' : 'navbar'}
                 collapseOnSelect 
                 expand="lg" 
