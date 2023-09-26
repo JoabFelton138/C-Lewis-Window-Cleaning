@@ -33,9 +33,10 @@
 }
 
 .carousel-container h1 {
-    padding-top: 2.5vw;
-    line-height: 85px;
-    font-size: 90px;
+    padding-top: 2vw;
+    line-height: 5rem;
+    /* font-size: 90px; */
+    font-size: 5.5rem;
     font-weight: bold;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .button-div{
-    padding-top: 3.5vw;
+    padding-top: 3vw;
 }
 
 .carousel-indicators {
