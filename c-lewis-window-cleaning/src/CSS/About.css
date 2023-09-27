@@ -24,27 +24,6 @@
     font-size: 2rem;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .about{
-        width: 90%;
-        margin-top: 7vw;
-        margin-bottom: 7vw;
-    }
-    .about img{
-        width: 140px
-    }
-    .content-div h3{
-        margin-top: 4vw;
-    }
-    .content-div p{
-        margin-top: 4vw;
-        margin-bottom: 7vw;
-    }
-    .row .col .svg-inline--fa {
-        font-size: 1.5rem;
-    }
-}  */
-
 /* Mobile Portrait */
 
 @media only screen
@@ -52,6 +31,37 @@ and (min-width: 355px)
 and (max-width: 415px)
 and (min-height: 665px)
 and (max-height: 920px)
+and (orientation: portrait)
+{
+    .about{
+        width: 85%;
+        margin-top: 7vw;
+        margin-bottom: 7vw;
+    }
+
+    .about img{
+        width: 125px
+    }
+
+    .content-div h3{
+        margin-top: 3vw;
+    }
+
+    .content-div p {
+        margin-top: 4vw;
+        margin-bottom: 7vw;
+    }
+
+    .row .col .svg-inline--fa {
+        font-size: 1.5rem;
+    }
+}
+
+/* Galaxy Fold Portrait */
+
+@media only screen
+and (max-width: 285px)
+and (max-height: 655px)
 and (orientation: portrait)
 {
     .about{
