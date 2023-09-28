@@ -23,7 +23,7 @@ const AboutMe = () => {
                         <div className='content-div'>
                             <h3>MEET CHAD</h3>
                             <p>
-                                Yeah, motherfuckers better know.
+                                Yeah, motherf****** better know.
                                 Huh, huh (I'm a bad, bad, bad).
                                 Lock your windows, close your doors.
                                 Biggie Smalls.

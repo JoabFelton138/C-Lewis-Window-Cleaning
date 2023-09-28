@@ -71,7 +71,7 @@ const NavBar = () => {
                     <Navbar.Brand>
                         <Image
                             alt="brand"
-                            width="100px"
+                            width="100em"
                             src={navbar ? 'blacklogo.png' : 'whitelogo.png'}
                             className="d-inline-block align-top"
                         />{' '}
