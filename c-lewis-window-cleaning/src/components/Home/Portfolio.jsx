@@ -23,36 +23,68 @@ const Portfolio = () => {
         <Container>
             <Row className="pt-5 d-flex justify-content-center">
                 <Col lg={4} md={12} mb={3}>
-                    <figure>
+                    <div className='overlay-container'>
                         <Image
                             src={cc}
-                            className="w-100 shadow-1-strong mb-3"
+                            className="image mb-3"
                             alt="Boat on Calm Water"
                         />
-                    </figure>
-                    <figure>
+                        <div className='image-overlay'>
+                            <div className='image-title'>
+                                Conservatory cleaning in ?
+                            </div>
+                            <p className='image-description'>
+                                This is where we provide a description.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='overlay-container'>
                         <Image
                             src={gutter}
-                            className="w-100 shadow-1-strong  mb-3"
+                            className="w-100 shadow-1-strong mb-3"
                             alt="Wintry Mountain Landscape"
                         />
-                    </figure>
+                        <div className='image-overlay'>
+                            <div className='image-title'>
+                                Gutter Cleaning in ?
+                            </div>
+                            <p className='image-description'>
+                                This is where we provide a description.
+                            </p>
+                        </div>
+                    </div>
                 </Col>
                 <Col lg={4} md={12} mb={3}>
-                    <figure>
+                    <div className='overlay-container'>
                         <Image
                             src={pw}
                             className="w-100 shadow-1-strong  mb-3"
                             alt="Mountains in the Clouds"
                         />
-                    </figure>
-                    <figure>
+                        <div className='image-overlay'>
+                            <div className='image-title'>
+                                Pressure Washing in ?
+                            </div>
+                            <p className='image-description'>
+                                This is where we provide a description.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='overlay-container'>
                         <Image
                             src={bwc}
                             className="w-100 shadow-1-strong  mb-3"
                             alt="Boat on Calm Water"
                         />
-                    </figure>
+                        <div className='image-overlay'>
+                            <div className='image-title'>
+                                Some Dudes Window
+                            </div>
+                            <p className='image-description'>
+                                My cousin stole this one off the internet.
+                            </p>
+                        </div>
+                    </div>
                 </Col>
             </Row>
         </Container>
