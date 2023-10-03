@@ -4,6 +4,7 @@
     margin:0 auto;
     margin-top: 8vw;
     margin-bottom: 4vw;
+    z-index: 1;
 }
 
 .form-check-input:checked {

@@ -1,26 +1,31 @@
 /* Desktop */
 
 .carousel div{
-    color: white;
     background-position: center center;
     background-repeat: none;
-    background-attachment: fixed;
     background-size: cover;
+    color: white;
 }
 
 .slide-one{
     height: 100vh;
-    background-image: url(../images/carousel/van.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)), 
+    url(../images/carousel/van.png);
 }
 
 .slide-two{
     height: 100vh;
-    background-image: url(../images/carousel/cc.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)), 
+    url(../images/carousel/cc.jpg);
 }
 
 .slide-three{
     height: 100vh;
-    background-image: url(../images/carousel/gc2.jpeg);   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)), 
+    url(../images/carousel/gc2.jpeg);   
 }
 
 .carousel-container{
