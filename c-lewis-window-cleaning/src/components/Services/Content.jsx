@@ -1,9 +1,10 @@
 import React from 'react';
 import '../../CSS/Services/Content.css'
 
+import Button from 'react-bootstrap/Button';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Button from 'react-bootstrap/Button';
 
 const content = (props) => {
 

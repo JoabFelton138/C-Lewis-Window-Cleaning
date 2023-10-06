@@ -14,7 +14,7 @@ import '../../CSS/Why.css';
 const Why = () => {
 
     return (
-        <Container fluid>
+        <Container fluid className='quote-container'>
             <h3>WHY CHOOSE C.LEWIS WINDOW CLEANERS?</h3>
             <Row className="icon-container content justify-content-md-center p-4">
                 <Col xs={12} sm={6} md={4} className='p-2'>
