@@ -68,7 +68,8 @@ const NavBar = () => {
                 collapseOnSelect 
                 expand="lg" 
                 fixed="top">
-                    <Navbar.Brand>
+                    <Navbar.Brand as={Link}
+                            to="/">
                         <Image
                             alt="brand"
                             width="100em"
@@ -91,7 +92,7 @@ const NavBar = () => {
                                 
                                 <Nav.Link
                                     className="a"
-                                    href="#form">
+                                    href="/#form">
                                     GET A QUOTE
                                 </Nav.Link>
 
@@ -102,7 +103,7 @@ const NavBar = () => {
                                 </Nav.Link>
 
                                 <NavDropdown title="SERVICES" id="navbarScrollingDropdown">
-                                    <NavDropdown.Item as={Link} to="">WINDOW CLEANING</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/window-cleaning">WINDOW CLEANING</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="">GUTTER & FASCIAS</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="">PRESSURE WASHING</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="">CONSERVATORY CLEANING</NavDropdown.Item>

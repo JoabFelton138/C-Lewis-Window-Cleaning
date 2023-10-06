@@ -9,22 +9,22 @@
 
 .slide-one{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), 
     url(../images/carousel/van.png);
 }
 
 .slide-two{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), 
     url(../images/carousel/cc.jpg);
 }
 
 .slide-three{
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), 
     url(../images/carousel/gc2.jpeg);   
 }
 

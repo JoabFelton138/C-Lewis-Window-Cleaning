@@ -4,15 +4,9 @@ import '../../CSS/FixedCarousel.css';
 
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import van from '../../images/carousel/van.png';
-import cc from '../../images/carousel/cc.jpg';
-import gc from '../../images/carousel/gc2.jpeg'
-
 
 function FixedCarousel() {
 

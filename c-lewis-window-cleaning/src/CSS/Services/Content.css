@@ -1,0 +1,26 @@
+.services-content-container{
+    margin: auto;
+    width: 65%;
+    text-align: center;
+}
+
+.services-content-container h1{
+    margin-top: 5vw;
+}
+
+.services-p{
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+
+}
+
+.services-content-div{
+    text-align: justify;
+    margin-top: 3vw;
+}
+
+.free-quote{
+    background-color: rgb(0, 191, 255) !important;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+}

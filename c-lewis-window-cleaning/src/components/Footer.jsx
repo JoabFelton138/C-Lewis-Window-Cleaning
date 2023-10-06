@@ -8,14 +8,14 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
     return (
         <div>
-            <footer className="text-center text-lg-start" style={{ backgroundColor: '#f6f6f6' }}>
-                <div className="container d-flex justify-content-center pt-5">
+            <div className="text-center text-lg-start" style={{ backgroundColor: 'rgb(246, 246, 246)'}}>
+                <div className="container d-flex justify-content-center pt-4">
                     <p>07391 853 506</p>
                 </div>
                 <div className="container d-flex justify-content-center">
                     <p>c.lewis.wcs@hotmail.com</p>
                 </div>
-                <div className="container d-flex justify-content-center pb-3">
+                <div className="container d-flex justify-content-center pb-4">
                     <FontAwesomeIcon
                         className='mx-2'
                         icon={faFacebookSquare}
@@ -38,10 +38,10 @@ const Footer = () => {
                         onClick={() => window.open("https://instagram.com", "_blank")}
                     />
                 </div >
-                <div className="text-center text-white p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+                <div className="text-center text-white p-3" style={{ backgroundColor: '	rgb(211,211,211)' }}>
                     © 2023 Copyright: cwlewiswcs.com
                 </div >
-            </footer >
+            </div >
         </div >
     );
 }
