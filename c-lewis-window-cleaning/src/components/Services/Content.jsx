@@ -46,7 +46,7 @@ const content = (props) => {
 
         </div>
 
-        <Button className='free-quote'> {icon} Get A Free Quote</Button>
+        <Button className='free-quote' size="lg"> {icon} Get A Free Quote</Button>
 
     </div>
     );

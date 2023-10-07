@@ -7,7 +7,7 @@ import Portfolio from '../components/Home/Portfolio';
 import Why from '../components/Home/Why';
 import Testimonials from '../components/Home/Quote';
 import Form from '../components/Form';
-import Scroll from '../components/Home/Scroll'
+import Scroll from '../components/commons/Scroll';
 
 const Home = () => {
 

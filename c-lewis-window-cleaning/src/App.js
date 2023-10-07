@@ -5,7 +5,7 @@ import MediaQuery from 'react-responsive';
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, Redirect } from 'react-router-dom';
 
-import NavBar from './components/NavBar';
+import NavBar from './components/commons/NavBar';
 
 import Home from './pages/Home';
 import Form from './components/Form'
@@ -13,7 +13,7 @@ import WindowCleaning from './pages/Services/WindowCleaning';
 import PortfolioPage from './pages/PortfolioPage';
 import TestimonialsPage from './pages/TestimonalsPage';
 
-import Footer from './components/Footer';
+import Footer from './components/commons/Footer';
 
 function App() {
 
