@@ -4,6 +4,7 @@
     background-size: cover;
     color: white;
     position: relative;
+    height: '90vh'
 }
 
 .hero-text {

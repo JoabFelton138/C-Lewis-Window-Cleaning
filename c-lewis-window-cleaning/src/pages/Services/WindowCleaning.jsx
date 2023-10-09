@@ -47,7 +47,7 @@ const WindowCleaning = () => {
             <div>
                 <Container className='wc-quote-container'>
                     <Row className="wc-quote-row justify-content-md-center">
-                        <Col xs={12} sm={6} md={4}>
+                        <Col xs={12} sm={6} md={7} lg={4}>
                             <FontAwesomeIcon icon={faQuoteLeft} />
                             <p className="wc-quote-p">
                                 Chad provides a first class window cleaning service.
@@ -57,7 +57,7 @@ const WindowCleaning = () => {
                             </p>
                             <h5 className="wc-quotee">- Phillip Parker</h5>
                         </Col>
-                        <Col xs={12} sm={6} md={4}>
+                        <Col xs={12} sm={6} md={7} lg={4}>
                             <FontAwesomeIcon icon={faQuoteLeft} />
                             <p className="wc-quote-p">
                                 Chad offers a great service at a competitive price.
@@ -65,7 +65,7 @@ const WindowCleaning = () => {
                             </p>
                             <h5 className="wc-quotee">- Glenn Rickwood</h5>
                         </Col>
-                        <Col xs={12} sm={6} md={4} >
+                        <Col xs={12} sm={6} md={7} lg={4}>
                             <FontAwesomeIcon icon={faQuoteLeft} />
                             <p className="wc-quote-p">
                                 Chad does a very professional job. He is a perfectionist who leaves

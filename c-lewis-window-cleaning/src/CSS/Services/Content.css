@@ -1,6 +1,6 @@
 .services-content-container{
     margin: auto;
-    width: 65%;
+    width: 75%;
     text-align: center;
 }
 
@@ -12,7 +12,6 @@
 .services-p{
     margin-top: 1.5vw;
     margin-bottom: 2vw;
-
 }
 
 .services-content-div{
@@ -25,3 +24,95 @@
     margin-top: 3vw;
     margin-bottom: 5vw;
 }
+
+/* Mobile Portrait*/
+
+@media only screen 
+and (max-width: 420px) 
+and (max-height: 920px)
+and (orientation: portrait){
+
+    .services-content-container{
+        width: 85%;
+    }
+    
+    .services-content-container h1{
+        margin-top: 16vw;
+        margin-bottom: 3vw;
+        font-weight: bold;
+    }
+
+    .services-content-container h4{
+        margin-top: 6vw;
+    }
+    
+    .services-content-div{
+        margin-top: 8vw;
+    }
+
+    .services-p{
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+    
+    .free-quote{
+        background-color: rgb(0, 191, 255) !important;
+        margin-top: 8vw;
+        margin-bottom: 10vw;
+    }
+
+    .wc-quote-p {
+        margin-top: 5vw;
+    }
+
+    .wc-quotee {
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+    }
+}
+
+@media only screen 
+and (min-width: 667px)
+and (max-width: 920px)
+and (max-height: 414px) 
+and (orientation: landscape) {
+
+    .services-content-container{
+        width: 85%;
+    }
+    
+    .services-content-container h1{
+        margin-top: 16vw;
+        font-weight: bold;
+    }
+
+    .services-content-container h4{
+        margin-top: 3vw;
+    }
+    
+    .services-content-div{
+        margin-top: 5vw;
+    }
+
+    .services-p{
+        margin-top: 3vw;
+        margin-bottom: 2vw;
+    }
+    
+    .free-quote{
+        background-color: rgb(0, 191, 255) !important;
+        margin-top: 6vw;
+        margin-bottom: 8vw;
+    }
+}
+
+@media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+        .services-content-container{
+            width: 85%;
+        }
+    }

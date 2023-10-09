@@ -24,7 +24,7 @@ const Hero = (props) =>{
                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), 
                                  rgba(0, 0, 0, 0.4)), 
                                  url(${x.src})`,
-                                 height: '90vh'
+                                 height: '95vh'
              }}>
                 <div className="hero-text">
                     <h1>WEST MIDLANDS WINDOW CLEANING</h1>

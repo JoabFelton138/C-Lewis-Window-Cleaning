@@ -63,7 +63,7 @@ const NavBar = () => {
 
     return (
     <>
-        {/* {screenWidth + " " + screenHeight} */}
+        {screenWidth + " " + screenHeight}
         <Navbar className={navbar ? 'navbar active' : 'navbar'}
                 collapseOnSelect 
                 expand="lg" 
