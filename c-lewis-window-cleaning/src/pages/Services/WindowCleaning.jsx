@@ -17,9 +17,10 @@ import Col from 'react-bootstrap/Col';
 import wc10 from '../../images/wc/wc10.jpg';
 
 const WindowCleaning = () => {
+
     return (
         <div>
-            <Hero source={"cc"} />
+            <Hero source={0} />
             <Content
                 title={'Window Cleaning Services'}
 
@@ -80,7 +81,6 @@ const WindowCleaning = () => {
                     <Row className="d-flex justify-content-center">
 
                         <Col lg={4} md={12} mb={3}>
-
                             <Image
                                 src={wc10}
                                 className="image mb-3"
