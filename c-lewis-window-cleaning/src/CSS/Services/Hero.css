@@ -1,9 +1,9 @@
 .hero-container{
-    height: 90vh;
-    background-position: center center;
+    background-position: center;
     background-repeat: none;
     background-size: cover;
     color: white;
+    position: relative;
 }
 
 .hero-text {
@@ -21,3 +21,65 @@
     font-size: 5em;
     font-weight: bold;
 }
+
+/* Mobile Portrait*/
+
+@media only screen 
+and (max-width: 420px) 
+and (max-height: 920px)
+and (orientation: portrait){
+    .hero-text h1{
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+@media only screen 
+and (min-width: 667px)
+and (max-width: 920px)
+and (max-height: 414px) 
+and (orientation: landscape) {
+
+    .hero-text {
+        top: 55%;
+    }
+
+    .hero-text h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+/*Galaxy Fold Landscape*/
+
+@media only screen 
+and (min-width: 650px) 
+and (max-width: 660px) 
+and (max-height: 280px)
+{
+    .hero-text{
+        top: 52%;
+    }
+    .hero-text h1{
+        font-size: 40px;
+        line-height: 45px;
+        padding-top: 1vw;
+
+    }
+}
+
+/* Ipad Portrait */
+@media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+        .hero-text{
+            top: 50%;
+        }    
+        .hero-text h1{
+            font-size: 90px;
+            line-height: 90px;
+        }
+    }
