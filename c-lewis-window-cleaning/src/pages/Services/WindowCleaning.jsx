@@ -14,7 +14,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import wc5 from '../../images/wc/wc5.jpg';
+import wc6 from '../../images/wc/wc6.jpg';
+import wc7 from '../../images/wc/wc7.jpg';
+import wc8 from '../../images/wc/wc8.jpg';
+import wc9 from '../../images/wc/wc9.jpg';
 import wc10 from '../../images/wc/wc10.jpg';
+import wc11 from '../../images/wc/wc11.jpg';
 
 const WindowCleaning = () => {
 
@@ -82,13 +88,13 @@ const WindowCleaning = () => {
 
                         <Col lg={4} md={12} mb={3}>
                             <Image
-                                src={wc10}
-                                className="image mb-3"
+                                src={wc11}
+                                className="w-100 shadow-1-strong mb-3"
                                 alt="Boat on Calm Water"
                             />
                             <Image
-                                src={wc10}
-                                className="image mb-3"
+                                src={wc7}
+                                className="w-100 shadow-1-strong mb-3"
                                 alt="Boat on Calm Water"
                             />
                         </Col>
@@ -96,14 +102,12 @@ const WindowCleaning = () => {
                         <Col lg={4} md={12} mb={3}>
 
                             <Image
-                                src={wc10}
-                                className="w-100 shadow-1-strong  mb-3"
-                                alt="Mountains in the Clouds"
+                                src={wc5}
+                                className="w-100 shadow-1-strong mb-3"
                             />
-
                             <Image
-                                src={wc10}
-                                className="w-100 shadow-1-strong  mb-3"
+                                src={wc6}
+                                className="w-100 shadow-1-strong mb-3"
                                 alt="Boat on Calm Water"
                             />
 
@@ -112,14 +116,14 @@ const WindowCleaning = () => {
                         <Col lg={4} md={12} mb={3}>
 
                             <Image
-                                src={wc10}
-                                className="w-100 shadow-1-strong  mb-3"
+                                src={wc8}
+                                className="w-100 shadow-1-strong mb-3"
                                 alt="Mountains in the Clouds"
                             />
 
                             <Image
                                 src={wc10}
-                                className="w-100 shadow-1-strong  mb-3"
+                                className="w-100 shadow-1-strong mb-3"
                                 alt="Boat on Calm Water"
                             />
 
