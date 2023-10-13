@@ -2,6 +2,7 @@ import React from 'react';
 
 import Hero from '../../components/Services/Hero';
 import Content from '../../components/Services/Content';
+import ImageGrid from '../../components/Services/ImageGrid';
 import Scroll from '../../components/commons/Scroll';
 
 import '../../CSS/Services/WindowCleaning.css';
@@ -22,13 +23,14 @@ import wc9 from '../../images/wc/wc9.jpg';
 import wc10 from '../../images/wc/wc10.jpg';
 import wc11 from '../../images/wc/wc11.jpg';
 
+
 const WindowCleaning = () => {
 
     return (
         <div>
-            <Hero source={0} />
+            <Hero source={0} heroTitle={"WINDOW CLEANING SERVICES"}/>
             <Content
-                title={'Window Cleaning Services'}
+                title={"Window Cleaning Services"}
 
                 subtitle1={`Why Should I Get My Windows Cleaned?`}
 
@@ -50,6 +52,7 @@ const WindowCleaning = () => {
 
                 p7={`Then don't settle for anything less! If you're in the Wheaton Aston, Perton or Shifnal area and find yourself in need of a commercial / residential window cleaning service, go ahead and get your free quote today!`}
             />
+            
             <div>
                 <Container className='wc-quote-container'>
                     <Row className="wc-quote-row justify-content-md-center">
@@ -82,56 +85,9 @@ const WindowCleaning = () => {
                     </Row>
                 </Container>
             </div>
-            <div className='image-grid-container'>
-                <Container>
-                    <Row className="d-flex justify-content-center">
 
-                        <Col lg={4} md={12} mb={3}>
-                            <Image
-                                src={wc11}
-                                className="w-100 shadow-1-strong mb-3"
-                                alt="Boat on Calm Water"
-                            />
-                            <Image
-                                src={wc7}
-                                className="w-100 shadow-1-strong mb-3"
-                                alt="Boat on Calm Water"
-                            />
-                        </Col>
+            <ImageGrid title={'wc'}/>
 
-                        <Col lg={4} md={12} mb={3}>
-
-                            <Image
-                                src={wc5}
-                                className="w-100 shadow-1-strong mb-3"
-                            />
-                            <Image
-                                src={wc6}
-                                className="w-100 shadow-1-strong mb-3"
-                                alt="Boat on Calm Water"
-                            />
-
-                        </Col>
-
-                        <Col lg={4} md={12} mb={3}>
-
-                            <Image
-                                src={wc8}
-                                className="w-100 shadow-1-strong mb-3"
-                                alt="Mountains in the Clouds"
-                            />
-
-                            <Image
-                                src={wc10}
-                                className="w-100 shadow-1-strong mb-3"
-                                alt="Boat on Calm Water"
-                            />
-
-                        </Col>
-
-                    </Row>
-                </Container>
-            </div>
             <Scroll/>
         </div>
     );

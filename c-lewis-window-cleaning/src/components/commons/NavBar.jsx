@@ -102,10 +102,18 @@ const NavBar = () => {
                                 </Nav.Link>
 
                                 <NavDropdown title="SERVICES" id="navbarScrollingDropdown">
-                                    <NavDropdown.Item as={Link} to="/window-cleaning">WINDOW CLEANING</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="">GUTTER & FASCIAS</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="">PRESSURE WASHING</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="">CONSERVATORY CLEANING</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/window-cleaning">
+                                        WINDOW CLEANING
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/gutter-cleaning">
+                                        GUTTER & FASCIAS
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="">
+                                        PRESSURE WASHING
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="">
+                                        CONSERVATORY CLEANING
+                                    </NavDropdown.Item>
                                 </NavDropdown>
 
                                 <Nav.Link
@@ -136,7 +144,7 @@ const NavBar = () => {
                     &times;
                 </a>
 
-                <div class="overlay-content">
+                <div className="overlay-content">
                     
                     <a href="#about">QUOTE</a>
                     <a href="#services">CONTACT</a>

@@ -9,7 +9,10 @@ import NavBar from './components/commons/NavBar';
 
 import Home from './pages/Home';
 import Form from './components/Form'
+
 import WindowCleaning from './pages/Services/WindowCleaning';
+import GutterCleaning from './pages/Services/GutterCleaning';
+
 import PortfolioPage from './pages/PortfolioPage';
 import TestimonialsPage from './pages/TestimonalsPage';
 
@@ -38,6 +41,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/form" element={<Form />} />
           <Route path="/window-cleaning" element={<WindowCleaning />} />
+          <Route path="/gutter-cleaning" element={<GutterCleaning />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
         </Routes>

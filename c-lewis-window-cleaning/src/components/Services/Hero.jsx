@@ -1,7 +1,10 @@
 import React from 'react';
+
 import '../../CSS/Services/Hero.css';
-import cc from '../../images/carousel/cc.jpg'
-import gc from '../../images/carousel/gc2.jpeg'
+
+import cc from '../../images/carousel/cc.jpg';
+import gc from '../../images/carousel/gc2.jpeg';
+import van from '../../images/vans/van4.jpg';
 
 const heroImages = [
     {
@@ -27,7 +30,7 @@ const Hero = (props) =>{
                                  height: '95vh'
              }}>
                 <div className="hero-text">
-                    <h1>WEST MIDLANDS WINDOW CLEANING</h1>
+                    <h1>{props.heroTitle}</h1>
                 </div>
         </div>
     );
