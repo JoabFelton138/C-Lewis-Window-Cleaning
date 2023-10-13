@@ -5,12 +5,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import wc5 from '../../images/wc/wc5.jpg';
-import wc6 from '../../images/wc/wc6.jpg';
-import wc7 from '../../images/wc/wc7.jpg';
-import wc8 from '../../images/wc/wc8.jpg';
-import wc10 from '../../images/wc/wc10.jpg';
-import wc11 from '../../images/wc/wc11.jpg';
+import wc1 from '../../images/wc/wc11.jpg';
+import wc2 from '../../images/wc/wc2fin.jpg';
+import wc3 from '../../images/wc/window angle.jpg';
+import wc4 from '../../images/wc/wc5fin.jpg';
+import wc5 from '../../images/wc/wcfin.jpg';
+import wc6 from '../../images/wc/wc4fin.jpg';
 
 import gc1 from '../../images/gc/gc1.jpeg';
 import gc2 from '../../images/gc/gc2.jpeg';
@@ -25,8 +25,8 @@ const ImageGrid = (props) => {
     
     const imageObj = {
         images: [
-        {title:"wc", imagePath:[wc11, wc5, wc8, wc7, wc6, wc10]},
-        {title:"gc", imagePath:[gc1, gc2, gc6, gc4, gc5, gc3]},
+        {title:"wc", imagePath:[wc1, wc2, wc3, wc4, wc5, wc6]},
+        {title:"gc", imagePath:[gc1, gc2, gc3, gc4, gc5, gc6]},
         {title:"pw", imagePath:["500", "Panda"]}
         ]
     }
