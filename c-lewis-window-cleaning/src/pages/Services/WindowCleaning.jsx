@@ -28,7 +28,7 @@ const WindowCleaning = () => {
 
     return (
         <div>
-            <Hero source={0} heroTitle={"WINDOW CLEANING SERVICES"}/>
+            <Hero source={3} heroTitle={"WINDOW CLEANING SERVICES"}/>
             <Content
                 title={"Window Cleaning Services"}
 

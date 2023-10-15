@@ -22,7 +22,7 @@ const CarouselButtons = (props) => {
             navigate('/gutter-cleaning');
         }
         else {
-            alert('kebabs');
+            navigate('/conservatory-cleaning');
         }
     };
 

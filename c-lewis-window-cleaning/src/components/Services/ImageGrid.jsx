@@ -29,8 +29,8 @@ import pw6 from '../../images/pw/pw6.jpg';
 import cc1 from '../../images/cc/cc1.jpeg';
 import cc2 from '../../images/cc/cc2.jpeg';
 import cc3 from '../../images/cc/cc3.jpeg';
-import cc4 from '../../images/pw/pw4.jpg';
-import cc5 from '../../images/pw/pw5.jpg';
+import cc4 from '../../images/cc/cc4.jpg';
+import cc5 from '../../images/cc/cc5.jpg';
 import cc6 from '../../images/pw/pw6.jpg';
 
 const ImageGrid = (props) => {

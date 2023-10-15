@@ -8,9 +8,9 @@ import Scroll from '../../components/commons/Scroll';
 const ConservatoryCleaning = () => {
     return (
     <div>
-        <Hero source={2} heroTitle={"CONSERVATORY CLEANING"}/>
+        <Hero source={0} heroTitle={"CONSERVATORY & SOLAR PANEL CLEANING"}/>
         <Content 
-            title={"Conservatory Cleaning Services"}
+            title={"Conservatory & Solar Panel Services"}
             subtitle1={`Why Should I Get My Windows Cleaned?`}
             p1={`Did you know that neglected window tracks are often filled with dust and insects? Also, were you aware that a build up of debris can cause glass to become chemically etched?`}
             p2={`Not only can these issues prevent the mechanisms on your windows from working properly, but they can also aggrevate any allergies that may effect you or your family.`}

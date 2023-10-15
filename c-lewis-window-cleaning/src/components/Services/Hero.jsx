@@ -2,9 +2,10 @@ import React from 'react';
 
 import '../../CSS/Services/Hero.css';
 
-import cc from '../../images/carousel/cc.jpg';
-import gc from '../../images/carousel/gc2.jpeg';
-import pw from '../../images/vans/van.png';
+import wc from '../../images/wc/wchero.jpg';
+import cc from '../../images/carousel/cc2.jpg';
+import gc from '../../images/carousel/gc.jpg';
+import pw from '../../images/carousel/pw2.jpg';
 
 const heroImages = [
     {
@@ -18,6 +19,10 @@ const heroImages = [
     {
         title: "pw",
         src: pw
+    },
+    {
+        title: "wc",
+        src: wc
     }
 ];
 
@@ -28,8 +33,8 @@ const Hero = (props) =>{
     return(
             <div className='hero-container'
              style={{
-                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), 
-                                 rgba(0, 0, 0, 0.4)), 
+                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), 
+                                 rgba(0, 0, 0, 0.5)), 
                                  url(${x.src})`,
                                  height: '95vh'
              }}>
