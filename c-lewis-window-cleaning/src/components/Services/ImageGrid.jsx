@@ -19,15 +19,20 @@ import gc4 from '../../images/gc/gc4.jpg';
 import gc5 from '../../images/gc/gc5.jpg';
 import gc6 from '../../images/gc/gc6.jpeg';
 
+import pw2 from '../../images/pw/pw2fin.jpg';
+import pw3 from '../../images/pw/pw3fin.jpg';
+import pw4 from '../../images/pw/pw4fin.jpg';
+import pw5 from '../../images/pw/pw5fin.jpg';
+
 const ImageGrid = (props) => {
 
     let images = [];
     
     const imageObj = {
         images: [
-        {title:"wc", imagePath:[wc1, wc2, wc3, wc4, wc5, wc6]},
-        {title:"gc", imagePath:[gc1, gc2, gc3, gc4, gc5, gc6]},
-        {title:"pw", imagePath:["500", "Panda"]}
+            {title:"wc", imagePath:[wc1, wc2, wc3, wc4, wc5, wc6]},
+            {title:"gc", imagePath:[gc1, gc2, gc3, gc4, gc5, gc6]},
+            {title:"pw", imagePath:[pw5, pw2, pw3, pw4, pw2]}
         ]
     }
 

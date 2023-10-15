@@ -108,7 +108,7 @@ const NavBar = () => {
                                     <NavDropdown.Item as={Link} to="/gutter-cleaning">
                                         GUTTER & FASCIAS
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="">
+                                    <NavDropdown.Item as={Link} to="/pressure-washing">
                                         PRESSURE WASHING
                                     </NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="">
