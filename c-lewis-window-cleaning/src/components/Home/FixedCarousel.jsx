@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import '../../CSS/FixedCarousel.css';
 
-import CarouselButtons from '../Button';
+import CarouselButtons from './Button';
 
 import Carousel from 'react-bootstrap/Carousel';
 

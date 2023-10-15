@@ -2,6 +2,9 @@ import React from 'react';
 
 import {Routes, Route, useNavigate} from 'react-router-dom';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 const CarouselButtons = (props) => {
@@ -24,14 +27,19 @@ const CarouselButtons = (props) => {
     };
 
     return (
-        <div className='button-div'>
-            <Button variant="outline-light" onClick={navigateToPage}> 
-                READ MORE
-            </Button>
-            <Button variant="outline-light">
-                GET A QUOTE
-            </Button>
-        </div>
+        <Container className="button-div">
+            <Row>
+                <Col className="d-flex justify-content-center gap-2">
+                    <Button variant="outline-light" onClick={navigateToPage}> 
+                        READ MORE
+                    </Button>
+
+                    <Button variant="outline-light">
+                        GET A QUOTE
+                    </Button> 
+                </Col>
+            </Row>
+        </Container>    
     );
 }
 
