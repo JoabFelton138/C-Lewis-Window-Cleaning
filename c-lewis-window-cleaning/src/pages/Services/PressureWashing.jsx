@@ -8,7 +8,7 @@ import Scroll from '../../components/commons/Scroll';
 const PressureWashing = (props) => {
     return (
         <div>
-            <Hero source={0} heroTitle={"PRESSURE WASHING SERVICES"}/>
+            <Hero source={2} heroTitle={"PRESSURE WASHING SERVICES"}/>
             <Content 
                 title={"Pressure Washing Services"}
 

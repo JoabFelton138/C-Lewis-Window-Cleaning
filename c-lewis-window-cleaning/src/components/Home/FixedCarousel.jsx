@@ -36,7 +36,7 @@ function FixedCarousel() {
                     <div className="slide-three d-block w-100">
                         <div className="carousel-container">
                             <h4 className=''>GUTTERS & FASCIAS</h4>
-                            <h1>MAKING THINGS SHINE SINCE 2020</h1>
+                            <h1>YOUR GUTTERS NEVER LOOKED SO GOOD</h1>
                             <CarouselButtons page={'gc'}/>
                         </div>
                     </div>

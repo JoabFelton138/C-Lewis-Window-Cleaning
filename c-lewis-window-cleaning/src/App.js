@@ -13,7 +13,7 @@ import Form from './components/Form'
 import WindowCleaning from './pages/Services/WindowCleaning';
 import GutterCleaning from './pages/Services/GutterCleaning';
 import PressureWashing from './pages/Services/PressureWashing';
-// import ConservatoryCleaning from './pages/Services/ConservatoryCleaning';
+import ConservatoryCleaning from './pages/Services/ConservatoryCleaning';
 
 import PortfolioPage from './pages/PortfolioPage';
 import TestimonialsPage from './pages/TestimonalsPage';
@@ -45,9 +45,9 @@ function App() {
           <Route path="/window-cleaning" element={<WindowCleaning />} />
           <Route path="/gutter-cleaning" element={<GutterCleaning />} />
           <Route path="/pressure-washing" element={<PressureWashing />} />
-          {/* <Route path="/conservatory-cleaning" element={<ConservatoryCleaning />} /> */}
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/conservatory-cleaning" element={<ConservatoryCleaning />} />
+          {/* <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} /> */}
         </Routes>
         <Footer />
       </body>

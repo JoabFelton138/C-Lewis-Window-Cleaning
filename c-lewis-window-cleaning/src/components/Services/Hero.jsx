@@ -4,7 +4,7 @@ import '../../CSS/Services/Hero.css';
 
 import cc from '../../images/carousel/cc.jpg';
 import gc from '../../images/carousel/gc2.jpeg';
-import van from '../../images/vans/van4.jpg';
+import pw from '../../images/vans/van.png';
 
 const heroImages = [
     {
@@ -14,6 +14,10 @@ const heroImages = [
     {
         title: "gc",
         src: gc
+    },
+    {
+        title: "pw",
+        src: pw
     }
 ];
 

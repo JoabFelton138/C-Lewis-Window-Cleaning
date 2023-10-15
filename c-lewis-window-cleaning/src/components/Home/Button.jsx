@@ -33,7 +33,6 @@ const CarouselButtons = (props) => {
                     <Button variant="outline-light" onClick={navigateToPage}> 
                         READ MORE
                     </Button>
-
                     <Button variant="outline-light">
                         GET A QUOTE
                     </Button> 

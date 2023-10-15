@@ -17,7 +17,6 @@ const NavBar = () => {
     const [count, setCount] = React.useState(0);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [screenHeight, setScreenHeight] = useState(window.innerHeight);
-    const [displayOverlay, setDisplayOverlay] = React.useState(false);
 
     React.useEffect(() => {
         function handleResize() {
@@ -71,7 +70,7 @@ const NavBar = () => {
                             to="/">
                         <Image
                             alt="brand"
-                            width="100em"
+                            width="96em"
                             src={navbar ? 'blacklogo.png' : 'whitelogo.png'}
                             className="d-inline-block align-top"
                         />{' '}
@@ -111,7 +110,7 @@ const NavBar = () => {
                                     <NavDropdown.Item as={Link} to="/pressure-washing">
                                         PRESSURE WASHING
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="">
+                                    <NavDropdown.Item as={Link} to="conservatory-cleaning">
                                         CONSERVATORY CLEANING
                                     </NavDropdown.Item>
                                 </NavDropdown>

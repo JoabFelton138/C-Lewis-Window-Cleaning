@@ -19,10 +19,19 @@ import gc4 from '../../images/gc/gc4.jpg';
 import gc5 from '../../images/gc/gc5.jpg';
 import gc6 from '../../images/gc/gc6.jpeg';
 
-import pw2 from '../../images/pw/pw2fin.jpg';
-import pw3 from '../../images/pw/pw3fin.jpg';
-import pw4 from '../../images/pw/pw4fin.jpg';
-import pw5 from '../../images/pw/pw5fin.jpg';
+import pw1 from '../../images/pw/pw1.jpg';
+import pw2 from '../../images/pw/pw2.jpg';
+import pw3 from '../../images/pw/pw3.jpg';
+import pw4 from '../../images/pw/pw4.jpg';
+import pw5 from '../../images/pw/pw5.jpg';
+import pw6 from '../../images/pw/pw6.jpg';
+
+import cc1 from '../../images/cc/cc1.jpeg';
+import cc2 from '../../images/cc/cc2.jpeg';
+import cc3 from '../../images/cc/cc3.jpeg';
+import cc4 from '../../images/pw/pw4.jpg';
+import cc5 from '../../images/pw/pw5.jpg';
+import cc6 from '../../images/pw/pw6.jpg';
 
 const ImageGrid = (props) => {
 
@@ -30,9 +39,10 @@ const ImageGrid = (props) => {
     
     const imageObj = {
         images: [
-            {title:"wc", imagePath:[wc1, wc2, wc3, wc4, wc5, wc6]},
-            {title:"gc", imagePath:[gc1, gc2, gc3, gc4, gc5, gc6]},
-            {title:"pw", imagePath:[pw5, pw2, pw3, pw4, pw2]}
+            { title: "wc", imagePath: [wc1, wc2, wc3, wc4, wc5, wc6] },
+            { title: "gc", imagePath: [gc1, gc2, gc3, gc4, gc5, gc6] },
+            { title: "pw", imagePath: [pw1, pw2, pw3, pw4, pw5, pw6] },
+            { title: "cc", imagePath: [cc1, cc2, cc3, cc4, cc5, cc6] },
         ]
     }
 
