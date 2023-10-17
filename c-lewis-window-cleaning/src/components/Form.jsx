@@ -1,12 +1,11 @@
 import React, { useState, useRef } from 'react';
-
-import '../CSS/Form.css'
-
 import emailjs from '@emailjs/browser';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+
+import '../CSS/Form.css'
 
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
@@ -16,84 +15,12 @@ import Alert from 'react-bootstrap/Alert';
 
 const ContactForm = () => {
 
-    const [firstName, setFirstName] = useState("");
-    const [surname, setSurname] = useState("");
-    const [number, setNumber] = useState("");
-    const [email, setEmail] = useState("");
-    const [address, setAddress] = useState("");
-    const [postCode, setPostCode] = useState("");
-    const [area, setArea] = useState("");
-    const [message, setMessage] = useState("");
-
-    const [HDYFOAU, setHDYFOAU] = useState("");
-    const [recommendationChecked, setRecommendationChecked] = useState(false);
-    const [isChecked, setIsChecked] = useState(false);
-    const [socialMediaChecked, setSocialMediaChecked] = useState(false);
-
     const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
     const [submissionFailed, setSubmissionFailed] = useState(false);
 
     const [validated, setValidated] = useState(false);
 
     const form = useRef();
-
-    const handleRecommendationCheck = () => {
-
-        setRecommendationChecked(true);
-
-        if (isChecked) {
-            setIsChecked(!isChecked);
-        }
-
-        else if (socialMediaChecked) {
-            setSocialMediaChecked(!socialMediaChecked);
-        }
-
-        else {
-            setRecommendationChecked(!recommendationChecked);
-        }
-
-        setHDYFOAU("Recommendation");
-    }
-
-    const handleIsChecked = () => {
-
-        setIsChecked(true);
-
-        if (recommendationChecked) {
-            setRecommendationChecked(!recommendationChecked);
-        }
-
-        else if (socialMediaChecked) {
-            setSocialMediaChecked(!socialMediaChecked);
-        }
-
-        else {
-            setIsChecked(!isChecked);
-        }
-
-        setHDYFOAU("Internet Search");
-
-    }
-
-    const handleSocialMediaChecked = () => {
-
-        setSocialMediaChecked(true);
-
-        if (recommendationChecked) {
-            setRecommendationChecked(!recommendationChecked);
-        }
-
-        else if (isChecked) {
-            setIsChecked(!isChecked);
-        }
-
-        else {
-            setSocialMediaChecked(!socialMediaChecked);
-        }
-
-        setHDYFOAU("Social Media");
-    }
 
     const sendEmail = (e) => {
         e.preventDefault();

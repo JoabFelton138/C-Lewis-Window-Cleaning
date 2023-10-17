@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
-// import Carousel from '../components/Home/Carousel';
 import Carousel from '../components/Home/FixedCarousel';
 import About from '../components/Home/About';
 import Portfolio from '../components/Home/Portfolio';
@@ -11,14 +10,19 @@ import Scroll from '../components/commons/Scroll';
 
 const Home = () => {
 
+    const ref = useRef(null);
+    console.log(ref);
+    
     return (
         <div>
-            <Carousel/>
+            <Carousel scrollingPoint={ref}/>
             <About/>
             <Portfolio/>
             <Why/>
             <Testimonials/> 
-            <Form/>
+            <div className="scrolling-point" ref={ref}>
+                <Form/>
+            </div>
             <Scroll/>
         </div>
     );

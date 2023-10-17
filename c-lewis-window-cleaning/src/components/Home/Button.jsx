@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -8,7 +8,9 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 const CarouselButtons = (props) => {
-    
+    console.log("in buttons compo, props = ", props.scrollTo)
+    const toForm = props.scrollTo;
+
     const navigate = useNavigate();
 
     const navigateToPage = () => {
@@ -26,6 +28,10 @@ const CarouselButtons = (props) => {
         }
     };
 
+    const navigateToForm = () => {
+        toForm.current?.scrollIntoView({behavior: 'smooth'});
+    };
+
     return (
         <Container className="button-div">
             <Row>
@@ -33,7 +39,7 @@ const CarouselButtons = (props) => {
                     <Button variant="outline-light" onClick={navigateToPage}> 
                         READ MORE
                     </Button>
-                    <Button variant="outline-light">
+                    <Button variant="outline-light" onClick={navigateToForm}>
                         GET A QUOTE
                     </Button> 
                 </Col>

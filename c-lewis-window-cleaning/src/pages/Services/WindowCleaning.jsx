@@ -10,19 +10,9 @@ import '../../CSS/Services/WindowCleaning.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
-import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import wc5 from '../../images/wc/wc5.jpg';
-import wc6 from '../../images/wc/wc6.jpg';
-import wc7 from '../../images/wc/wc7.jpg';
-import wc8 from '../../images/wc/wc8.jpg';
-import wc9 from '../../images/wc/wc9.jpg';
-import wc10 from '../../images/wc/wc10.jpg';
-import wc11 from '../../images/wc/wc11.jpg';
-
 
 const WindowCleaning = () => {
 

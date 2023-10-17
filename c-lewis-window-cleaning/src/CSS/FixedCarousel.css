@@ -11,28 +11,28 @@
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), 
-    url(../images/carousel/van5.jpg);
+    url(../images/carousel/van5-min.jpg);
 }
 
 .slide-two{
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), 
-    url(../images/carousel/cc.jpg);
+    url(../images/carousel/cc-min.jpg);
 }
 
 .slide-three{
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), 
-    url(../images/carousel/pw3.jpg);   
+    url(../images/carousel/pw3-min.jpg);   
 }
 
 .slide-four{
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)), 
-    url(../images/carousel/gc2.jpeg);   
+    url(../images/carousel/gc2-min.jpeg);   
 }
 
 .carousel-container{

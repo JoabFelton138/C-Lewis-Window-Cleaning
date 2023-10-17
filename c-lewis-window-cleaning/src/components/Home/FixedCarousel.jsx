@@ -1,16 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import '../../CSS/FixedCarousel.css';
 
 import CarouselButtons from './Button';
-
 import Carousel from 'react-bootstrap/Carousel';
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
-function FixedCarousel() {
-
+function FixedCarousel(props) {
     return (
         <>
             <Carousel fade>
@@ -19,7 +15,7 @@ function FixedCarousel() {
                         <div className="carousel-container">
                             <h4>COVERING PERTON, SHIFNAL, WHEATON ASTON & MORE</h4>
                             <h1>EXPERT WINDOW CLEANERS</h1>
-                            <CarouselButtons page={'wc'}/>
+                            <CarouselButtons page={'wc'} scrollTo={props.scrollingPoint}/>
                         </div>
                     </div>
                 </Carousel.Item>
@@ -29,7 +25,7 @@ function FixedCarousel() {
                         <div className="carousel-container">
                             <h4 className=''>CONSERVATORY & SOLAR PANEL CLEANING</h4>
                             <h1>LET ME LIGHT UP YOUR HOME</h1>
-                            <CarouselButtons page={'cc'}/>
+                            <CarouselButtons page={'cc'} scrollTo={props.scrollingPoint}/>
                         </div>
                     </div>
                 </Carousel.Item>
@@ -39,7 +35,7 @@ function FixedCarousel() {
                         <div className="carousel-container">
                             <h4 className=''>PRESSURE WASHING SERVICES</h4>
                             <h1>LEAVE THE PRESSURE TO ME</h1>
-                            <CarouselButtons page={'pw'}/>
+                            <CarouselButtons page={'pw'} scrollTo={props.scrollingPoint}/>
                         </div>
                     </div>
                 </Carousel.Item>
@@ -49,7 +45,7 @@ function FixedCarousel() {
                         <div className="carousel-container">
                             <h4 className=''>GUTTERS & FASCIA CLEANING</h4>
                             <h1>GUTTERS NEVER LOOKED SO GOOD</h1>
-                            <CarouselButtons page={'gc'}/>
+                            <CarouselButtons page={'gc'} scrollTo={props.scrollingPoint}/>
                         </div>
                     </div>
                 </Carousel.Item>
