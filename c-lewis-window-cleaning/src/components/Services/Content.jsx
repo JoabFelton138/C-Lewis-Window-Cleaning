@@ -1,14 +1,12 @@
 import React from 'react';
 import '../../CSS/Services/Content.css'
 
+import {useNavigate} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import CarouselButtons from '../Home/Button';
 
 const content = (props) => {
-
-    const icon = <FontAwesomeIcon icon={faEnvelope} />
 
     return (
         <div className="services-content-container">
@@ -46,7 +44,7 @@ const content = (props) => {
 
         </div>
 
-        <Button className='free-quote' size="lg"> {icon} Get A Free Quote</Button>
+       <CarouselButtons isContent={true}/>
 
     </div>
     );

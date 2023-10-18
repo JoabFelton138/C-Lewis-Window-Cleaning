@@ -11,7 +11,6 @@ import Scroll from '../components/commons/Scroll';
 const Home = () => {
 
     const ref = useRef(null);
-    console.log(ref);
     
     return (
         <div>

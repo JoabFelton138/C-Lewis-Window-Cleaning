@@ -42,15 +42,12 @@ const ContactForm = () => {
             emailjs.sendForm('service_b7pfg3u', 'template_bpuo3nh', form, 'bR_vQvzEQNeW8qqkX')
                 .then((result) => {
 
-                    console.log(result.text);
-
                     if (result.text === "OK") {
                         setSubmissionSuccessful(true);
                     }
                 },
 
                 (error) => {
-                    console.log(error.text);
                     setSubmissionFailed(true);
                     e.preventDefault();
                     e.stopPropagation();

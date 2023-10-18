@@ -39,7 +39,7 @@ const AboutMe = () => {
                                 <FontAwesomeIcon
                                     icon={faFacebookSquare}
                                     type="button"
-                                    onClick={() => window.open("https://facebook.com", "_blank")}
+                                    onClick={() => window.open("https://www.facebook.com/WCS.CLewis", "_blank")}
                                 />
                                 <FontAwesomeIcon
                                     icon={faLinkedinIn} 

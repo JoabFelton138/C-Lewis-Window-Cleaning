@@ -2,13 +2,18 @@ import React from 'react';
 
 import {useNavigate} from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 const CarouselButtons = (props) => {
-    console.log("in buttons compo, props = ", props.scrollTo)
+    
+    const icon = <FontAwesomeIcon icon={faEnvelope} />
+    const content = props.isContent;
     const toForm = props.scrollTo;
 
     const navigate = useNavigate();
@@ -32,17 +37,38 @@ const CarouselButtons = (props) => {
         toForm.current?.scrollIntoView({behavior: 'smooth'});
     };
 
+    const navigateToFormFromContent = () => {
+        navigate("/");
+        setTimeout(() => {
+            const formSection = document.getElementById("form");
+            if (formSection) {
+              formSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 100);
+    }
+
     return (
         <Container className="button-div">
             <Row>
-                <Col className="d-flex justify-content-center gap-2">
-                    <Button variant="outline-light" onClick={navigateToPage}> 
-                        READ MORE
-                    </Button>
-                    <Button variant="outline-light" onClick={navigateToForm}>
-                        GET A QUOTE
-                    </Button> 
-                </Col>
+                { content ?
+                    <Col className="d-flex justify-content-center">
+                        <Button 
+                                onClick={navigateToFormFromContent}
+                                className="free-quote"
+                            >
+                                {icon} GET A QUOTE
+                        </Button> 
+                    </Col>
+                :
+                    <Col className="d-flex justify-content-center gap-2">
+                        <Button variant="outline-light" onClick={navigateToPage}> 
+                            READ MORE
+                        </Button>
+                        <Button variant="outline-light" onClick={navigateToForm}>
+                            GET A QUOTE
+                        </Button> 
+                    </Col>
+                }
             </Row>
         </Container>    
     );

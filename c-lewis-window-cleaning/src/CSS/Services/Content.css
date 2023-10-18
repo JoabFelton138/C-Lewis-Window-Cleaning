@@ -21,8 +21,12 @@
 
 .free-quote{
     background-color: rgb(0, 191, 255) !important;
-    margin-top: 4vw;
     margin-bottom: 5vw;
+}
+
+.row .col .svg-inline--fa {
+    color: white !important;
+    font-size: 1rem;
 }
 
 /* Mobile Portrait*/

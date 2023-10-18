@@ -21,7 +21,7 @@ const Footer = () => {
                         icon={faFacebookSquare}
                         style={{ color: 'rgb(0, 191, 255)' }}
                         type="button"
-                        onClick={() => window.open("https://facebook.com", "_blank")}
+                        onClick={() => window.open("https://www.facebook.com/WCS.CLewis", "_blank")}
                     />
                     <FontAwesomeIcon
                         className='mx-2'
