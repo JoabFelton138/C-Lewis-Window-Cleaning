@@ -40,7 +40,7 @@ const CarouselButtons = (props) => {
     const navigateToFormFromContent = () => {
         navigate("/");
         setTimeout(() => {
-            const formSection = document.getElementById("form");
+            const formSection = document.getElementById("form-container");
             if (formSection) {
               formSection.scrollIntoView({ behavior: "smooth" });
             }

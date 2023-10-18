@@ -1,4 +1,5 @@
 import React, {useRef} from 'react';
+import { useNavigate } from "react-router-dom";
 
 import Carousel from '../components/Home/FixedCarousel';
 import About from '../components/Home/About';
@@ -9,9 +10,8 @@ import Form from '../components/Form';
 import Scroll from '../components/commons/Scroll';
 
 const Home = () => {
-
     const ref = useRef(null);
-    
+
     return (
         <div>
             <Carousel scrollingPoint={ref}/>
