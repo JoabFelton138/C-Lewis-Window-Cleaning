@@ -64,7 +64,7 @@ const NavBar = () => {
     const navigateToForm = () => {
         navigate("/home");
         setTimeout(() => {
-            const formSection = document.getElementById("form-container");
+            const formSection = document.getElementById("target");
             if (formSection) {
               formSection.scrollIntoView({ behavior: "smooth" });
             }
