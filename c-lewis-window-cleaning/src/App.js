@@ -36,6 +36,7 @@ function App() {
             <ScrollToTop/> 
             <NavBar/>
             <Routes>
+              <Route path='/' Component={Home}/>
               <Route path='/home' Component={Home}/>
               <Route path='/home#get-a-quote' Component={Home}/>
               <Route path='/window-cleaning' Component={WindowCleaning}/>

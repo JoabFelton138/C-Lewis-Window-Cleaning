@@ -111,8 +111,7 @@ const NavBar = () => {
                                 </Nav.Link>
 
                                 <Nav.Link
-                                    as={Link}
-                                    to="">
+                                    href="tel:447391853506">
                                     CONTACT
                                 </Nav.Link>
 
