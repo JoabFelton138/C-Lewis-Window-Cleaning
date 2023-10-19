@@ -1,7 +1,9 @@
 import React, { useState, useEffect} from 'react';
+
+import {useNavigate} from 'react-router-dom';
+
 import {Link} from 'react-router-dom';
 
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -17,6 +19,7 @@ const NavBar = () => {
     const [count, setCount] = React.useState(0);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+    const navigate = useNavigate();
 
     React.useEffect(() => {
         function handleResize() {
@@ -58,6 +61,16 @@ const NavBar = () => {
         }
     };
 
+    const navigateToForm = () => {
+        navigate("/home");
+        setTimeout(() => {
+            const formSection = document.getElementById("form-container");
+            if (formSection) {
+              formSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }, 100);
+    }
+
     window.addEventListener('scroll', changeBackground);
 
     return (
@@ -66,8 +79,9 @@ const NavBar = () => {
                 collapseOnSelect 
                 expand="lg" 
                 fixed="top">
+
                     <Navbar.Brand as={Link}
-                            to="/">
+                            to="/home">
                         <Image
                             alt="brand"
                             width="96em"
@@ -90,7 +104,9 @@ const NavBar = () => {
                                 
                                 <Nav.Link
                                     className="a"
-                                    href="/#form">
+                                    onClick={navigateToForm}
+                                    as={Link} 
+                                    to="/home#get-a-quote">
                                     GET A QUOTE
                                 </Nav.Link>
 

@@ -8,7 +8,7 @@ import NavBar from './components/commons/NavBar';
 
 import ScrollToTop from './components/commons/ToTop';
 import Home from './pages/Home';
-import Form from './components/Form'
+import Form from './components/GetAQuote'
 import WindowCleaning from './pages/Services/WindowCleaning';
 import GutterCleaning from './pages/Services/GutterCleaning';
 import PressureWashing from './pages/Services/PressureWashing';
@@ -36,7 +36,8 @@ function App() {
             <ScrollToTop/> 
             <NavBar/>
             <Routes>
-              <Route path='/' Component={Home}/>
+              <Route path='/home' Component={Home}/>
+              <Route path='/home#get-a-quote' Component={Home}/>
               <Route path='/window-cleaning' Component={WindowCleaning}/>
               <Route path='/gutter-cleaning' Component={GutterCleaning}/>
               <Route path='/pressure-washing' Component={PressureWashing}/>              

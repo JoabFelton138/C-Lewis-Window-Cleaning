@@ -6,7 +6,6 @@ import ImageGrid from '../../components/Services/ImageGrid';
 import Scroll from '../../components/commons/Scroll';
 
 const ConservatoryCleaning = () => {
-    window.scrollTo(0, 0);
     return (
     <div>
         <Hero source={0} heroTitle={"CONSERVATORY & SOLAR PANEL CLEANING"}/>

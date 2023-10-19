@@ -14,7 +14,6 @@ const CarouselButtons = (props) => {
     
     const icon = <FontAwesomeIcon icon={faEnvelope} />
     const content = props.isContent;
-    const toForm = props.scrollTo;
 
     const navigate = useNavigate();
 
@@ -34,11 +33,7 @@ const CarouselButtons = (props) => {
     };
 
     const navigateToForm = () => {
-        toForm.current?.scrollIntoView({behavior: 'smooth'});
-    };
-
-    const navigateToFormFromContent = () => {
-        navigate("/");
+        navigate("/home");
         setTimeout(() => {
             const formSection = document.getElementById("form-container");
             if (formSection) {
@@ -53,7 +48,7 @@ const CarouselButtons = (props) => {
                 { content ?
                     <Col className="d-flex justify-content-center">
                         <Button 
-                                onClick={navigateToFormFromContent}
+                                onClick={navigateToForm}
                                 className="free-quote"
                             >
                                 {icon} GET A QUOTE

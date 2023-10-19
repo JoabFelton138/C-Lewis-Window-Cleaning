@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Element } from 'react-scroll'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -13,7 +14,7 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 
-const ContactForm = () => {
+const GetAQuote = () => {
 
     const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
     const [submissionFailed, setSubmissionFailed] = useState(false);
@@ -230,4 +231,4 @@ const ContactForm = () => {
     );
 }
 
-export default ContactForm;
+export default GetAQuote;
