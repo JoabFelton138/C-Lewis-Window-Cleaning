@@ -14,17 +14,13 @@ const GutterCleaning = () => {
             <Content
                 title={'Gutter Cleaning Services'}
 
-                subtitle1={`Why Should I Get My Windows Cleaned?`}
+                subtitle1={`What's Included In the Service?`}
 
-                p1={`Did you know that neglected window tracks are often filled with dust and insects? Also, were you aware that a build up of debris can cause glass to become chemically etched?`}
-                p2={`Not only can these issues prevent the mechanisms on your windows from working properly, but they can also aggrevate any allergies that may effect you or your family.`}
-                p3={`By hiring an expert, you can gurantee your windows will be cleaned thoroughly, thus prolonging their life and keeping your home healthy and allergen free in the process.`}
+                p1={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nisi quis eleifend quam adipiscing vitae. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Mi ipsum faucibus vitae aliquet nec.`}
 
-                subtitle2={`Why Can't I Just Do It Myself?`}
+                subtitle2={`Why Get Your Gutters Cleaned?`}
 
-                p4={`Obviously you can but without the right equipment, the risk of falling becomes a major hazard. It's much safer to leave it to a fully-insured professional. Not only do I have ladder stand offs and extension poles but I've also had extensive training.`}
-
-                p5={`I also use a specialty solution designed to keep your windows streak-free and provide a thorough inspection of the condition of your windows, examining for issues such as pane compression.`}
+                p4={`itae justo eget magna fermentum iaculis eu non. Cursus sit amet dictum sit. Eget aliquet nibh praesent tristique magna sit amet. Tincidunt tortor aliquam nulla facilisi cras fermentum. Nec ultrices dui sapien eget mi proin sed. Nibh sed pulvinar proin gravida hendrerit lectus. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Nisl nisi scelerisque eu ultrices vitae auctor eu augue.`}
             />
             <ImageGrid title={'gc'}/>
             <Scroll/>

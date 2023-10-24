@@ -9,7 +9,7 @@ function FixedCarousel(props) {
     return (
         <>
             <Carousel fade>
-                <Carousel.Item interval={750}>
+                <Carousel.Item interval={5000}>
                     <div className="slide-one d-block w-100">
                         <div className="carousel-container">
                             <h4>COVERING PERTON, SHIFNAL, WHEATON ASTON & MORE</h4>
@@ -19,7 +19,7 @@ function FixedCarousel(props) {
                     </div>
                 </Carousel.Item>
 
-                <Carousel.Item interval={750}>
+                <Carousel.Item interval={5000}>
                     <div className="slide-two d-block w-100">
                         <div className="carousel-container">
                             <h4 className=''>CONSERVATORY & SOLAR PANEL CLEANING</h4>
@@ -29,7 +29,7 @@ function FixedCarousel(props) {
                     </div>
                 </Carousel.Item>
 
-                <Carousel.Item interval={750}>
+                <Carousel.Item interval={5000}>
                     <div className="slide-three d-block w-100">
                         <div className="carousel-container">
                             <h4 className=''>PRESSURE WASHING SERVICES</h4>
@@ -39,7 +39,7 @@ function FixedCarousel(props) {
                     </div>
                 </Carousel.Item>
            
-                <Carousel.Item interval={750}>
+                <Carousel.Item interval={5000}>
                     <div className="slide-four d-block w-100">
                         <div className="carousel-container">
                             <h4 className=''>GUTTERS & FASCIA CLEANING</h4>

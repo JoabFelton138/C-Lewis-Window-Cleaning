@@ -1,4 +1,6 @@
-import React, {useRef} from 'react';
+import React from 'react';
+
+import {useNavigate} from 'react-router-dom';
 
 import Carousel from '../components/Home/FixedCarousel';
 import About from '../components/Home/About';

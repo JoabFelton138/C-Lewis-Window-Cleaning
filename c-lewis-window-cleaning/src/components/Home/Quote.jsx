@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {useNavigate} from 'react-router-dom';
+
 import '../../CSS/Quote.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,6 +11,13 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 
 const Quote = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToTestimonials = () => {
+        navigate("/testimonials");
+    }
+
     return (
         <div className="bg-image d-block w-100">
             <div className="content-container">
@@ -18,7 +27,10 @@ const Quote = () => {
                     Always here when he says he will be,
                     extremely competitive with his prices!
                 </h1>
-                <Button variant="outline-light">TESTIMONIALS</Button>{' '}
+                <Button variant="outline-light" onClick={navigateToTestimonials}>
+                    TESTIMONIALS
+                </Button>
+                
             </div>
         </div>
     );

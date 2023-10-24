@@ -6,6 +6,9 @@ import wc from '../../images/wc/wchero.jpg';
 import cc from '../../images/carousel/cc2-min.jpg';
 import gc from '../../images/carousel/gc-min.jpg';
 import pw from '../../images/carousel/pw2-min.jpg';
+import van from '../../images/carousel/van.png';
+import van2 from '../../images/carousel/van6.jpeg';
+
 
 const heroImages = [
     {
@@ -23,6 +26,14 @@ const heroImages = [
     {
         title: "wc",
         src: wc
+    },
+    {
+        title: "van",
+        src: van
+    },
+    {
+        title: "van2",
+        src: van2
     }
 ];
 

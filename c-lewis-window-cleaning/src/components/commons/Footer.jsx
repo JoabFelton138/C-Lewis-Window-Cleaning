@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from "react-scroll";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
@@ -7,7 +8,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
-        <div>
+        <Element>
             <div className="text-center text-lg-start" style={{ backgroundColor: 'rgb(246, 246, 246)'}}>
                 <div className="container d-flex justify-content-center pt-4">
                     <p>07391 853 506</p>
@@ -42,7 +43,7 @@ const Footer = () => {
                     © 2023 Copyright: cwlewiswcs.com
                 </div >
             </div >
-        </div >
+        </Element >
     );
 }
 

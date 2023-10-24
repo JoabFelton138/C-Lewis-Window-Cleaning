@@ -23,17 +23,11 @@ const AboutMe = () => {
                         <div className='content-div'>
                             <h3>MEET CHAD</h3>
                             <p>
-                                Yeah, motherf****** better know.
-                                Huh, huh (I'm a bad, bad, bad).
-                                Lock your windows, close your doors.
-                                Biggie Smalls.
-                                Huh, yeah.
-                                (I'm a bad, bad, bad).
-
-                                My man Inf left a TEC and a nine at my crib,
-                                Turned him self in, he had to do a bid.
-                                A one-to-three, he be home the end of '93.
-                                I'm ready to get this paper, G, you with me?
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
                             </p>
                             <div className="icon-container d-flex justify-content-around">
                                 <FontAwesomeIcon

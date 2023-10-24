@@ -12,10 +12,8 @@ const PressureWashing = (props) => {
             <Content 
                 title={"Pressure Washing Services"}
 
-                subtitle1={`Why Should I Get My Windows Cleaned?`}
-                p1={`Did you know that neglected window tracks are often filled with dust and insects? Also, were you aware that a build up of debris can cause glass to become chemically etched?`}
-                p2={`Not only can these issues prevent the mechanisms on your windows from working properly, but they can also aggrevate any allergies that may effect you or your family.`}
-                p3={`By hiring an expert, you can gurantee your windows will be cleaned thoroughly, thus prolonging their life and keeping your home healthy and allergen free in the process.`}
+                subtitle1={`What's Included in the Service?`}
+                p1={`Massa eget egestas purus viverra accumsan in nisl. Tellus mauris a diam maecenas sed enim. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Dolor sit amet consectetur adipiscing elit ut aliquam. Senectus et netus et malesuada. Fusce id velit ut tortor pretium viverra suspendisse potenti. Aliquam faucibus purus in massa tempor. `}
             />
 
             <ImageGrid title={'pw'}/>

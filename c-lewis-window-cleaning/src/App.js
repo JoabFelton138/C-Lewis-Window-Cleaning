@@ -42,7 +42,9 @@ function App() {
               <Route path='/window-cleaning' Component={WindowCleaning}/>
               <Route path='/gutter-cleaning' Component={GutterCleaning}/>
               <Route path='/pressure-washing' Component={PressureWashing}/>              
-              <Route path='/conservatory-cleaning' Component={ConservatoryCleaning}/>                            
+              <Route path='/conservatory-cleaning' Component={ConservatoryCleaning}/> 
+              <Route path='/portfolio' Component={PortfolioPage}/>              
+              <Route path='/testimonials' Component={TestimonialsPage}/>                            
             </Routes>
             <Footer/>
         </div>
