@@ -33,6 +33,11 @@
     padding-top: 1vw;
 }
 
+.spinner-border{
+    margin-right: 1vw;
+}
+
+
 
 @media only screen and (max-width: 500px) {
     .form-container{
