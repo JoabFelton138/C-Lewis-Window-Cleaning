@@ -7,7 +7,6 @@ import '../../CSS/Quote.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
-import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 
 const Quote = () => {

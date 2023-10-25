@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+import {useNavigate} from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
@@ -15,6 +17,12 @@ import Alert from 'react-bootstrap/Alert';
 import Spinner from 'react-bootstrap/Spinner';
 
 const GetAQuote = () => {
+
+    const navigate = useNavigate();
+
+    const navigateToThankYou = () => {
+        navigate("/thank-you");
+    }
 
     const [submissionSuccessful, setSubmissionSuccessful] = useState(false);
     const [submissionFailed, setSubmissionFailed] = useState(false);
@@ -38,7 +46,7 @@ const GetAQuote = () => {
             e.preventDefault();
             e.stopPropagation();
             setValidated(true);
-            
+
             setIsLoading(false);
             setSubmissionFailed(true);
         }
@@ -52,7 +60,8 @@ const GetAQuote = () => {
                     
                     if (result.text === "OK") {
                         setIsLoading(false);
-                        setSubmissionSuccessful(true);
+                        // setSubmissionSuccessful(true);
+                        navigateToThankYou();
                     }
                 },
 

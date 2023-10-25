@@ -4,7 +4,7 @@
     background-size: cover;
     color: white;
     position: relative;
-    height: '90vh'
+    height: '90vh';
 }
 
 .hero-text {
@@ -20,6 +20,11 @@
     line-height: 1em;
     font-size: 4.5em;
     font-weight: bold;
+}
+
+.hero-text h2{
+    font-weight: bold;
+    margin-top: 2vw;
 }
 
 /* Mobile Portrait*/

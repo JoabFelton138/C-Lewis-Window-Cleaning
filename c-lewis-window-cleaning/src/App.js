@@ -1,14 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS/NavBar.css';
 
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route} from 'react-router-dom';
 
 import NavBar from './components/commons/NavBar';
 
 import ScrollToTop from './components/commons/ToTop';
 import Home from './pages/Home';
-import Form from './components/GetAQuote'
 import WindowCleaning from './pages/Services/WindowCleaning';
 import GutterCleaning from './pages/Services/GutterCleaning';
 import PressureWashing from './pages/Services/PressureWashing';
@@ -18,6 +17,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import TestimonialsPage from './pages/TestimonalsPage';
 
 import Footer from './components/commons/Footer';
+import ThankYou from './pages/ThankYou';
 
 function App() {
 
@@ -44,7 +44,8 @@ function App() {
               <Route path='/pressure-washing' Component={PressureWashing}/>              
               <Route path='/conservatory-cleaning' Component={ConservatoryCleaning}/> 
               <Route path='/portfolio' Component={PortfolioPage}/>              
-              <Route path='/testimonials' Component={TestimonialsPage}/>                            
+              <Route path='/testimonials' Component={TestimonialsPage}/>
+              <Route path='/thank-you' Component={ThankYou}/>                            
             </Routes>
             <Footer/>
         </div>

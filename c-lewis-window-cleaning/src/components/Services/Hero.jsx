@@ -51,6 +51,7 @@ const Hero = (props) =>{
              }}>
                 <div className="hero-text">
                     <h1>{props.heroTitle}</h1>
+                    <h2>{props.heroSubTitle}</h2>
                 </div>
         </div>
     );
