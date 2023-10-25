@@ -11,6 +11,13 @@
     padding-top: 2vw;
 }
 
+.alert-danger {
+    background-color: #fff6f6;
+    border-color: #C41E3A;
+    color: #880808;
+    border-width: 1.5px;
+}
+
 .inner-form-container{
     padding-top: 2.5vw;
 }
