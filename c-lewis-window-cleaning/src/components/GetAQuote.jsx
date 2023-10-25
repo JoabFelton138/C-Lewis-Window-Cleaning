@@ -40,7 +40,7 @@ const GetAQuote = () => {
     
         else {
             setValidated(false);
-            emailjs.sendForm('service_b7pfg3u', 'template_bpuo3nh', form, 'bR_vQvzEQNeW8qqkX')
+            emailjs.sendForm('service_quze6yw', 'template_bpuo3nh', form, 'bR_vQvzEQNeW8qqkX')
                 .then((result) => {
 
                     if (result.text === "OK") {
