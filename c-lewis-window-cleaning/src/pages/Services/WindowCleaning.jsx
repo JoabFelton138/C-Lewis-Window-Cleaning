@@ -32,7 +32,7 @@ const WindowCleaning = () => {
 
                 p4={`Obviously you can but without the right equipment, the risk of falling becomes a major hazard. It's much safer to leave it to a fully-insured professional. Not only do I have ladder stand offs and extension poles but I've also had extensive training.`}
 
-                p5={`I also use a specialty solution designed to keep your windows streak-free and provide a thorough inspection of the condition of your windows, examining for issues such as pane compression.`}
+                p5={`I also use a specialty process designed to keep your windows streak-free and provide a thorough inspection of the condition of your windows, examining for issues such as pane compression.`}
 
                 subtitle3={`What If It Rains?`}
 

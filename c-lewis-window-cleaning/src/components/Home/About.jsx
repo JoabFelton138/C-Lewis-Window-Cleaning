@@ -9,8 +9,8 @@ import Col from 'react-bootstrap/Col';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = () => {
 
@@ -35,16 +35,13 @@ const AboutMe = () => {
                                     type="button"
                                     onClick={() => window.open("https://www.facebook.com/WCS.CLewis", "_blank")}
                                 />
-                                <FontAwesomeIcon
-                                    icon={faLinkedinIn} 
-                                    type="button"
-                                    onClick={() => window.open("https://linkedin.com", "_blank")}
-                                />
-                                <FontAwesomeIcon
-                                    icon={faInstagram}
-                                    type="button"
-                                    onClick={() => window.open("https://instagram.com", "_blank")}
-                                />
+
+                                <a href="tel:447391853506">
+                                    <FontAwesomeIcon icon={faPhone}/>
+                                </a>
+                                <a href="mailto:c.lewis.wcs@hotmail.com">
+                                    <FontAwesomeIcon icon={faEnvelope}/>
+                                </a>
                             </div>
                         </div>
                     </Col>

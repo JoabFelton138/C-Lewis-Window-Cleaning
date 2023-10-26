@@ -13,7 +13,7 @@ function FixedCarousel(props) {
                     <div className="slide-one d-block w-100">
                         <div className="carousel-container">
                             <h4>COVERING PERTON, SHIFNAL, WHEATON ASTON & MORE</h4>
-                            <h1>EXPERT WINDOW CLEANERS</h1>
+                            <h1>EXPERT WINDOW CLEANER</h1>
                             <CarouselButtons page={'wc'}/>
                         </div>
                     </div>
