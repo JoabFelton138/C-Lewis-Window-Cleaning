@@ -1,22 +1,5 @@
-#form-container{
-    display:block;
-    width:60%;
-    margin:0 auto;
-    margin-top: 8vw;
-    margin-bottom: 8vw;
-    z-index: 1;
-}
-
 #target{
     padding-top: 2vw;
-}
-
-.inner-form-container{
-    padding-top: 2.5vw;
-}
-
-.spinner-border{
-    margin-right: 1vw;
 }
 
 @media only screen and (max-width: 500px) {

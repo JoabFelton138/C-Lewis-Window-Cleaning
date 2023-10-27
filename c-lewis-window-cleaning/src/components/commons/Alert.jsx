@@ -22,7 +22,7 @@ const WarningIcon = styled(FontAwesomeIcon)`
 `;
 
 const AlertHeader = styled(Alert.Heading)`
-margin-left: 1vw;
+    margin-left: 1vw;
     padding-top: 1vw;
 `;
 

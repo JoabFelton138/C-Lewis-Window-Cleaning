@@ -1,10 +1,8 @@
 import React, { useState, useRef } from 'react';
+import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
 
 import {useNavigate} from 'react-router-dom';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 
 import '../CSS/Form.css'
 
@@ -15,6 +13,22 @@ import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 
 import DangerAlert from '../components/commons/Alert';
+
+const FormContainer = styled.div`
+    width:60%;
+    margin:0 auto;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    z-index: 1;
+`;
+
+const InnerFormContainer = styled.div`
+    padding-top: 2.5vw;
+`;
+
+const LoadingSpinner = styled(Spinner)`
+    margin-right: 1vw;
+`;
 
 const GetAQuote = () => {
 
@@ -79,7 +93,7 @@ const GetAQuote = () => {
     return (
         <div>
             <div id="target"/>
-                <div id="form-container" className="border border-1 rounded">
+                <FormContainer className="border border-1 rounded">
                     <Form 
                         noValidate
                         validated={validated}
@@ -87,7 +101,7 @@ const GetAQuote = () => {
                         onSubmit={sendEmail} 
                         className="p-4">
                             
-                        <div className='form-title-container'>
+                        <div>
                             <h3>Need a Quote?</h3>
                             <p className="mt-2">If you would like a free quote, fill out the form and i'll get back to you!</p>
                         </div>
@@ -96,7 +110,7 @@ const GetAQuote = () => {
                             <DangerAlert/>
                         }
 
-                        <div className="inner-form-container">
+                        <InnerFormContainer>
                             <Row className="mb-3">
                                 <Col>
                                     <Form.Label>
@@ -206,7 +220,7 @@ const GetAQuote = () => {
                                     </Form.Control.Feedback>
                                 </Col>
                             </Row>
-                        </div>
+                        </InnerFormContainer>
 
                         { isLoading ?
                             <Button
@@ -214,7 +228,7 @@ const GetAQuote = () => {
                                 value="Send"
                                 variant="secondary"
                                 className="mt-2">
-                                    <Spinner
+                                    <LoadingSpinner
                                             animation="border" 
                                             variant="light" 
                                             size="sm"
@@ -233,7 +247,7 @@ const GetAQuote = () => {
                         }
 
                     </Form>
-            </div>
+            </FormContainer>
         </div>
     );
 }
