@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import Chad from '../../images/etc/chad2.png'
 import '../../CSS/About.css';
 

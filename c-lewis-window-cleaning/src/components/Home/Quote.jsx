@@ -11,7 +11,12 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import Button from 'react-bootstrap/Button';
 import VanImg from '../../images/carousel/van.png';
 
-const BgImage = styled.section`
+const QuoteIcon = styled(FontAwesomeIcon)`
+    font-size: 60px;
+    color: white;
+`;
+
+const BgImage = styled.div`
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${VanImg});
     background-position: center center;
@@ -21,7 +26,7 @@ const BgImage = styled.section`
     position: relative;
 `;
 
-const ContentContainer = styled.section`
+const ContentContainer = styled.div`
     width: 50%;
     text-align: center;
     position: absolute;
@@ -37,7 +42,7 @@ const Header = styled.h1`
     font-weight: bold;
 `;
 
-const ButtonDiv = styled.section`
+const ButtonDiv = styled.div`
     margin-top: 2vw;
 `;
 
@@ -52,7 +57,7 @@ const Quote = () => {
     return (
         <BgImage className="d-block w-100">
             <ContentContainer>
-                <FontAwesomeIcon icon={faQuoteLeft}/>
+                <QuoteIcon icon={faQuoteLeft}/>
                 <Header>
                     Great service, quality is amazing.
                     Always here when he says he will be,
