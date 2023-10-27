@@ -1,19 +1,6 @@
-.quote-container{
-    padding-top: 9vw;
-    padding-bottom: 6vw;
-    text-align: center;
-}
-
-.content .svg-inline--fa {
+.icon {
     color: rgb(0, 191, 255) !important;
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 1.5vw;
 }
 
-.icon-container{
-    margin-top: 3vw;
-}
-
-.icon-container p{
-    margin-top: 1.5vw;
-}

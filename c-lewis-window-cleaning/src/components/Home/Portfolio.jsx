@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 
 import { useNavigate } from 'react-router-dom';
 
@@ -14,6 +15,43 @@ import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import Image from 'react-bootstrap/Image';
 
+const PortfolioContainer = styled.section`
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    padding-bottom: 5vw;
+    width: 100%;
+`;
+
+const PortfolioHeader = styled.section`
+    padding-top: 10vw;
+    text-align: center;
+`;
+
+const Subheader = styled.h6`
+    padding-top: 2vw;
+    font-weight: normal;
+`;
+
+const ButtonDiv = styled.section`
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+`;
+
+const OverlayContainer = styled.section`
+    position: relative;
+    width: 100%;
+`;
+
+const ImageTitle = styled.section`
+    font-size: 1.25em;
+    font-weight: bold;
+`;
+
+const ImageDescription = styled.p`
+    font-size: 1em;
+    margin-top: 0.25em;
+`;
+
 const Portfolio = () => {
 
     const navigate = useNavigate();
@@ -24,87 +62,90 @@ const Portfolio = () => {
 
     return (
 
-        <div className="portfolio-container">
-            <div className="portfolio-header">
+        <PortfolioContainer>
+            <PortfolioHeader>
                 <h3>MY PORTFOLIO</h3>
-                <h6>I take great pride in my work, see for yourself!</h6>
-            </div>
+                <Subheader>I take great pride in my work, see for yourself!</Subheader>
+            </PortfolioHeader>
 
             <Container>
                 <Row className="pt-5 d-flex justify-content-center">
                     <Col lg={4} md={12} mb={3}>
-                        <div className='overlay-container'>
+                        <OverlayContainer>
                             <Image
                                 src={cc}
                                 className="image mb-3"
                                 alt="Boat on Calm Water"
                             />
                             <div className='image-overlay'>
-                                <div className='image-title'>
+                                <ImageTitle>
                                     Conservatory cleaning in ?
-                                </div>
-                                <p className='image-description'>
+                                </ImageTitle>
+                                <ImageDescription>
                                     This is where we'll provide a description.
-                                </p>
+                                </ImageDescription>
                             </div>
-                        </div>
-                        <div className='overlay-container'>
+                        </OverlayContainer>
+                        <OverlayContainer>
                             <Image
                                 src={gutter}
                                 className="w-100 shadow-1-strong mb-3"
                                 alt="Wintry Mountain Landscape"
                             />
                             <div className='image-overlay'>
-                                <div className='image-title'>
+                                <ImageTitle>
                                     Gutter Cleaning in ?
-                                </div>
-                                <p className='image-description'>
+                                </ImageTitle>
+                                <ImageDescription>
                                     This is where we'll provide a description.
-                                </p>
+                                </ImageDescription>
                             </div>
-                        </div>
+                        </OverlayContainer>
                     </Col>
                     <Col lg={4} md={12} mb={3}>
-                        <div className='overlay-container'>
+                        <OverlayContainer>
                             <Image
                                 src={pw}
                                 className="w-100 shadow-1-strong  mb-3"
                                 alt="Mountains in the Clouds"
                             />
                             <div className='image-overlay'>
-                                <div className='image-title'>
+                                <ImageTitle>
                                     Pressure Washing in ?
-                                </div>
-                                <p className='image-description'>
+                                </ImageTitle>
+                                <ImageDescription>
                                     This is where we'll provide a description.
-                                </p>
+                                </ImageDescription>
                             </div>
-                        </div>
-                        <div className='overlay-container'>
+                        </OverlayContainer>
+                        <OverlayContainer>
                             <Image
                                 src={bwc}
                                 className="w-100 shadow-1-strong  mb-3"
                                 alt="Boat on Calm Water"
                             />
                             <div className='image-overlay'>
-                                <div className='image-title'>
+                                <ImageTitle>
                                     Pressure Washing in ?
-                                </div>
-                                <p className='image-description'>
+                                </ImageTitle>
+                                <ImageDescription>
                                     This is where we provide a description.
-                                </p>
+                                </ImageDescription>
                             </div>
-                        </div>
+                        </OverlayContainer>
                     </Col>
                 </Row>
             </Container>
 
-            <Button className="portfolio-button"
-                variant="outline-secondary"
-                onClick={navigateToPortfolio}>
-                VIEW PORTFOLIO
-            </Button>
-        </div>
+            <ButtonDiv>
+                <Button className="portfolio-button"
+                    variant="outline-secondary"
+                    onClick={navigateToPortfolio}>
+                    VIEW PORTFOLIO
+                </Button>
+            </ButtonDiv>
+
+        </PortfolioContainer>
     );
 }
 

@@ -1,31 +1,3 @@
-
-.portfolio-container {
-    background-color: rgb(246, 246, 246);
-    text-align: center;
-    padding-bottom: 5vw;
-    width: 100%;
-}
-
-.portfolio-header {
-    padding-top: 10vw;
-    text-align: center;
-}
-
-.portfolio-header > h6{
-    padding-top: 2vw;
-    font-weight: normal;
-}
-
-.portfolio-button{
-    margin-top: 2vw;
-    margin-bottom: 3vw;
-}
-
-.overlay-container{
-    position: relative;
-    width: 100%;
-}
-
 .image{
     display: block;
     width: 100%;
@@ -37,9 +9,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgb(0, 0, 0, 0.6); */
     background: rgb(255,255,255,.40);
-    /* color: white; */
     color: black;
     display: flex;
     flex-direction: column;
@@ -61,25 +31,3 @@
 .image-overlay:hover > * {
     transform: translateY(0);
 }
-
-.image-title{
-    font-size: 1.25em;
-    font-weight: bold;
-}
-
-.image-description{
-    font-size: 1em;
-    margin-top: 0.25em;
-}
-
-
-/* .image {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.image figure:hover img {
-	opacity: .5;
-} */
-
-
