@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 import {useNavigate} from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 
 import '../CSS/Form.css'
@@ -13,8 +12,9 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
 import Spinner from 'react-bootstrap/Spinner';
+
+import DangerAlert from '../components/commons/Alert';
 
 const GetAQuote = () => {
 
@@ -92,37 +92,8 @@ const GetAQuote = () => {
                             <p className="mt-2">If you would like a free quote, fill out the form and i'll get back to you!</p>
                         </div>
                         
-                        {submissionSuccessful &&
-                            <div className="alert-container">
-                                <Alert variant="success">
-                                    <div className="alert-div d-flex">
-                                        <FontAwesomeIcon icon={faCheckCircle}/>
-                                        <Alert.Heading>
-                                            Thank you!
-                                        </Alert.Heading>
-                                    </div>
-                                    <hr />
-                                    <p className="p mb-0">
-                                        I'll be in touch soon, have a great day!
-                                    </p>
-                                </Alert>
-                            </div>}
-
                         {submissionFailed &&
-                            <div className="alert-container">
-                                <Alert variant="danger">
-                                    <div className="alert-div d-flex">
-                                        <FontAwesomeIcon icon={faCircleExclamation}/>
-                                        <Alert.Heading>
-                                            Something's not right...
-                                        </Alert.Heading>
-                                    </div>
-                                    <hr />
-                                    <p className="p mb-0">
-                                        Please review your submission and try again!
-                                    </p>
-                                </Alert>
-                            </div>
+                            <DangerAlert/>
                         }
 
                         <div className="inner-form-container">

@@ -1,52 +1,52 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import '../../CSS/Services/Content.css'
 
-import {useNavigate} from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-
 import CarouselButtons from '../Home/Button';
+
+const ContentContainer = styled.div`
+    margin: auto;
+    width: 75%;
+    text-align: center;
+`;
+
+const Header = styled.h1`
+    margin-top: 6vw;
+    margin-bottom: 3vw;`
+    ;
+
+const InnerContainer = styled.div`
+    text-align: justify;
+    margin-top: 4vw;
+`;
+
+const Content = styled.p`
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+`;
+
 
 const content = (props) => {
 
     return (
-        <div className="services-content-container">
-
-            <h1>{props.title}</h1>
-
-            <div className='services-content-div'>
-
-            <h4>{props.subtitle1}</h4>
-
-            <div className='services-p'>
-                <p>{props.p1}</p>
-                <p>{props.p2}</p>
-                <p>{props.p3}</p>
-            </div>
-
-            <h4>{props.subtitle2}</h4>
-            
-            <div className='services-p'>
-                <p>{props.p4}</p>
-                <p>{props.p5}</p>
-            </div>
-
-            <h4>{props.subtitle3}</h4>
-
-            <div className='services-p'>
-                <p>{props.p6}</p>
-            </div>
-
-            <h4>{props.subtitle4}</h4>
-        
-            <div className='services-p'>
-                <p>{props.p7}</p>
-            </div>
-
-        </div>
-
-       <CarouselButtons isContent={true}/>
-
-    </div>
+        <ContentContainer>
+            <Header>{props.title}</Header>
+            <InnerContainer>
+                <h4>{props.subtitle1}</h4>
+                    <Content>{props.p1}</Content>
+                    <Content>{props.p2}</Content>
+                    <Content>{props.p3}</Content>
+                <h4>{props.subtitle2}</h4>
+                    <Content>{props.p4}</Content>
+                    <Content>{props.p5}</Content>
+                <h4>{props.subtitle3}</h4>
+                    <Content>{props.p6}</Content>
+                <h4>{props.subtitle4}</h4>
+                    <Content>{props.p7}</Content>
+            </InnerContainer>
+            <CarouselButtons isContent={true} />
+        </ContentContainer>
     );
 }
 

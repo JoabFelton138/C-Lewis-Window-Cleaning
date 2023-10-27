@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
@@ -33,6 +34,10 @@ import cc4 from '../../images/cc/cc4.jpg';
 import cc5 from '../../images/cc/cc5.jpg';
 import cc6 from '../../images/pw/pw6.jpg';
 
+const ImageGridContainer = styled.div`
+    margin-bottom: 6vw;
+`;
+
 const ImageGrid = (props) => {
 
     let images = [];
@@ -55,7 +60,7 @@ const ImageGrid = (props) => {
     }
 
     return (
-            <div className='image-grid-container'>
+            <ImageGridContainer>
                 <Container>
                     <Row className="d-flex justify-content-center">
                         {images.map((imagePath, index) => 
@@ -68,7 +73,7 @@ const ImageGrid = (props) => {
                         )}
                     </Row>
                 </Container>
-            </div>
+            </ImageGridContainer>
         ) 
 }
 

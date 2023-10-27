@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Hero from '../../components/Services/Hero';
 import Content from '../../components/Services/Content';
@@ -15,6 +16,23 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const WindowCleaning = () => {
+
+    const QuoteContainer = styled(Container)`
+        margin-bottom: 3vw;
+    `; 
+
+    const QuoteContent = styled.p`
+        margin-top: 3vw;
+        font-size: 1.2em;
+    `;
+
+    const Quotee = styled.h5`
+        margin-top: 2vw;
+    `;
+
+    const QuoteIcon = styled(FontAwesomeIcon)`
+        font-size: 32px;
+    `;
 
     return (
         <div>
@@ -43,38 +61,36 @@ const WindowCleaning = () => {
                 p7={`Then don't settle for anything less! If you're in the Wheaton Aston, Perton or Shifnal area and find yourself in need of a commercial / residential window cleaning service, go ahead and get your free quote today!`}
             />
             
-            <div>
-                <Container className='wc-quote-container'>
-                    <Row className="wc-quote-row justify-content-md-center">
-                        <Col xs={12} sm={6} md={7} lg={4}>
-                            <FontAwesomeIcon icon={faQuoteLeft} />
-                            <p className="wc-quote-p">
-                                Chad provides a first class window cleaning service.
-                                He's always prompt and keeps in touch before arriving.
-                                He takes his time to do a first class job of not only
-                                the windows, but the frames, seals and surrounds too.
-                            </p>
-                            <h5 className="wc-quotee">- Phillip Parker</h5>
-                        </Col>
-                        <Col xs={12} sm={6} md={7} lg={4}>
-                            <FontAwesomeIcon icon={faQuoteLeft} />
-                            <p className="wc-quote-p">
-                                Chad offers a great service at a competitive price.
-                                Good communication and great job done on the windows each time!
-                            </p>
-                            <h5 className="wc-quotee">- Glenn Rickwood</h5>
-                        </Col>
-                        <Col xs={12} sm={6} md={7} lg={4}>
-                            <FontAwesomeIcon icon={faQuoteLeft} />
-                            <p className="wc-quote-p">
-                                Chad does a very professional job. He is a perfectionist who leaves
-                                our windows sparkling clean. He is also pleasant and polite. Highly recommended!
-                            </p>
-                            <h5 className="wc-quotee">- Nicola Challinor</h5>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <QuoteContainer>
+                <Row className="wc-quote-row justify-content-md-center">
+                    <Col xs={12} sm={6} md={7} lg={4}>
+                        <QuoteIcon icon={faQuoteLeft} />
+                        <QuoteContent>
+                            Chad provides a first class window cleaning service.
+                            He's always prompt and keeps in touch before arriving.
+                            He takes his time to do a first class job of not only
+                            the windows, but the frames, seals and surrounds too.
+                        </QuoteContent>
+                        <Quotee>- Phillip Parker</Quotee>
+                    </Col>
+                    <Col xs={12} sm={6} md={7} lg={4}>
+                        <QuoteIcon icon={faQuoteLeft} />
+                        <QuoteContent>
+                            Chad offers a great service at a competitive price.
+                            Good communication and great job done on the windows each time!
+                        </QuoteContent>
+                        <Quotee>- Glenn Rickwood</Quotee>
+                    </Col>
+                    <Col xs={12} sm={6} md={7} lg={4}>
+                        <QuoteIcon icon={faQuoteLeft} />
+                        <QuoteContent>
+                            Chad does a very professional job. He is a perfectionist who leaves
+                            our windows sparkling clean. He is also pleasant and polite. Highly recommended!
+                        </QuoteContent>
+                        <Quotee>- Nicola Challinor</Quotee>
+                    </Col>
+                </Row>
+            </QuoteContainer>
 
             <ImageGrid title={'wc'}/>
 

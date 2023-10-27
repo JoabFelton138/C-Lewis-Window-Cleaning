@@ -11,40 +11,13 @@
     padding-top: 2vw;
 }
 
-.alert-danger {
-    background-color: #fff6f6;
-    border-color: #C41E3A;
-    color: #880808;
-    border-width: 1.5px;
-}
-
 .inner-form-container{
     padding-top: 2.5vw;
-}
-
-.alert-container{
-    padding-top: 2.5vw;
-}
-
-.alert-container .h3{
-    font-size: 2.5vw;
-}
-
-.alert-div .svg-inline--fa {
-    height: 1.6em; 
-    padding-top: 1.2vw;
-}
-
-.alert-div .alert-heading {
-    margin-left: 1vw;
-    padding-top: 1vw;
 }
 
 .spinner-border{
     margin-right: 1vw;
 }
-
-
 
 @media only screen and (max-width: 500px) {
     .form-container{

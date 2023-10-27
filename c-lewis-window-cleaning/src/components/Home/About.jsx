@@ -14,6 +14,11 @@ import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+const ContactIcons = styled(FontAwesomeIcon)`
+    color: rgb(0, 191, 255) !important;
+    font-size: 1.75rem;
+`;
+
 const AboutMe = () => {
 
     return (
@@ -32,17 +37,17 @@ const AboutMe = () => {
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
                             </p>
                             <div className="icon-container d-flex justify-content-around">
-                                <FontAwesomeIcon
+                                <ContactIcons
                                     icon={faFacebookSquare}
                                     type="button"
                                     onClick={() => window.open("https://www.facebook.com/WCS.CLewis", "_blank")}
                                 />
 
                                 <a href="tel:447391853506">
-                                    <FontAwesomeIcon icon={faPhone}/>
+                                    <ContactIcons icon={faPhone}/>
                                 </a>
                                 <a href="mailto:c.lewis.wcs@hotmail.com">
-                                    <FontAwesomeIcon icon={faEnvelope}/>
+                                    <ContactIcons icon={faEnvelope}/>
                                 </a>
                             </div>
                         </div>

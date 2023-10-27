@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import {useNavigate} from 'react-router-dom';
 
@@ -10,9 +11,20 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
+const QuoteButton = styled(Button)`
+    background-color: rgb(0, 191, 255) !important;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+`;
+
+const StyledIcon = styled(FontAwesomeIcon)`
+    font-size: 1rem;
+    color: white;
+    padding-right: 1vw;
+`;
+
 const CarouselButtons = (props) => {
     
-    const icon = <FontAwesomeIcon icon={faEnvelope} />
     const content = props.isContent;
 
     const navigate = useNavigate();
@@ -47,12 +59,13 @@ const CarouselButtons = (props) => {
             <Row>
                 { content ?
                     <Col className="d-flex justify-content-center">
-                        <Button 
+                        <QuoteButton 
                                 onClick={navigateToForm}
-                                className="free-quote"
                             >
-                                {icon} GET A QUOTE
-                        </Button> 
+                            <StyledIcon icon={faEnvelope}/>
+                            
+                            GET A QUOTE
+                        </QuoteButton> 
                     </Col>
                 :
                     <Col className="d-flex justify-content-center gap-2">

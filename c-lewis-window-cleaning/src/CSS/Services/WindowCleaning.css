@@ -1,24 +1,3 @@
-.wc-quote-container{
-    margin-bottom: 3vw;
-}
-
-.wc-quote-p{
-    margin-top: 3vw;
-    font-size: 1.2em;
-}
-
-.wc-quotee {
-    margin-top: 2vw;
-}
-
-.wc-quote-row .svg-inline--fa {
-    font-size: 32px;
-}
-
-.image-grid-container{
-    margin-bottom: 6vw;
-}
-
 /* Mobile Portrait*/
 
 @media only screen 

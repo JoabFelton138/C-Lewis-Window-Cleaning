@@ -5,7 +5,7 @@ import Content from '../../components/Services/Content';
 import ImageGrid from '../../components/Services/ImageGrid';
 import Scroll from '../../components/commons/Scroll';
 
-const PressureWashing = (props) => {
+const PressureWashing = () => {
     return (
         <div>
             <Hero source={2} heroTitle={"PRESSURE WASHING SERVICES"}/>
