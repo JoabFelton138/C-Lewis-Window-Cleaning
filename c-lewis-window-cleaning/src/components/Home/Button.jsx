@@ -22,7 +22,7 @@ const QuoteButton = styled(Button)`
     and (max-height: 920px)
     and (orientation: portrait){
         background-color: rgb(0, 191, 255) !important;
-        margin-top: 8vw;
+        margin-top: 3vw;
         margin-bottom: 10vw;
     }
 

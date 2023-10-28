@@ -4,8 +4,6 @@ import emailjs from '@emailjs/browser';
 
 import {useNavigate} from 'react-router-dom';
 
-import '../../CSS/Form.css'
-
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -20,6 +18,12 @@ const FormContainer = styled.div`
     margin-top: 8vw;
     margin-bottom: 8vw;
     z-index: 1;
+
+    @media only screen and (max-width: 500px) {
+        width:90%;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    } 
 `;
 
 const InnerFormContainer = styled.div`
@@ -92,7 +96,7 @@ const GetAQuote = () => {
 
     return (
         <div>
-            <div id="target"/>
+            <div style={{paddingTop: '2vw'}} id="target"/>
                 <FormContainer className="border border-1 rounded">
                     <Form 
                         noValidate

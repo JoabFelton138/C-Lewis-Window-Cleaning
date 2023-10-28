@@ -13,7 +13,7 @@ const StyledAlert = styled(Alert)`
     background-color: #fff6f6;
     border-color: #C41E3A;
     color: #880808;
-    border-width: 1.5px;
+    border-width: 1.5px;    
 `;
 
 const WarningIcon = styled(FontAwesomeIcon)`
@@ -24,6 +24,18 @@ const WarningIcon = styled(FontAwesomeIcon)`
 const AlertHeader = styled(Alert.Heading)`
     margin-left: 1vw;
     padding-top: 1vw;
+
+    @media only screen and (max-width: 500px) {
+        font-size: 3.5vw;
+        margin-left: 2vw;
+        padding-top: 2vw;
+    } 
+`;
+
+const AlertContent = styled.p`
+    @media only screen and (max-width: 500px) {
+        font-size: 3vw;
+    } 
 `;
 
 function RenderAlert(){
@@ -37,9 +49,9 @@ function RenderAlert(){
                     </AlertHeader>
                 </div>
                 <hr />
-                <p className="p mb-0">
+                <AlertContent className="mb-0">
                     Please review your submission and try again!
-                </p>
+                </AlertContent>
             </StyledAlert>
         </AlertContainer>
     );

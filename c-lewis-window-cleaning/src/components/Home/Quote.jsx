@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 import {useNavigate} from 'react-router-dom';
 
-import '../../CSS/Quote.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,6 +12,11 @@ import VanImg from '../../images/carousel/van.png';
 const QuoteIcon = styled(FontAwesomeIcon)`
     font-size: 60px;
     color: white;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 55px;
+            color: white;
+    }
 `;
 
 const BgImage = styled.div`
@@ -24,6 +27,11 @@ const BgImage = styled.div`
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+
+    @media only screen and (max-width: 600px) {
+        height: 85vh;    
+    }
+
 `;
 
 const ContentContainer = styled.div`
@@ -33,6 +41,10 @@ const ContentContainer = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
+
+    @media only screen and (max-width: 600px) {
+            width: 70%;
+        }
 `;
 
 const Header = styled.h1`
@@ -40,10 +52,20 @@ const Header = styled.h1`
     line-height: 4vw;
     color: white;
     font-weight: bold;
+
+    @media only screen and (max-width: 600px) {
+
+        margin-top: 1vw;
+                line-height: 8vw;  
+        }
 `;
 
 const ButtonDiv = styled.div`
     margin-top: 2vw;
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 5vw; 
+    }
 `;
 
 const Quote = () => {
