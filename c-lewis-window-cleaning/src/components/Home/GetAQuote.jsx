@@ -78,7 +78,6 @@ const GetAQuote = () => {
                     
                     if (result.text === "OK") {
                         setIsLoading(false);
-                        // setSubmissionSuccessful(true);
                         navigateToThankYou();
                     }
                 },

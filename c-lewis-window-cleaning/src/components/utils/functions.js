@@ -1,5 +1,4 @@
 export function navigateToForm (navigate) {
-    console.log("test func clicked");
     navigate("/home");
     setTimeout(() => {
         const formSection = document.getElementById("target");

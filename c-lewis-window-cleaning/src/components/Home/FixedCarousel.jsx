@@ -18,6 +18,35 @@ const InnerContainer = styled.div`
     left: 50%;
     transform: translate(-50% , -50%);
     width: 95%;
+
+    @media only screen 
+    and (max-width: 420px) 
+    and (max-height: 920px)
+    and (orientation: portrait){
+            top: 52%;
+    }
+
+    @media only screen 
+    and (min-width: 667px)
+    and (max-width: 920px)
+    and (max-height: 414px) 
+    and (orientation: landscape) {
+        text-align: center;
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 95%;  
+    }
+
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+            top: 50%;  
+    }
 `;
 
 const Slide = styled.div`
@@ -36,15 +65,109 @@ const Header = styled.h1`
     line-height: 1em;
     font-size: 4.25em;
     font-weight: bold;
+
+    @media only screen 
+    and (max-width: 420px) 
+    and (max-height: 920px)
+    and (orientation: portrait){
+        font-size: 50px;
+        line-height: 55px;
+        font-weight: bold;
+    }
+
+    @media only screen 
+    and (min-width: 667px)
+    and (max-width: 920px)
+    and (max-height: 414px) 
+    and (orientation: landscape) {
+            font-size: 50px;
+            line-height: 50px;
+            font-weight: bold; 
+    }
+
+    @media only screen 
+    and (min-width: 650px) 
+    and (max-width: 660px) 
+    and (max-height: 280px)
+    {
+            font-size: 40px;
+            line-height: 45px;
+            padding-top: 1vw;
+    }
+
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+        font-size: 90px;
+        line-height: 90px;
+    }
+
 `;
 
 const SubHeader = styled.h4`
     font-size: 22px;
     font-weight: bold;
+
+    @media only screen 
+    and (max-width: 420px) 
+    and (max-height: 920px)
+    and (orientation: portrait){
+            padding: 3vw;
+            font-weight: bold;
+            font-size: 25px;
+    }
+
+    @media only screen 
+    and (min-width: 667px)
+    and (max-width: 920px)
+    and (max-height: 414px) 
+    and (orientation: landscape) {
+    font-weight: bold;
+            font-size: 20px;
+    }
+
+    @media only screen 
+    and (min-width: 650px) 
+    and (max-width: 660px) 
+    and (max-height: 280px)
+    {	
+        font-size: 20px;
+            padding-top: 1vw;
+    }
+
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+        font-size: 30px;
+        padding-top: 4vw;
+    }
 `;
 
 const ButtonContainer = styled.div`
     padding-top: 4vw;
+
+    @media only screen 
+    and (min-width: 650px) 
+    and (max-width: 660px) 
+    and (max-height: 280px)
+    {	
+        padding-top: 2vw;
+    }
+
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+        padding-top: 4vw;
+    }
 `;
 
 function FixedCarousel() {
