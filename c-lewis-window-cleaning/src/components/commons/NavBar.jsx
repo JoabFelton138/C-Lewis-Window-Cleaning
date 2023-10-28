@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 
+import {navigateToForm} from '../utils/functions.js';
 import {useNavigate} from 'react-router-dom';
 
 import {Link} from 'react-router-dom';
@@ -61,16 +62,6 @@ const NavBar = () => {
         }
     };
 
-    const navigateToForm = () => {
-        navigate("/home");
-        setTimeout(() => {
-            const formSection = document.getElementById("target");
-            if (formSection) {
-              formSection.scrollIntoView({ behavior: "smooth" });
-            }
-          }, 100);
-    }
-
     window.addEventListener('scroll', changeBackground);
 
     return (
@@ -100,12 +91,10 @@ const NavBar = () => {
 
                         {screenWidth > 991 &&
                         
-                        <Nav className="ms-auto">
-                                
+                        <Nav className="ms-auto">            
                                 <Nav.Link
                                     className="a"
-                                    onClick={navigateToForm}
-                                    as={Link} 
+                                    onClick={() => navigateToForm(navigate)}                                    as={Link} 
                                     to="/home#get-a-quote">
                                     GET A QUOTE
                                 </Nav.Link>

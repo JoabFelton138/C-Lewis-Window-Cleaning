@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import { useNavigate } from 'react-router-dom';
 
-import '../../CSS/Portfolio.css'
 import gutter from '../../images/gallery/gutter1.jpeg'
 import pw from '../../images/gallery/pw12.jpg'
 import cc from '../../images/gallery/cc.jpeg'
@@ -42,6 +41,11 @@ const OverlayContainer = styled.section`
     width: 100%;
 `;
 
+const PortfolioImage = styled(Image)`
+    display: block;
+    width: 100%;
+`;
+
 const ImageTitle = styled.section`
     font-size: 1.25em;
     font-weight: bold;
@@ -50,6 +54,35 @@ const ImageTitle = styled.section`
 const ImageDescription = styled.p`
     font-size: 1em;
     margin-top: 0.25em;
+`;
+
+const ImageOverlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255,.40);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    > * {
+        transform: translateY(20px);
+        transition: 0.25s;
+    }
+    
+    &:hover > * {
+        transform: translateY(0);
+    }
 `;
 
 const Portfolio = () => {
@@ -72,66 +105,66 @@ const Portfolio = () => {
                 <Row className="pt-5 d-flex justify-content-center">
                     <Col lg={4} md={12} mb={3}>
                         <OverlayContainer>
-                            <Image
+                            <PortfolioImage
                                 src={cc}
                                 className="image mb-3"
                                 alt="Boat on Calm Water"
                             />
-                            <div className='image-overlay'>
+                            <ImageOverlay>
                                 <ImageTitle>
                                     Conservatory cleaning in ?
                                 </ImageTitle>
                                 <ImageDescription>
                                     This is where we'll provide a description.
                                 </ImageDescription>
-                            </div>
+                            </ImageOverlay>
                         </OverlayContainer>
                         <OverlayContainer>
-                            <Image
+                            <PortfolioImage
                                 src={gutter}
                                 className="w-100 shadow-1-strong mb-3"
                                 alt="Wintry Mountain Landscape"
                             />
-                            <div className='image-overlay'>
+                            <ImageOverlay>
                                 <ImageTitle>
                                     Gutter Cleaning in ?
                                 </ImageTitle>
                                 <ImageDescription>
                                     This is where we'll provide a description.
                                 </ImageDescription>
-                            </div>
+                            </ImageOverlay>
                         </OverlayContainer>
                     </Col>
                     <Col lg={4} md={12} mb={3}>
                         <OverlayContainer>
-                            <Image
+                            <PortfolioImage
                                 src={pw}
                                 className="w-100 shadow-1-strong  mb-3"
                                 alt="Mountains in the Clouds"
                             />
-                            <div className='image-overlay'>
+                            <ImageOverlay>
                                 <ImageTitle>
                                     Pressure Washing in ?
                                 </ImageTitle>
                                 <ImageDescription>
                                     This is where we'll provide a description.
                                 </ImageDescription>
-                            </div>
+                            </ImageOverlay>
                         </OverlayContainer>
                         <OverlayContainer>
-                            <Image
+                            <PortfolioImage
                                 src={bwc}
                                 className="w-100 shadow-1-strong  mb-3"
                                 alt="Boat on Calm Water"
                             />
-                            <div className='image-overlay'>
+                            <ImageOverlay>
                                 <ImageTitle>
                                     Pressure Washing in ?
                                 </ImageTitle>
                                 <ImageDescription>
                                     This is where we provide a description.
                                 </ImageDescription>
-                            </div>
+                            </ImageOverlay>
                         </OverlayContainer>
                     </Col>
                 </Row>

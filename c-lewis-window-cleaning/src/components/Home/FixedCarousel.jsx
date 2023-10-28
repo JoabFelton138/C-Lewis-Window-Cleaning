@@ -52,7 +52,7 @@ function FixedCarousel() {
         <>
             <Carousel fade>
                 <Carousel.Item interval={5000}>
-                    <Slide src={van}className="d-block w-100">
+                    <Slide src={van} className="d-block w-100">
                         <InnerContainer>
                             <SubHeader>COVERING PERTON, SHIFNAL, WHEATON ASTON & MORE</SubHeader>
                             <Header>EXPERT WINDOW CLEANER</Header>

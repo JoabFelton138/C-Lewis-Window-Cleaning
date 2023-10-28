@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 
 import {useNavigate} from 'react-router-dom';
 
-import '../CSS/Form.css'
+import '../../CSS/Form.css'
 
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
@@ -12,7 +12,7 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 
-import DangerAlert from '../components/commons/Alert';
+import DangerAlert from '../commons/Alert';
 
 const FormContainer = styled.div`
     width:60%;

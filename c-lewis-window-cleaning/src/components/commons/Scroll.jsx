@@ -1,10 +1,20 @@
-import '../../CSS/Home/Scroll.css';
+import styled from 'styled-components';
 
 import React, {useEffect, useState} from 'react';
 
-import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons';
+
+const ScrollIcon = styled(FontAwesomeIcon)`
+    position: fixed; 
+    width: 100%;
+    left: 45vw;
+    bottom: 50px;
+    height: 3vw;
+    z-index: 1;
+    cursor: pointer;
+    color: rgb(0, 191, 255);
+`;
 
 const ScrollButton = () => {
 
@@ -31,7 +41,7 @@ const ScrollButton = () => {
     return (
         <>
             {visible &&
-                <FontAwesomeIcon 
+                <ScrollIcon 
                     className="scroll-button"
                     type="button"
                     onClick={scrollUp}

@@ -6,8 +6,6 @@ import Content from '../../components/Services/Content';
 import ImageGrid from '../../components/Services/ImageGrid';
 import Scroll from '../../components/commons/Scroll';
 
-import '../../CSS/Services/WindowCleaning.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,10 +22,50 @@ const WindowCleaning = () => {
     const QuoteContent = styled.p`
         margin-top: 3vw;
         font-size: 1.2em;
+
+        @media only screen 
+        and (max-width: 420px) 
+        and (max-height: 920px)
+        and (orientation: portrait){
+                margin-top: 5vw;
+        }
+
+        @media only screen 
+        and (min-width: 768px)
+        and (max-width: 820px)
+        and (max-height: 1180px)
+        and (orientation: portrait)
+        {
+                margin-top: 2vw;
+        }
     `;
 
     const Quotee = styled.h5`
         margin-top: 2vw;
+        margin-bottom: 4vw;
+
+        @media only screen 
+        and (max-width: 420px) 
+        and (max-height: 920px)
+        and (orientation: portrait){
+                margin-top: 5vw;
+                margin-bottom: 8vw;
+        }
+
+        @media only screen 
+        and (min-width: 768px)
+        and (max-width: 820px)
+        and (max-height: 1180px)
+        and (orientation: portrait)
+        {
+            margin-top: 2vw;
+            margin-bottom: 4vw;
+        }
+
+        @media (min-width: 580px) and (max-width: 990px){
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
     `;
 
     const QuoteIcon = styled(FontAwesomeIcon)`
@@ -62,7 +100,7 @@ const WindowCleaning = () => {
             />
             
             <QuoteContainer>
-                <Row className="wc-quote-row justify-content-md-center">
+                <Row className="justify-content-md-center">
                     <Col xs={12} sm={6} md={7} lg={4}>
                         <QuoteIcon icon={faQuoteLeft} />
                         <QuoteContent>
