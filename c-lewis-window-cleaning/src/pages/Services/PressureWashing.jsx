@@ -15,7 +15,6 @@ const PressureWashing = () => {
                 subtitle1={`What's Included in the Service?`}
                 p1={`Massa eget egestas purus viverra accumsan in nisl. Tellus mauris a diam maecenas sed enim. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Dolor sit amet consectetur adipiscing elit ut aliquam. Senectus et netus et malesuada. Fusce id velit ut tortor pretium viverra suspendisse potenti. Aliquam faucibus purus in massa tempor. `}
             />
-
             <ImageGrid title={'pw'}/>
             <Scroll />
         </div>

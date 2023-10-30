@@ -149,8 +149,14 @@ const NavBar = () => {
 
                 <div className="overlay-content">
                     
-                    <a href="#about">QUOTE</a>
-                    <a href="#services">CONTACT</a>
+                    <a href="#get-a-quote"
+                        onClick={() => navigateToForm(navigate)}  >
+                        QUOTE
+                    </a>
+
+                    <a href="tel:447391853506"> 
+                        CONTACT
+                    </a>
 
                     <a className="dropdown-btn"
                        onClick={handleClick}
@@ -173,14 +179,38 @@ const NavBar = () => {
 
                     {dropDown &&
                         <div className="dropdown-container">
-                            <a href="#">WINDOW CLEANING</a>
-                            <a href="#">GUTTERS & FASCIAS</a>
-                            <a href="#">PRESSURE WASHING</a>
-                            <a href="#">CONSERVATORY CLEANING</a>
+                            <Link
+                                as={Link}
+                                to="/window-cleaning">
+                                WINDOW CLEANING
+                            </Link>
+                            <Link
+                                as={Link}
+                                to="/gutter-cleaning">
+                                GUTTERS & FASCIAS
+                            </Link>
+                            <Link
+                                as={Link}
+                                to="/pressure-washing">
+                                PRESSURE WASHING                            
+                            </Link>
+                            <Link
+                                as={Link}
+                                to="/conservatory-cleaning">
+                                CONSERVATORY CLEANING                           
+                            </Link>
                         </div>
                     }
-                    <a href="#">PORTFOLIO</a>
-                    <a href="#">TESTIMONIALS</a>
+                    <Link
+                        as={Link}
+                        to="/portfolio">
+                        PORTFOLIO
+                    </Link>
+                    <Link
+                        as={Link}
+                        to="/testimonials">
+                        TESTIMONIALS
+                    </Link>
                 </div>
         </div>
     </>

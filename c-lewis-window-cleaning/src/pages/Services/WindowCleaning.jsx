@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import '../../CSS/WC.css';
+
 import Hero from '../../components/Services/Hero';
 import Content from '../../components/Services/Content';
 import ImageGrid from '../../components/Services/ImageGrid';

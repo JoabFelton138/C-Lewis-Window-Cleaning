@@ -20,13 +20,6 @@ const InnerContainer = styled.div`
     width: 95%;
 
     @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
-    and (orientation: portrait){
-            top: 52%;
-    }
-
-    @media only screen 
     and (min-width: 667px)
     and (max-width: 920px)
     and (max-height: 414px) 
@@ -70,8 +63,7 @@ const Header = styled.h1`
     and (max-width: 420px) 
     and (max-height: 920px)
     and (orientation: portrait){
-        font-size: 50px;
-        line-height: 55px;
+        font-size: 45px;
         font-weight: bold;
     }
 
@@ -80,7 +72,7 @@ const Header = styled.h1`
     and (max-width: 920px)
     and (max-height: 414px) 
     and (orientation: landscape) {
-            font-size: 50px;
+            font-size: 48px;
             line-height: 50px;
             font-weight: bold; 
     }
@@ -117,7 +109,7 @@ const SubHeader = styled.h4`
     and (orientation: portrait){
             padding: 3vw;
             font-weight: bold;
-            font-size: 25px;
+            font-size: 22px;
     }
 
     @media only screen 
@@ -153,11 +145,18 @@ const ButtonContainer = styled.div`
     padding-top: 4vw;
 
     @media only screen 
+    and (max-width: 420px) 
+    and (max-height: 920px)
+    and (orientation: portrait){
+        margin-top: 5vw;
+    }
+
+    @media only screen 
     and (min-width: 650px) 
     and (max-width: 660px) 
     and (max-height: 280px)
     {	
-        padding-top: 2vw;
+        margin-top: 4vw;
     }
 
     @media only screen 

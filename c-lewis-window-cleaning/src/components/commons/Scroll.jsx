@@ -5,6 +5,7 @@ import React, {useEffect, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons';
 
+
 const ScrollIcon = styled(FontAwesomeIcon)`
     position: fixed; 
     width: 100%;

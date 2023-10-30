@@ -22,8 +22,8 @@ const QuoteButton = styled(Button)`
     and (max-height: 920px)
     and (orientation: portrait){
         background-color: rgb(0, 191, 255) !important;
-        margin-top: 3vw;
-        margin-bottom: 10vw;
+        margin-top: 10vw;
+        margin-bottom: 16vw;
     }
 
     @media only screen 
@@ -33,6 +33,16 @@ const QuoteButton = styled(Button)`
     and (orientation: landscape) {
         margin-top: 6vw;
         margin-bottom: 8vw;
+    }
+
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
     }
 `;
 

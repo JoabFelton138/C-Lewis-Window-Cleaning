@@ -88,8 +88,7 @@ const Header = styled.h1`
     and (max-width: 420px) 
     and (max-height: 920px)
     and (orientation: portrait){
-            font-size: 50px;
-            line-height: 55px;
+        font-size: 45px;
     }
 
     @media only screen 
@@ -97,8 +96,7 @@ const Header = styled.h1`
     and (max-width: 920px)
     and (max-height: 414px) 
     and (orientation: landscape) {
-            font-size: 50px;
-            line-height: 50px;
+        font-size: 48px;
     }
 
     @media only screen 
@@ -106,9 +104,9 @@ const Header = styled.h1`
     and (max-width: 660px) 
     and (max-height: 280px)
     {
-        line-height: 1em;
-        font-size: 2em;
-        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        padding-top: 1vw;
     }
 
     @media only screen 

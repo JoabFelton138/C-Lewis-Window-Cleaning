@@ -9,9 +9,45 @@ const FooterContainer = styled.section`
 const FirstSection = styled.section`
     padding-bottom: 2vw; 
     padding-top: 2vw; 
-    padding-top: 2vw; 
     line-height: 1vw;
     font-size: 14px;
+
+    @media only screen 
+    and (max-width: 420px) 
+    and (max-height: 920px)
+    and (orientation: portrait){
+        padding-bottom: 5vw; 
+        padding-top: 5vw; 
+    }
+
+    @media only screen 
+    and (min-width: 667px)
+    and (max-width: 920px)
+    and (max-height: 414px) 
+    and (orientation: landscape) {
+        padding-bottom: 3vw; 
+        padding-top: 3vw; 
+    }
+
+    @media only screen 
+    and (min-width: 650px) 
+    and (max-width: 660px) 
+    and (max-height: 280px)
+    {
+        padding-bottom: 5vw; 
+        padding-top: 5vw; 
+    }
+
+    @media only screen 
+    and (min-width: 768px)
+    and (max-width: 820px)
+    and (max-height: 1180px)
+    and (orientation: portrait)
+    {
+        padding-bottom: 5vw; 
+        padding-top: 5vw; 
+    }
+
 `;
 
 const SecondSection = styled.section`
