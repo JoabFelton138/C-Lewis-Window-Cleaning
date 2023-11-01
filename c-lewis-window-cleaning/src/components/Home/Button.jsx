@@ -14,8 +14,8 @@ import Button from 'react-bootstrap/Button';
 
 const QuoteButton = styled(Button)`
     background-color: rgb(0, 191, 255) !important;
-    margin-bottom: 5vw;
-    margin-top: 3vw;
+    margin-bottom: 6vw;
+    margin-top: 4vw;
 
     @media only screen 
     and (max-width: 420px) 

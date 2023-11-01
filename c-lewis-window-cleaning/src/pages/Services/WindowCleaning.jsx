@@ -66,7 +66,7 @@ const WindowCleaning = () => {
 
         @media (min-width: 580px) and (max-width: 990px){
             margin-top: 2vw;
-            margin-bottom: 2vw;
+            margin-bottom: 4vw;
         }
     `;
 
@@ -77,28 +77,34 @@ const WindowCleaning = () => {
     return (
         <div>
             <Hero source={3} heroTitle={"WINDOW CLEANING SERVICES"}/>
+
             <Content
                 title={"Window Cleaning Services"}
+                subtitle1={`What's Included In The Service`}
 
-                subtitle1={`Why Should I Get My Windows Cleaned?`}
+                p1={`Before proceeding to clean, I give the overall condition of your windows a thorough examination. During which, I'll check the seals and their surrounding areas, keeping a close eye out for such potential issues as pane compression. 
+                     Afterwards, I like to use a chemically-free purified water solution that'll give your windows a shiny, professional finish.`}
+                
+                p2={`To begin, I'll loosen any dirt or build up on the windows, frames and surrounding plastics by giving them a thorough scrub.
+                I'll then rinse the windows rigorously, leaving behind only the pure water solution which dry clears in a matter of minutes. 
+                The results are always completely crystal clear!`}
 
-                p1={`Did you know that neglected window tracks are often filled with dust and insects? Also, were you aware that a build up of debris can cause glass to become chemically etched?`}
-                p2={`Not only can these issues prevent the mechanisms on your windows from working properly, but they can also aggrevate any allergies that may effect you or your family.`}
-                p3={`By hiring an expert, you can gurantee your windows will be cleaned thoroughly, thus prolonging their life and keeping your home healthy and allergen free in the process.`}
+                p3={`Not only is this an environmentally friendly approach, but the process also significantly reduces the risk of damage to your property. 
+                Furthermore, in the unlikely chance you discover any marks or spotting, providing this is up-to 24 hours after receiving a service, I'll come back for a touch up, absolutely free of charge!`}
 
-                subtitle2={`Why Can't I Just Do It Myself?`}
+                disclaimer={`Please note, Window Cleaning Services are limited to just the Wheaton Aston, Perton and Shifnal areas.*`}
+  
+                subtitle2={`Why Get Your Windows Cleaned`}
 
-                p4={`Obviously you can but without the right equipment, the risk of falling becomes a major hazard. It's much safer to leave it to a fully-insured professional. Not only do I have ladder stand offs and extension poles but I've also had extensive training.`}
+                p4={`Did you know that neglected window tracks are often filled with dust and insects? Also, were you aware that a build up of debris can cause glass to become chemically etched?`}
+                p5={`Not only can these issues prevent the mechanisms on your windows from working properly, but they can also aggrevate any allergies that may effect you or your family. By hiring an expert, you can guarantee your windows 
+                    will be cleaned thoroughly, thus prolonging their life and keeping your home healthy and allergen free in the process.`}
+                p7={`Last of all, whilst there's always the option of doing it yourself, without the right equipment, the risk of falling becomes a major hazard. It's much safer to leave it to a fully-insured 
+                    professional. Not only do I have ladder stand offs and extension poles but I've also had extensive training so you don't have to take the risk!`}
 
-                p5={`I also use a specialty process designed to keep your windows streak-free and provide a thorough inspection of the condition of your windows, examining for issues such as pane compression.`}
-
-                subtitle3={`What If It Rains?`}
-
-                p6={`If one thing's for certain, rain is never off the cards with English weather! Not to worry, I offer a three day guarantee, so if it rains within 3 days afterwards, give me a ring and I'll glady touch up any spotting that may have occurred as a result of the weather!`}
-
-                subtitle4={`Sounds Good!`}
-
-                p7={`Then don't settle for anything less! If you're in the Wheaton Aston, Perton or Shifnal area and find yourself in need of a commercial / residential window cleaning service, go ahead and get your free quote today!`}
+                subtitle3={`Sounds Good!`}
+                p8={`Then don't settle for anything less! If you're in the Wheaton Aston, Perton or Shifnal area and find yourself in need of a commercial / residential window cleaning service, 
+                    go ahead and get your free quote today!`}
             />
             
             <QuoteContainer>
