@@ -19,6 +19,14 @@ const WindowCleaning = () => {
 
     const QuoteContainer = styled(Container)`
         margin-bottom: 3vw;
+
+        @media only screen 
+        and (max-width: 435px) 
+        and (max-height: 940px)
+        and (orientation: portrait){
+            margin-bottom: 10vw;
+
+        }
     `; 
 
     const QuoteContent = styled.p`

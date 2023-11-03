@@ -20,15 +20,16 @@ const AboutContainer = styled.div`
     margin-top: 5vw;
     margin-bottom: 5vw;
 
+  
     @media only screen
     and (min-width: 355px)
-    and (max-width: 415px)
+    and (max-width: 435px)
     and (min-height: 665px)
-    and (max-height: 920px)
+    and (max-height: 940px)
     and (orientation: portrait)
     {
         width: 90%;
-        margin-top: 8vw;
+        margin-top: 10vw;
         margin-bottom: 8vw;
     }
 
@@ -87,12 +88,12 @@ const AboutImage = styled(Image)`
 
     @media only screen
     and (min-width: 355px)
-    and (max-width: 415px)
+    and (max-width: 435px)
     and (min-height: 665px)
-    and (max-height: 920px)
+    and (max-height: 940px)
     and (orientation: portrait)
     {
-        width: 125px;
+        width: 130px;
     }
 
     @media only screen
@@ -139,11 +140,12 @@ const ContactIcons = styled(FontAwesomeIcon)`
 
     @media only screen
     and (min-width: 355px)
-    and (max-width: 415px)
+    and (max-width: 435px)
     and (min-height: 665px)
-    and (max-height: 920px)
+    and (max-height: 940px)
     and (orientation: portrait)
     {
+        margin-top: 4vw;
         font-size: 1.5rem;
     }
 
@@ -161,9 +163,9 @@ const Header = styled.h3`
 
     @media only screen
     and (min-width: 355px)
-    and (max-width: 415px)
+    and (max-width: 435px)
     and (min-height: 665px)
-    and (max-height: 920px)
+    and (max-height: 940px)
     and (orientation: portrait)
     {
         margin-top: 3vw;
@@ -178,16 +180,15 @@ const Header = styled.h3`
     }
 `;
 
-const Content = styled.p`
-    line-height: 27px;
+const Content = styled.div`
     margin-top: 2.5vw;
     margin-bottom: 2.5vw;
 
     @media only screen
     and (min-width: 355px)
-    and (max-width: 415px)
+    and (max-width: 435px)
     and (min-height: 665px)
-    and (max-height: 920px)
+    and (max-height: 940px)
     and (orientation: portrait)
     {
         margin-top: 5vw;
@@ -246,30 +247,37 @@ const AboutMe = () => {
                         <div>
                             <Header>MEET CHAD</Header>
                             <Content>
-                                Hi, I’m Chad, the proud owner of C.Lewis Window Cleaning Services. 
-                                I started my exterior cleaning business at the start of 2021. 
-                                It's been my mission since to offer the local
-                                community a professional, reliable and quality service. 
-                                I’m extremely passionate about building a great reputation within my local and surrounding areas.
-                                Understanding the importance of keeping my customers pleased has aloud me 
-                                to build and expand through recommendations. This is what keeps me working 
-                                hard and drives me to provide the best
-                                services that I possibly can.
-                            </Content>
-                            <div className="d-flex justify-content-around">
-                                <ContactIcons
-                                    icon={faFacebookSquare}
-                                    type="button"
-                                    onClick={() => window.open("https://www.facebook.com/WCS.CLewis", "_blank")}
-                                />
+                                <p style={{textAlign: 'justify', marginTop: '2vw'}}>
+                                    Hi, I’m Chad, the proud owner of C.Lewis Window Cleaning Services. 
+                                    I started my exterior cleaning business at the start of 2021. 
+                                    It's been my mission since to offer the local
+                                    community a professional, reliable and quality service. 
+                                </p>
+                                <p style={{textAlign: 'justify'}}>
+                                    I’m extremely passionate about building a great reputation within my local and surrounding areas.
+                                    Understanding the importance of keeping my customers pleased has aloud me 
+                                    to build and expand through recommendations. This is what keeps me working 
+                                    hard and drives me to provide the best
+                                    services that I possibly can.
+                                </p>
+                                <p style={{textAlign: 'justify', marginBottom: '4vw'}}>
+                                If you have any questions on what I do, feel free to get in touch. You can call me, drop me an email or even get at me on Facebook, I'd love to hear from you!
+                                </p>
+                                <div className="d-flex justify-content-around">
+                                    <ContactIcons
+                                        icon={faFacebookSquare}
+                                        type="button"
+                                        onClick={() => window.open("https://www.facebook.com/WCS.CLewis", "_blank")}
+                                    />
 
-                                <a href="tel:447391853506">
-                                    <ContactIcons icon={faPhone}/>
-                                </a>
-                                <a href="mailto:c.lewis.wcs@hotmail.com">
-                                    <ContactIcons icon={faEnvelope}/>
-                                </a>
-                            </div>
+                                    <a href="tel:447391853506">
+                                        <ContactIcons icon={faPhone}/>
+                                    </a>
+                                    <a href="mailto:c.lewis.wcs@hotmail.com">
+                                        <ContactIcons icon={faEnvelope}/>
+                                    </a>
+                                </div>
+                            </Content>
                         </div>
                     </Col>
                 </Row>

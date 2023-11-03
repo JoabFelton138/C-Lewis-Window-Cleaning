@@ -21,6 +21,13 @@ const QuoteContainer = styled.div`
     padding-top: 9vw;
     padding-bottom: 6vw;
     text-align: center;
+
+    @media only screen 
+    and (max-width: 435px) 
+    and (max-height: 940px)
+    and (orientation: portrait){
+        margin-top: 5vw;
+    }
 `;
 
 const IconContainer = styled.div`

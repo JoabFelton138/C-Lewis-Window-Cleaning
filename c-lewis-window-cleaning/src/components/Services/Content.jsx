@@ -9,8 +9,8 @@ const ContentContainer = styled.div`
     text-align: center;
 
     @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
+    and (max-width: 435px) 
+    and (max-height: 940px)
     and (orientation: portrait){
         width: 80%;
     }
@@ -29,8 +29,8 @@ const Header = styled.h1`
     margin-bottom: 3vw;
 
     @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
+    and (max-width: 435px) 
+    and (max-height: 940px)
     and (orientation: portrait){
         margin-top: 16vw;
         margin-bottom: 4vw;
@@ -52,8 +52,8 @@ const SubHeader = styled.h4`
     text-align: left;
 
     @media only screen 
-        and (max-width: 420px) 
-        and (max-height: 920px)
+        and (max-width: 435px) 
+        and (max-height: 940px)
         and (orientation: portrait){
             margin-top: 6vw;
         }
@@ -73,8 +73,8 @@ const SubHeader2 = styled.h4`
     text-align: left;
 
     @media only screen 
-        and (max-width: 420px) 
-        and (max-height: 920px)
+        and (max-width: 435px) 
+        and (max-height: 940px)
         and (orientation: portrait){
             margin-top: 6vw;
         }
@@ -95,8 +95,8 @@ const InnerContainer = styled.div`
 const TextContainer = styled.div`
 
 @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
+    and (max-width: 435px) 
+    and (max-height: 940px)
     and (orientation: portrait){
      margin-top: 4vw;   
     }
@@ -105,8 +105,8 @@ const TextContainer = styled.div`
 const Content = styled.p`
     text-align: justify;
     @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
+    and (max-width: 435px) 
+    and (max-height: 940px)
     and (orientation: portrait){
         margin-top: 3vw;
         margin-bottom: 2vw;
@@ -127,8 +127,8 @@ const Disclaimer = styled.p`
     color: red;
     font-size: 15px;
     @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
+    and (max-width: 435px) 
+    and (max-height: 940px)
     and (orientation: portrait){
         margin-top: 3vw;
         margin-bottom: 2vw;

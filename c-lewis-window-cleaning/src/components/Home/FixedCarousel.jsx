@@ -21,12 +21,12 @@ const InnerContainer = styled.div`
 
     @media only screen 
     and (min-width: 667px)
-    and (max-width: 920px)
+    and (max-width: 940px)
     and (max-height: 414px) 
     and (orientation: landscape) {
         text-align: center;
         position: absolute;
-        top: 52%;
+        top: 50%;
         left: 50%;
         transform: translate(-50% , -50%);
         width: 95%;  
@@ -60,8 +60,8 @@ const Header = styled.h1`
     font-weight: bold;
 
     @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
+    and (max-width: 435px) 
+    and (max-height: 940px)
     and (orientation: portrait){
         font-size: 45px;
         font-weight: bold;

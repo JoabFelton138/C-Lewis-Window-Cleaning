@@ -34,6 +34,17 @@ const Subheader = styled.h6`
 const ButtonDiv = styled.section`
     margin-top: 2vw;
     margin-bottom: 3vw;
+
+    @media only screen
+    and (min-width: 355px)
+    and (max-width: 435px)
+    and (min-height: 665px)
+    and (max-height: 940px)
+    and (orientation: portrait)
+    {
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
 `;
 
 const OverlayContainer = styled.section`

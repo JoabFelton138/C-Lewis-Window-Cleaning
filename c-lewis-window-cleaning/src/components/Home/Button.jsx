@@ -18,8 +18,8 @@ const QuoteButton = styled(Button)`
     margin-top: 4vw;
 
     @media only screen 
-    and (max-width: 420px) 
-    and (max-height: 920px)
+    and (max-width: 435px) 
+    and (max-height: 940px)
     and (orientation: portrait){
         background-color: rgb(0, 191, 255) !important;
         margin-top: 10vw;
