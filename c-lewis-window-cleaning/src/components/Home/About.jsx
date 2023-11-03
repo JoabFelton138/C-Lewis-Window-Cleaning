@@ -246,11 +246,15 @@ const AboutMe = () => {
                         <div>
                             <Header>MEET CHAD</Header>
                             <Content>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+                                Hi, I’m Chad, the proud owner of C.Lewis Window Cleaning Services. 
+                                I started my exterior cleaning business at the start of 2021. 
+                                It's been my mission since to offer the local
+                                community a professional, reliable and quality service. 
+                                I’m extremely passionate about building a great reputation within my local and surrounding areas.
+                                Understanding the importance of keeping my customers pleased has aloud me 
+                                to build and expand through recommendations. This is what keeps me working 
+                                hard and drives me to provide the best
+                                services that I possibly can.
                             </Content>
                             <div className="d-flex justify-content-around">
                                 <ContactIcons

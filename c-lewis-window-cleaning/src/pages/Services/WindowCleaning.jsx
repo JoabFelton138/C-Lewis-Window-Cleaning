@@ -73,6 +73,7 @@ const WindowCleaning = () => {
     const QuoteIcon = styled(FontAwesomeIcon)`
         font-size: 32px;
     `;
+    
 
     return (
         <div>
@@ -92,9 +93,9 @@ const WindowCleaning = () => {
                 p3={`Not only is this an environmentally friendly approach, but the process also significantly reduces the risk of damage to your property. 
                 Furthermore, in the unlikely chance you discover any marks or spotting, providing this is up-to 24 hours after receiving a service, I'll come back for a touch up, absolutely free of charge!`}
 
-                disclaimer={`Please note, Window Cleaning Services are limited to just the Wheaton Aston, Perton and Shifnal areas.*`}
+                disclaimer={`Window cleaning services are limited to just the Wheaton Aston, Perton and Shifnal areas.*`}
   
-                subtitle2={`Why Get Your Windows Cleaned`}
+                subtitle2={`Why Hire a Professional`}
 
                 p4={`Did you know that neglected window tracks are often filled with dust and insects? Also, were you aware that a build up of debris can cause glass to become chemically etched?`}
                 p5={`Not only can these issues prevent the mechanisms on your windows from working properly, but they can also aggrevate any allergies that may effect you or your family. By hiring an expert, you can guarantee your windows 

@@ -9,7 +9,7 @@ import { faCircleArrowUp } from '@fortawesome/free-solid-svg-icons';
 const ScrollIcon = styled(FontAwesomeIcon)`
     position: fixed; 
     width: 100%;
-    left: 45vw;
+    left: 47vw;
     bottom: 50px;
     height: 3vw;
     z-index: 1;

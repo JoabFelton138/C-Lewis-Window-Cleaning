@@ -14,11 +14,19 @@ const GutterCleaning = () => {
 
                 subtitle1={`What's Included In the Service?`}
 
-                p1={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nisi quis eleifend quam adipiscing vitae. Integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Mi ipsum faucibus vitae aliquet nec.`}
+                p1={`My method for clearing out gutters to ensure that they are flowing correctly, is to use a pole reach system which includes a vacuum.  This allows me to reach up to four stories. Also i can do it by hand off a
+                ladder when needed. Pictures to ensure they have been correctly cleared can be provided upon request.`}
+
+                disclaimer={`Gutter cleaning services are available to Wheaton Aston, Perton and Shifnal as well as the surrounding areas.*`}
 
                 subtitle2={`Why Get Your Gutters Cleaned?`}
 
-                p4={`itae justo eget magna fermentum iaculis eu non. Cursus sit amet dictum sit. Eget aliquet nibh praesent tristique magna sit amet. Tincidunt tortor aliquam nulla facilisi cras fermentum. Nec ultrices dui sapien eget mi proin sed. Nibh sed pulvinar proin gravida hendrerit lectus. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Nisl nisi scelerisque eu ultrices vitae auctor eu augue.`}
+                p4={`Keeping your gutters cleared is extremely important and is often over looked. Keeping a eye on what’s in the gutters can prevent water damage to the exterior and interior of your home,
+                including your roof!`}
+
+                subtitle3={`Sounds Good!`}
+                p8={`Then don't settle for anything less! If your gutters are overdue a clean,
+                go ahead and get your free quote today!`}
             />
             <ImageGrid title={'gc'}/>
             <Scroll/>

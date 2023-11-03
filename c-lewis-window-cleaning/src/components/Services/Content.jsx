@@ -49,6 +49,7 @@ const Header = styled.h1`
 
 const SubHeader = styled.h4`
     margin-bottom: 2vw;
+    text-align: left;
 
     @media only screen 
         and (max-width: 420px) 
@@ -69,6 +70,7 @@ const SubHeader = styled.h4`
 const SubHeader2 = styled.h4`
     margin-top: 2vw;
     margin-bottom: 2vw;
+    text-align: left;
 
     @media only screen 
         and (max-width: 420px) 
@@ -87,7 +89,6 @@ const SubHeader2 = styled.h4`
 `;
 
 const InnerContainer = styled.div`
-    text-align: justify;
     margin-top: 4vw;
 `;
 
@@ -102,7 +103,7 @@ const TextContainer = styled.div`
 `;
 
 const Content = styled.p`
-
+    text-align: justify;
     @media only screen 
     and (max-width: 420px) 
     and (max-height: 920px)
@@ -122,7 +123,7 @@ const Content = styled.p`
 `;
 
 const Disclaimer = styled.p`
-
+    text-align: justify;
     color: red;
     font-size: 15px;
     @media only screen 
