@@ -13,9 +13,9 @@ const Home = () => {
     return (
         <div>
             <Carousel/>
-            <Why/>
-            <Portfolio/>
             <About/>
+            <Portfolio/>
+            <Why/>
             <Testimonials/> 
             <Form/>
             <Scroll/>
