@@ -2,10 +2,8 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import ReviewCard from './ReviewCard';
 
 import '../../CSS/ReviewCarousel.css';
@@ -13,7 +11,6 @@ import '../../CSS/ReviewCarousel.css';
 const CarouselWrapper = styled.div`
     padding-top: 3vw;
     padding-bottom: 3vw;
-    background-color: #D3D3D3;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,6 +24,21 @@ function ReviewCarousel() {
 
   const baseURL = 'maps/api/place/details/json?';
   const [review, setReview] = useState([]);
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   useEffect(() => {
       axios.get(`${baseURL}`, {
@@ -44,32 +56,23 @@ function ReviewCarousel() {
     }, []);
 
   return (
-    <CarouselWrapper>
-      <CarouselContainer>
-        <Carousel>
+        <Carousel responsive={responsive} 
+                  containerClass="carousel-container"
+                  itemClass="carousel-item-padding-40-px"
+                  centerMode={true}
+                  >
             {review.map((item, i) => {
                   return (
-                      <Carousel.Item interval={3000}>
-                        <Container>
-                          <Row xs={1} md={2} lg={3} className="justify-content-md-center">
-                              <Col>
-                                    <ReviewCard
-                                        profile_photo_url={item.profile_photo_url}
-                                        author_name={item.author_name}
-                                        relative_time_description={item.relative_time_description}
-                                        rating={item.rating}
-                                        text={item.text}
-                                    />
-                              </Col>
-                          </Row>
-                        </Container>
-                      </Carousel.Item>
-
-                );
+                      <ReviewCard key={i}
+                          profile_photo_url={item.profile_photo_url}
+                          author_name={item.author_name}
+                          relative_time_description={item.relative_time_description}
+                          rating={item.rating}
+                          text={item.text}
+                      />
+                  );
               })}  
         </Carousel>
-      </CarouselContainer>
-    </CarouselWrapper>
   );
 }
 

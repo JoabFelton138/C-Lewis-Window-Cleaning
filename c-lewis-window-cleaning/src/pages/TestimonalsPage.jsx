@@ -20,13 +20,13 @@ const Content = styled.p`
 
 export default function TestimonialsPage (){
 
+    
     return(
         <div className="mt-8">
             <Hero source={4} heroTitle={"A SPOTLESS REPUTATION"}/>
             <Container>
                 <Header>REVIEWS</Header>
                 <Content>I work very hard for my customers and it shows in my reviews, take a look!</Content>
-                {/* <TestCarousel/> */}
                 <ReviewCarousel/>
             </Container>
         </div>
