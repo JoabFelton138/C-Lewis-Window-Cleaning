@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
 import ReviewCard from './ReviewCard';
 
 import '../../CSS/ReviewCarousel.css';
@@ -28,7 +29,7 @@ function ReviewCarousel() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -56,23 +57,34 @@ function ReviewCarousel() {
     }, []);
 
   return (
-        <Carousel responsive={responsive} 
-                  containerClass="carousel-container"
-                  itemClass="carousel-item-padding-40-px"
-                  centerMode={true}
-                  >
-            {review.map((item, i) => {
-                  return (
-                      <ReviewCard key={i}
-                          profile_photo_url={item.profile_photo_url}
-                          author_name={item.author_name}
-                          relative_time_description={item.relative_time_description}
-                          rating={item.rating}
-                          text={item.text}
-                      />
-                  );
-              })}  
-        </Carousel>
+
+        <div className='parent'>
+          <Carousel   responsive={responsive}
+                      autoPlay={true}
+                      swipeable={true}
+                      draggable={false}
+                      showDots={false}
+                      infinite={true}
+                      partialVisible={false}
+                    >
+
+              {review.map((item, i) => {
+                    return (
+                        <div className='slider' key={i}>
+                          <ReviewCard
+                              profile_photo_url={item.profile_photo_url}
+                              author_name={item.author_name}
+                              relative_time_description={item.relative_time_description}
+                              rating={item.rating}
+                              text={item.text}
+                          />
+                        </div>
+                    );
+                })}  
+
+          </Carousel>
+        </div>
+
   );
 }
 
