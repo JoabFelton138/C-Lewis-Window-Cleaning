@@ -10,7 +10,10 @@
   padding: 4rem 0;
 }
 
-
 .react-multi-carousel-list {
 padding: 0rem 0 2rem 0;
+}
+
+.react-multiple-carousel__arrow:hover {
+  background: rgba(0,0,0,0.4);
 }
