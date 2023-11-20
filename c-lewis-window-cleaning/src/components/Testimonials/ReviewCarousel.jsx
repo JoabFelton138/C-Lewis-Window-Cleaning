@@ -9,18 +9,6 @@ import ReviewCard from './ReviewCard';
 
 import '../../CSS/ReviewCarousel.css';
 
-const CarouselWrapper = styled.div`
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-`
-
-const CarouselContainer = styled.div`
-  width: 80%;
-  `
-
 function ReviewCarousel() {
 
   const baseURL = 'maps/api/place/details/json?';
@@ -29,15 +17,18 @@ function ReviewCarousel() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 4,
+      slidesToSlide: 4 // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
+      breakpoint: { max: 1024, min: 768 },
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
+      breakpoint: { max: 767, min: 464 },
+      items: 2,
+      slidesToSlide: 1 // optional, default to 1.
     }
   };
 
@@ -57,20 +48,20 @@ function ReviewCarousel() {
     }, []);
 
   return (
-
-        <div className='parent'>
-          <Carousel   responsive={responsive}
-                      autoPlay={true}
-                      swipeable={true}
-                      draggable={false}
-                      showDots={false}
-                      infinite={true}
-                      partialVisible={false}
-                    >
-
-              {review.map((item, i) => {
+    <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={false}
+        infinite={true}
+        partialVisible={false}
+      >
+       {review.map((item, i) => {
                     return (
-                        <div className='slider' key={i}>
+                        <div className='slider' 
+                          key={i}>
                           <ReviewCard
                               profile_photo_url={item.profile_photo_url}
                               author_name={item.author_name}
@@ -80,11 +71,9 @@ function ReviewCarousel() {
                           />
                         </div>
                     );
-                })}  
-
-          </Carousel>
-        </div>
-
+                })} 
+      </Carousel>
+    </div>
   );
 }
 

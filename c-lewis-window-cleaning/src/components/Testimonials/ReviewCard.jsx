@@ -15,8 +15,8 @@ const CardContainer = styled.div`
   margin-top: 2vw;
   margin-bottom: 2vw;
   text-align: center; 
-  width: 18rem;
-  height: 18rem;
+  width: 16rem;
+  height: auto;
   background-color: white;
 `;
 

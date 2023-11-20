@@ -4,18 +4,13 @@
   box-sizing: border-box;
 }
 
-
-
-.carousel-container{
-    padding-top: 4vw;
+.slider {
+  margin: 0 25px;
+  overflow:"hidden";
+  padding: 4rem 0;
 }
 
-.slider {
-    margin:0 20px;
-    overflow:"hidden";
-    padding:2rem 0;
-  }
 
-  .react-multi-carousel-item {
-    padding: 40px;
-    }
+.react-multi-carousel-list {
+padding: 0rem 0 2rem 0;
+}
