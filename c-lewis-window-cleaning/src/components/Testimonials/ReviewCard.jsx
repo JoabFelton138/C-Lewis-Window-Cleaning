@@ -15,7 +15,7 @@ const CardContainer = styled.div`
   margin-top: 2vw;
   margin-bottom: 2vw;
   text-align: center; 
-  width: 16rem;
+  width: 14rem;
   height: auto;
   background-color: white;
 `;
@@ -32,6 +32,7 @@ const UserImage = styled(Image)`
 function MultiplyStars(icon, rating){
 
   let StarsArr = [];
+  
   for (let i = 0; i < rating; i++)
   {
     StarsArr.push(icon)

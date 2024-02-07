@@ -1,36 +1,18 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components'
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import '../../CSS/ReviewCarouselStyle.css';
 
 import ReviewCard from './ReviewCard';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-import '../../CSS/ReviewCarousel.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function ReviewCarousel() {
 
   const baseURL = 'maps/api/place/details/json?';
   const [review, setReview] = useState([]);
-
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 4 // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 768 },
-      items: 3,
-      slidesToSlide: 3 // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 767, min: 464 },
-      items: 2,
-      slidesToSlide: 1 // optional, default to 1.
-    }
-  };
 
   useEffect(() => {
       axios.get(`${baseURL}`, {
@@ -45,34 +27,51 @@ function ReviewCarousel() {
       .then((result) => {
         setReview(result.data.result.reviews);
       });
-    }, []);
+  }, []);
+
+  const responsive = {
+  
+    desktop: {
+      breakpoint: { max: 3000, min: 992 },
+      items: 3,
+      slidesToSlide: 3
+    },
+    tablet: {
+      breakpoint: { max: 992, min: 575 },
+      items: 2,
+      slidesToSlide: 2
+
+    },
+    mobile: {
+       breakpoint: { max: 575 },
+       items: 1,
+       slidesToSlide: 1
+     }
+  };
 
   return (
-    <div className="parent">
-      <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={true}
-        draggable={true}
-        showDots={false}
-        infinite={true}
-        partialVisible={false}
-      >
-       {review.map((item, i) => {
-                    return (
-                        <div className='slider' 
-                          key={i}>
-                          <ReviewCard
-                              profile_photo_url={item.profile_photo_url}
-                              author_name={item.author_name}
-                              relative_time_description={item.relative_time_description}
-                              rating={item.rating}
-                              text={item.text}
-                          />
-                        </div>
-                    );
-                })} 
-      </Carousel>
+    <div className='card-container'>
+
+      <Container>
+        <Row >
+            <Carousel responsive={responsive}>
+                  {review.map((item, i) => {
+                                return (
+                                  <Col>
+                                      <ReviewCard
+                                          profile_photo_url={item.profile_photo_url}
+                                          author_name={item.author_name}
+                                          relative_time_description={item.relative_time_description}
+                                          rating={item.rating}
+                                          text={item.text}
+                                      />
+                                  </Col>
+                                );
+                  })} 
+            </Carousel>
+          </Row>
+      </Container>
+
     </div>
   );
 }

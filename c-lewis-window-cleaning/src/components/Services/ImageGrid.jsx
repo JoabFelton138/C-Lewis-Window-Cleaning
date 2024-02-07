@@ -62,7 +62,7 @@ const ImageGrid = (props) => {
     return (
             <ImageGridContainer>
                 <Container>
-                    <Row className="d-flex justify-content-center">
+                    <Row>
                         {images.map((imagePath, index) => 
                             <Col lg={4} md={12} mb={3} key={index}>
                                     <Image

@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import '../../CSS/FixedCarousel.css';
-
 import van from '../../images/carousel/van5-min.jpg';
 import cc from '../../images/carousel/cc-min.jpg';
 import pw from '../../images/carousel/pw3-min.jpg';
