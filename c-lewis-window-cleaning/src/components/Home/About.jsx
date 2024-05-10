@@ -248,10 +248,7 @@ const AboutMe = () => {
                             <Header>MEET CHAD</Header>
                             <Content>
                                 <p style={{textAlign: 'justify', marginTop: '2vw'}}>
-                                    Hi, I’m Chad, the proud owner of C.Lewis Window Cleaning Services. 
-                                    I started my exterior cleaning business at the start of 2021. 
-                                    It's been my mission since to offer the local
-                                    community a professional, reliable and quality service. 
+                                In early 2021, I embarked on my journey in the exterior cleaning business. My unwavering mission has been to provide the local community with a professional, dependable, and high-quality service. I take immense pride in delivering exceptional results and cultivating a stellar reputation within my vicinity and beyond. Recognizing the significance of customer satisfaction, I’ve grown my business through word-of-mouth recommendations. This commitment fuels my determination to consistently offer the finest services possible.
                                 </p>
                                 <p style={{textAlign: 'justify'}}>
                                     I’m extremely passionate about building a great reputation within my local and surrounding areas.

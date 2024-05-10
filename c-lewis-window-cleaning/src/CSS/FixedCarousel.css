@@ -1,9 +1,16 @@
 .carousel-indicators {
-    display: none;
+    margin-bottom: 3vw;
 }
 
 /* .carousel-control-prev-icon, .carousel-control-next-icon{
     display: none;
 } */
+
+.carousel-control-prev-icon {
+    transform: translate(-20px, 15px); /* Adjust the value as needed */
+}
+.carousel-control-next-icon {
+    transform: translate(20px, 15px); /* Adjust the value as needed */
+}
 
 

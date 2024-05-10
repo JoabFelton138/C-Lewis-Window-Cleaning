@@ -1,15 +1,22 @@
+.card-container{
+    margin-top: 1vw;
+}
+
 @media (min-width: 992px){
+    
     .card-container .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 770px;
     }
 }
 
 @media (min-width: 575px) and (max-width: 992px){
+
     .card-container .container, .container-md, .container-sm {
     max-width: 500px;
 }}
 
 @media (max-width: 575px){
+    
     .card-container .container, .container-sm {
         max-width: 250px;
     }
@@ -17,10 +24,10 @@
 
 .react-multiple-carousel__arrow--left {
     left: calc(0% + 1px) !important;
-    bottom: 415px;
+    bottom: 250px;
 }
 
 .react-multiple-carousel__arrow--right {
     right: calc(0% + 1px) !important;
-    bottom: 415px;
+    bottom: 250px;
 }

@@ -4,15 +4,17 @@ import styled from 'styled-components'
 import van from '../../images/carousel/van5-min.jpg';
 import cc from '../../images/carousel/cc-min.jpg';
 import pw from '../../images/carousel/pw3-min.jpg';
-import gc from '../../images/carousel/gc2-min.jpeg';
+import gc from '../../images/carousel/gc3.jpg';
 
 import CarouselButtons from './Button';
 import Carousel from 'react-bootstrap/Carousel';
 
+import '../../CSS/FixedCarousel.css';
+
 const InnerContainer = styled.div`
     text-align: center;
     position: absolute;
-    top: 54%;
+    top: 53%;
     left: 50%;
     transform: translate(-50% , -50%);
     width: 95%;
@@ -52,7 +54,7 @@ const Slide = styled.div`
 `;
 
 const Header = styled.h1`
-    padding-top: 3vw;
+    padding-top: 2.5vw;
     line-height: 1em;
     font-size: 4.25em;
     font-weight: bold;
@@ -140,7 +142,7 @@ const SubHeader = styled.h4`
 `;
 
 const ButtonContainer = styled.div`
-    padding-top: 4vw;
+    padding-top: 3.25vw;
 
     @media only screen 
     and (max-width: 420px) 
@@ -207,17 +209,17 @@ function FixedCarousel() {
                     </Slide>
                 </Carousel.Item>
            
-                <Carousel.Item interval={5000}>
+            <Carousel.Item interval={5000}>
                     <Slide src={gc} className="d-block w-100">
                         <InnerContainer>
                             <SubHeader >GUTTERS & FASCIA CLEANING</SubHeader>
-                            <Header>GUTTERS NEVER LOOKED SO GOOD</Header>
+                            <Header>CLEAN GUTTERS, CLEAN MIND</Header>
                             <ButtonContainer>
                                 <CarouselButtons page={'gc'}/>
                             </ButtonContainer>
                         </InnerContainer>
                     </Slide>
-                </Carousel.Item>
+            </Carousel.Item> 
 
             </Carousel>
         </>

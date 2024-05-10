@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import wc from '../../images/wc/wchero.jpg';
+import wc from '../../images/servicecarousel2/twctwc.png';
 
 import cc from '../../images/carousel/cc2-min.jpg';
 
-import gc from '../../images/carousel/gc-min.jpg';
+import gc from '../../images/carousel/gc4.jpg';
 
-import pw from '../../images/carousel/pw2-min.jpg';
+import pw from '../../images/servicecarousel2/pw.jpg';
 
 import van from '../../images/carousel/van.png';
 

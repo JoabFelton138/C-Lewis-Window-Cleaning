@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS/NavBar.css';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route} from 'react-router-dom';
 
 import NavBar from './components/commons/NavBar';
@@ -21,18 +21,8 @@ import ThankYou from './pages/ThankYou';
 
 function App() {
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  React.useEffect(() => {
-    function handleResize() {
-        setScreenWidth(
-        window.innerWidth)
-    }
-    window.addEventListener('resize', handleResize);    
-})
-
   return (
-        <div className='app'>
+        <>
             <ScrollToTop/> 
             <NavBar/>
             <Routes>
@@ -48,7 +38,7 @@ function App() {
               <Route path='/thank-you' Component={ThankYou}/>                            
             </Routes>
             <Footer/>
-        </div>
+        </>
   );
 }
 

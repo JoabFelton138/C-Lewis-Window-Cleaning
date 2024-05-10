@@ -116,7 +116,7 @@ const WindowCleaning = () => {
                     go ahead and get your free quote today!`}
             />
             
-            <QuoteContainer>
+            {/* <QuoteContainer>
                 <Row className="justify-content-md-center">
                     <Col xs={12} sm={6} md={7} lg={4}>
                         <QuoteIcon icon={faQuoteLeft} />
@@ -145,7 +145,7 @@ const WindowCleaning = () => {
                         <Quotee>- Nicola Challinor</Quotee>
                     </Col>
                 </Row>
-            </QuoteContainer>
+            </QuoteContainer> */}
 
             <ImageGrid title={'wc'}/>
 

@@ -51,8 +51,7 @@ const Header = styled.h1`
     margin-top: 1vw;
     line-height: 4vw;
     color: white;
-    font-weight: bold;
-
+    
     @media only screen and (max-width: 600px) {
 
         margin-top: 1vw;

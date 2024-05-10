@@ -146,6 +146,7 @@ const Portfolio = () => {
                             </ImageOverlay>
                         </OverlayContainer>
                     </Col>
+
                     <Col lg={4} md={12} mb={3}>
                         <OverlayContainer>
                             <PortfolioImage
@@ -174,6 +175,39 @@ const Portfolio = () => {
                                 </ImageTitle>
                                 <ImageDescription>
                                     This is where we provide a description.
+                                </ImageDescription>
+                            </ImageOverlay>
+                        </OverlayContainer>
+                    </Col>
+
+                    <Col lg={4} md={12} mb={3}>
+                        <OverlayContainer>
+                            <PortfolioImage
+                                src={cc}
+                                className="image mb-3"
+                                alt="Boat on Calm Water"
+                            />
+                            <ImageOverlay>
+                                <ImageTitle>
+                                    Conservatory cleaning in ?
+                                </ImageTitle>
+                                <ImageDescription>
+                                    This is where we'll provide a description.
+                                </ImageDescription>
+                            </ImageOverlay>
+                        </OverlayContainer>
+                        <OverlayContainer>
+                            <PortfolioImage
+                                src={gutter}
+                                className="w-100 shadow-1-strong mb-3"
+                                alt="Wintry Mountain Landscape"
+                            />
+                            <ImageOverlay>
+                                <ImageTitle>
+                                    Gutter Cleaning in ?
+                                </ImageTitle>
+                                <ImageDescription>
+                                    This is where we'll provide a description.
                                 </ImageDescription>
                             </ImageOverlay>
                         </OverlayContainer>

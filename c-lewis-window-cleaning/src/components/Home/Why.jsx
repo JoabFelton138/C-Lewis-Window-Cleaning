@@ -39,7 +39,7 @@ const Content = styled.p`
 `;
 
 const ContentContainer = styled.div`
-width: 100%
+width: 98%
 `;
 
 
